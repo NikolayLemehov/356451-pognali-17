@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Николай Лемехов](https://up.htmlacademy.ru/adaptive/17/user/356451).
-* Наставник: `Неизвестно`.
+* Наставник:  [Алексей Зольников](https://htmlacademy.ru/profile/id870391).
 
 ---
 
