@@ -5,8 +5,272 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/100x19" width="100" height="19"
+             alt="Погнали?">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item  site-list__item--active">
+            <a href="#">О сервисе</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Направления</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Попутчики</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="#">Авторизация</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list contact-list">
+          <li class="contact-list__item">
+            <a class="contact-list__link contact-list__link--phone" href="tel:88005558628">8 800 555-86-28</a>
+          </li>
+          <li class="contact-list__item">
+            <a class="contact-list__link contact-list__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://facebook.com/" target="_blank">Facebook</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://vk.com/" target="_blank">ВКонтакте</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://www.instagram.com/" target="_blank">Instagram</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="caption">
+        <h1 class="caption__title">В путешествие с крутыми попутчиками!</h1>
+        <ul class="main-nav__list contact-list">
+          <li class="contact-list__item">
+            <a class="contact-list__link contact-list__link--phone" href="tel:88005558628">8 800 555-86-28</a>
+          </li>
+          <li class="contact-list__item">
+            <a class="contact-list__link contact-list__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="#">Авторизация</a>
+          </li>
+        </ul>
+      </section>
+      <section class="about-us">
+        <div class="about-us__quote blockquote">
+          <q class="blockquote__quote">«Лучшее приложение, что я видел в жизни!»</q>
+          <cite class="blockquote__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+        </div>
+        <ul class="about-us__step-list step-list">
+          <li class="step-list__item">Выберите направление</li>
+          <li class="step-list__item">Изучите идеи путешественников</li>
+          <li class="step-list__item">Находите тех, кто похож на вас</li>
+          <li class="step-list__item">Путешествуйте вместе!</li>
+        </ul>
+        <div class="about-us__wrapper">
+          <h2 class="about-us__title">О сервисе</h2>
+          <p class="about-us__text">
+            Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
+            Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+          </p>
+          <p class="about-us__text">
+            <b>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b>
+          </p>
+        </div>
+      </section>
+      <section class="route">
+        <h2 class="route__title">Направления</h2>
+        <p class="route__text">
+          Мы не продаем туры и ничего не рекламируем.
+          Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+        </p>
+        <ul class="route__list route-list">
+          <li class="route-list__item">
+            <div class="route-card route-card--thailand">
+              <div class="route-card__inner route-card__inner--thailand">
+                <div class="route-card__wrapper">
+                  <h3 class="route-card__country">Тайланд</h3>
+                  <p class="route-card__user-quantity">18321</p>
+                </div>
+                <p class="route-card__text">Джугли зовут!</p>
+              </div>
+            </div>
+          </li>
+          <li class="route-list__item">
+            <div class="route-card route-card--france">
+              <div class="route-card__inner route-card__inner--france">
+                <div class="route-card__wrapper">
+                  <h3 class="route-card__country">Франция</h3>
+                  <p class="route-card__user-quantity">12518</p>
+                </div>
+                <p class="route-card__text">Трэ бьен, манифик!</p>
+              </div>
+            </div>
+          </li>
+          <li class="route-list__item">
+            <div class="route-card route-card--czech">
+              <div class="route-card__inner route-card__inner--czech">
+                <div class="route-card__wrapper">
+                  <h3 class="route-card__country">Чехия</h3>
+                  <p class="route-card__user-quantity">5326</p>
+                </div>
+                <p class="route-card__text">Закоулки старой Европы</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <a class="route__all" href="form.html">Показать все</a>
+      </section>
+      <section class="follow-traveler">
+        <h2 class="follow-traveler__title">Попутчики</h2>
+        <p class="follow-traveler__text">
+          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+        </p>
+        <p class="follow-traveler__text">
+          <b>Теперь можно легко найти единомышленников!</b>
+        </p>
+        <ul class="follow-traveler__list traveler-list">
+          <li class="traveler-list__item">
+            <div class="traveler-card">
+              <div class="traveler-card__wrap traveler-card__wrap--img">
+                <img class="traveler__image" src="http://placehold.it/270x270" width="270" height="270" alt="Путешественник">
+              </div>
+              <div class="traveler-card__wrap traveler-card__wrap--information">
+                <ul class="traveler-card__flag-list flag-list">
+                  <li class="flag-list__item flag-list__item--srilanka" aria-label="Шри-Ланка">Шри-Ланка</li>
+                  <li class="flag-list__item flag-list__item--thailand" aria-label="Thailand">Таиланд</li>
+                  <li class="flag-list__item flag-list__item--seychelles" aria-label="Сейшельские острова">Сейшельские острова</li>
+                </ul>
+                <h3 class="traveler-card__name">Таня Фирсова</h3>
+                <p class="traveler-card__tag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                <ul class="traveler-card__travel-modes travel-modes">
+                  <li class="travel-modes__item travel-modes__item--air travel-modes__item--active" aria-label="Самолёт - да">
+                    Самолёт - да
+                  </li>
+                  <li class="travel-modes__item travel-modes__item--mass-transit" aria-label="Автобус - нет">
+                    Автобус - нет
+                  </li>
+                  <li class="travel-modes__item travel-modes__item--bicycle" aria-label="Велосипед - нет">
+                    Велосипед - нет
+                  </li>
+                  <li class="travel-modes__item travel-modes__item--pedestrian" aria-label="Пешеход - нет">
+                    Пешеход - нет
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="traveler-list__item">
+            <div class="traveler-card">
+              <div class="traveler-card__wrap traveler-card__wrap--img">
+                <img class="traveler__image" src="http://placehold.it/270x270" width="270" height="270" alt="Путешественник">
+              </div>
+              <div class="traveler-card__wrap traveler-card__wrap--information">
+                <ul class="traveler-card__flag-list flag-list">
+                  <li class="flag-list__item flag-list__item--belgium" aria-label="Бельгия">Бельгия</li>
+                  <li class="flag-list__item flag-list__item--czech" aria-label="Чехия">Чехия</li>
+                </ul>
+                <h3 class="traveler-card__name"></h3>
+                <p class="traveler-card__tag"></p>
+                <ul class="traveler-card__travel-modes travel-modes">
+                  <li class="travel-modes__item travel-modes__item--air travel-modes__item--active" aria-label="Самолёт - да">
+                    Самолёт - да
+                  </li>
+                  <li class="travel-modes__item travel-modes__item--mass-transit travel-modes__item--active" aria-label="Автобус - да">
+                    Автобус - да
+                  </li>
+                  <li class="travel-modes__item travel-modes__item--bicycle" aria-label="Велосипед - нет">
+                    Велосипед - нет
+                  </li>
+                  <li class="travel-modes__item travel-modes__item--pedestrian travel-modes__item--active" aria-label="Пешеход - да">
+                    Пешеход - да
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <a class="traveler-list__all" href="catalog.html">Показать все</a>
+      </section>
+      <section class="add-profile">
+        <h2 class="add-profile__title">Добавтьте свой профиль</h2>
+        <ul class="add-profile__price-list price-list">
+          <li class="price-list__item">
+            <p class="price-list__service">Базовое размещение</p>
+            <p class="price-list__cost">Бесплатно</p>
+          </li>
+          <li class="price-list__item">
+            <p class="price-list__service">Вывод на первых позициях</p>
+            <p class="price-list__cost">99 руб./мес</p>
+          </li>
+          <li class="price-list__item">
+            <p class="price-list__service">Кастомный цвет карточки</p>
+            <p class="price-list__cost">59 руб./мес</p>
+          </li>
+        </ul>
+        <a class="add-profile__business-price" href="#">Показать тарифы для бизнеса</a>
+      </section>
+      <section class="user-nav">
+        <h2 class="user-nav__title">Заинтересовались?</h2>
+        <p class="user-nav__text">
+          Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
+          <a class="user-nav__authorization" href="#">авторизуйтесь</a>.
+        </p>
+        <form class="user-nav__form registration" action="form.html" method="get">
+          <label class="visually-hidden" for="email">Авторизация</label>
+          <input class="registration__email" id="email" type="email" placeholder="E-mail">
+          <button class="registration__link" type="submit" aria-label="Перейти на страницу регистрации">
+            Страница регистрации
+          </button>
+        </form>
+        <p class="user-nav__text">Остались вопросы? Мы с радостью на них ответим!</p>
+        <ul class="user-nav__contact contact-list">
+          <li class="contact-list__item">
+            <a class="contact-list__link contact-list__link--phone" href="tel:88005558628">8 800 555-86-28</a>
+          </li>
+          <li class="contact-list__item">
+            <a class="contact-list__link contact-list__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+      </section>
+      <section class="get-route">
+        <address class="get-route__address">ул. Большая Конюшенная, 19/8</address>
+        <a class="get-route__link" href="#">Проложить маршрут</a>
+      </section>
+      <section class="map">
+        <img class="map__img" src="http://placehold.it/320x546" width="320" height="546" alt="ул. Большая Конюшенная, 19/8">
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-image" src="http://placehold.it/100x19" width="100" height="19"
+             alt="Погнали?">
+      </a>
+      <ul class="page-footer__social-list social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://facebook.com/" target="_blank">Facebook</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://vk.com/" target="_blank">ВКонтакте</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">HTML Academy</a>
+      </p>
+    </footer>
   </body>
 </html>
