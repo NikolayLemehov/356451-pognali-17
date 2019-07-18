@@ -37,13 +37,13 @@
         </ul>
         <ul class="main-nav__list social-list">
           <li class="social-list__item">
-            <a class="social-list__link" href="https://facebook.com/" target="_blank">Facebook</a>
+            <a class="social-list__link" href="https://facebook.com/" target="_blank" aria-label="Facebook">Facebook</a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="https://vk.com/" target="_blank">ВКонтакте</a>
+            <a class="social-list__link" href="https://vk.com/" target="_blank" aria-label="ВКонтакте">ВКонтакте</a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a class="social-list__link" href="https://www.instagram.com/" target="_blank" aria-label="Instagram">Instagram</a>
           </li>
         </ul>
       </nav>
@@ -59,17 +59,29 @@
         <p class="user-card__text">#бургер #бар #футбол #концерт #крафт</p>
         <h3 class="user-card__title">Транспорт</h3>
         <ul class="user-card__travel-modes travel-modes">
-          <li class="travel-modes__item travel-modes__item--air travel-modes__item--active" aria-label="Самолёт - да">
-            Самолёт - да
+          <li class="travel-modes__item">
+            <label class="travel-modes__label">
+              <input class="travel-modes__checkbox travel-modes__checkbox--air" type="checkbox" disabled checked>
+              Самолёт
+            </label>
           </li>
-          <li class="travel-modes__item travel-modes__item--mass-transit travel-modes__item--active" aria-label="Автобус - да">
-            Автобус - да
+          <li class="travel-modes__item">
+            <label class="travel-modes__label">
+              <input class="travel-modes__checkbox travel-modes__checkbox--mass-transit" type="checkbox" disabled checked>
+              Автобус
+            </label>
           </li>
-          <li class="travel-modes__item travel-modes__item--bicycle" aria-label="Велосипед - нет">
-            Велосипед - нет
+          <li class="travel-modes__item">
+            <label class="travel-modes__label">
+              <input class="travel-modes__checkbox travel-modes__checkbox--bicycle" type="checkbox" disabled>
+              Велосипед
+            </label>
           </li>
-          <li class="travel-modes__item travel-modes__item--pedestrian travel-modes__item--active" aria-label="Пешеход - да">
-            Пешеход - да
+          <li class="travel-modes__item">
+            <label class="travel-modes__label">
+              <input class="travel-modes__checkbox travel-modes__checkbox--pedestrian" type="checkbox" disabled checked>
+              Пешеход
+            </label>
           </li>
         </ul>
       </section>
@@ -110,7 +122,7 @@
             <label class="form-step__label" for="with-children">Можно с детьми</label>
             <input class="form-step__with-children" id="with-children" type="checkbox">
             <label>
-              <input class="form-step__month" type="month" value="2019-04">
+              <input class="form-step__month" type="text" value="2019-04">
             </label>
             <table class="form-step__calendar calendar">
               <tr>
@@ -305,13 +317,13 @@
       </a>
       <ul class="page-footer__social-list social-list">
         <li class="social-list__item">
-          <a class="social-list__link" href="https://facebook.com/" target="_blank">Facebook</a>
+          <a class="social-list__link" href="https://facebook.com/" target="_blank" aria-label="Facebook">Facebook</a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://vk.com/" target="_blank">ВКонтакте</a>
+          <a class="social-list__link" href="https://vk.com/" target="_blank" aria-label="ВКонтакте">ВКонтакте</a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://www.instagram.com/" target="_blank">Instagram</a>
+          <a class="social-list__link" href="https://www.instagram.com/" target="_blank" aria-label="Instagram">Instagram</a>
         </li>
       </ul>
       <p class="page-footer__copyright copyright">

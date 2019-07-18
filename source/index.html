@@ -37,13 +37,13 @@
         </ul>
         <ul class="main-nav__list social-list">
           <li class="social-list__item">
-            <a class="social-list__link" href="https://facebook.com/" target="_blank">Facebook</a>
+            <a class="social-list__link" href="https://facebook.com/" target="_blank" aria-label="Facebook">Facebook</a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="https://vk.com/" target="_blank">ВКонтакте</a>
+            <a class="social-list__link" href="https://vk.com/" target="_blank" aria-label="ВКонтакте">ВКонтакте</a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a class="social-list__link" href="https://www.instagram.com/" target="_blank" aria-label="Instagram">Instagram</a>
           </li>
         </ul>
       </nav>
@@ -146,24 +146,32 @@
               </div>
               <div class="traveler-card__wrap traveler-card__wrap--information">
                 <ul class="traveler-card__flag-list flag-list">
-                  <li class="flag-list__item flag-list__item--srilanka" aria-label="Шри-Ланка">Шри-Ланка</li>
-                  <li class="flag-list__item flag-list__item--thailand" aria-label="Thailand">Таиланд</li>
-                  <li class="flag-list__item flag-list__item--seychelles" aria-label="Сейшельские острова">Сейшельские острова</li>
+                  <li class="flag-list__item flag-list__item--srilanka"><span class="visually-hidden">Шри-Ланка</span></li>
+                  <li class="flag-list__item flag-list__item--thailand"><span class="visually-hidden">Таиланд</span></li>
+                  <li class="flag-list__item flag-list__item--seychelles"><span class="visually-hidden">Сейшельские острова</span></li>
                 </ul>
                 <h3 class="traveler-card__name">Таня Фирсова</h3>
                 <p class="traveler-card__tag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
                 <ul class="traveler-card__travel-modes travel-modes">
-                  <li class="travel-modes__item travel-modes__item--air travel-modes__item--active" aria-label="Самолёт - да">
-                    Самолёт - да
+                  <li class="travel-modes__item travel-modes__item--air travel-modes__item--active">
+                    <label class="visually-hidden">
+                      <input class="visually-hidden" type="checkbox" disabled checked>Самолёт
+                    </label>
                   </li>
-                  <li class="travel-modes__item travel-modes__item--mass-transit" aria-label="Автобус - нет">
-                    Автобус - нет
+                  <li class="travel-modes__item travel-modes__item--mass-transit">
+                    <label class="visually-hidden">
+                      <input class="visually-hidden" type="checkbox" disabled>Автобус
+                    </label>
                   </li>
-                  <li class="travel-modes__item travel-modes__item--bicycle" aria-label="Велосипед - нет">
-                    Велосипед - нет
+                  <li class="travel-modes__item travel-modes__item--bicycle">
+                    <label class="visually-hidden">
+                      <input class="visually-hidden" type="checkbox" disabled>Велосипед
+                    </label>
                   </li>
-                  <li class="travel-modes__item travel-modes__item--pedestrian" aria-label="Пешеход - нет">
-                    Пешеход - нет
+                  <li class="travel-modes__item travel-modes__item--pedestrian">
+                    <label class="visually-hidden">
+                      <input class="visually-hidden" type="checkbox" disabled>Пешеход
+                    </label>
                   </li>
                 </ul>
               </div>
@@ -176,23 +184,31 @@
               </div>
               <div class="traveler-card__wrap traveler-card__wrap--information">
                 <ul class="traveler-card__flag-list flag-list">
-                  <li class="flag-list__item flag-list__item--belgium" aria-label="Бельгия">Бельгия</li>
-                  <li class="flag-list__item flag-list__item--czech" aria-label="Чехия">Чехия</li>
+                  <li class="flag-list__item flag-list__item--belgium"><span class="visually-hidden">Бельгия</span></li>
+                  <li class="flag-list__item flag-list__item--czech"><span class="visually-hidden">Чехия</span></li>
                 </ul>
                 <h3 class="traveler-card__name">Петя Демин</h3>
                 <p class="traveler-card__tag">#бургер #бар #футбол #концерт #крафт</p>
                 <ul class="traveler-card__travel-modes travel-modes">
-                  <li class="travel-modes__item travel-modes__item--air travel-modes__item--active" aria-label="Самолёт - да">
-                    Самолёт - да
+                  <li class="travel-modes__item travel-modes__item--air travel-modes__item--active">
+                    <label class="visually-hidden">
+                      <input class="visually-hidden" type="checkbox" disabled checked>Самолёт
+                    </label>
                   </li>
-                  <li class="travel-modes__item travel-modes__item--mass-transit travel-modes__item--active" aria-label="Автобус - да">
-                    Автобус - да
+                  <li class="travel-modes__item travel-modes__item--mass-transit">
+                    <label class="visually-hidden">
+                      <input class="visually-hidden" type="checkbox" disabled checked>Автобус
+                    </label>
                   </li>
-                  <li class="travel-modes__item travel-modes__item--bicycle" aria-label="Велосипед - нет">
-                    Велосипед - нет
+                  <li class="travel-modes__item travel-modes__item--bicycle">
+                    <label class="visually-hidden">
+                      <input class="visually-hidden" type="checkbox" disabled>Велосипед
+                    </label>
                   </li>
-                  <li class="travel-modes__item travel-modes__item--pedestrian travel-modes__item--active" aria-label="Пешеход - да">
-                    Пешеход - да
+                  <li class="travel-modes__item travel-modes__item--pedestrian">
+                    <label class="visually-hidden">
+                      <input class="visually-hidden" type="checkbox" disabled checked>Пешеход
+                    </label>
                   </li>
                 </ul>
               </div>
@@ -258,13 +274,13 @@
       </a>
       <ul class="page-footer__social-list social-list">
         <li class="social-list__item">
-          <a class="social-list__link" href="https://facebook.com/" target="_blank">Facebook</a>
+          <a class="social-list__link" href="https://facebook.com/" target="_blank" aria-label="Facebook">Facebook</a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://vk.com/" target="_blank">ВКонтакте</a>
+          <a class="social-list__link" href="https://vk.com/" target="_blank" aria-label="ВКонтакте">ВКонтакте</a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://www.instagram.com/" target="_blank">Instagram</a>
+          <a class="social-list__link" href="https://www.instagram.com/" target="_blank" aria-label="Instagram">Instagram</a>
         </li>
       </ul>
       <p class="page-footer__copyright copyright">

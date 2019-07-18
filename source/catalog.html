@@ -37,13 +37,13 @@
         </ul>
         <ul class="main-nav__list social-list">
           <li class="social-list__item">
-            <a class="social-list__link" href="https://facebook.com/" target="_blank">Facebook</a>
+            <a class="social-list__link" href="https://facebook.com/" target="_blank" aria-label="Facebook">Facebook</a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="https://vk.com/" target="_blank">ВКонтакте</a>
+            <a class="social-list__link" href="https://vk.com/" target="_blank" aria-label="ВКонтакте">ВКонтакте</a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a class="social-list__link" href="https://www.instagram.com/" target="_blank" aria-label="Instagram">Instagram</a>
           </li>
         </ul>
       </nav>
@@ -202,85 +202,17 @@
                 <p class="traveler-card__tag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
               </div>
               <div class="traveler-card__wrap-decorate">
-                <h4 class="terravel-card__subtitle">Хочет посетить:</h4>
-                <ul class="traveler-card__flag-list flag-list">
-                  <li class="flag-list__item flag-list__item--srilanka" aria-label="Шри-Ланка">Шри-Ланка</li>
-                  <li class="flag-list__item flag-list__item--thailand" aria-label="Thailand">Таиланд</li>
-                  <li class="flag-list__item flag-list__item--seychelles" aria-label="Сейшельские острова">Сейшелы</li>
-                </ul>
-              </div>
-              <div class="traveler-card__wrap">
-                <div class="traveler-card__wrap-decorate">
-                  <h4 class="traveler-card__subtitle">Транспорт:</h4>
-                  <ul class="traveler-card__travel-modes travel-modes">
-                    <li class="travel-modes__item">
-                      <label class="travel-modes__label">
-                        <input class="travel-modes__checkbox travel-modes__checkbox--air" type="checkbox" disabled checked>
-                        Самолёт
-                      </label>
-                    </li>
-                    <li class="travel-modes__item">
-                      <label class="travel-modes__label">
-                        <input class="travel-modes__checkbox travel-modes__checkbox--mass-transit" type="checkbox" disabled>
-                        Автобус
-                      </label>
-                    </li>
-                    <li class="travel-modes__item">
-                      <label class="travel-modes__label">
-                        <input class="travel-modes__checkbox travel-modes__checkbox--bicycle" type="checkbox" disabled>
-                        Велосипед
-                      </label>
-                    </li>
-                    <li class="travel-modes__item">
-                      <label class="travel-modes__label">
-                        <input class="travel-modes__checkbox travel-modes__checkbox--pedestrian" type="checkbox" disabled>
-                        Пешеход
-                      </label>
-                    </li>
-                  </ul>
-                </div>
-                <div class="traveler-card__wrap-decorate">
-                  <h4 class="traveler-card__subtitle">Левел:</h4>
-                  <p class="traveler-card__level">80</p>
-                </div>
-              </div>
-              <button class="traveler-card__btn">Позвать!</button>
-            </div>
-          </li>
-          <li class="traveler-list__item">
-            <div class="traveler-card">
-              <div class="traveler-card__have-online">
-                <label class="traveler-card__label">
-                  <input class="traveler-card__checkbox" type="checkbox" disabled>Онлайн
-                </label>
-              </div>
-              <div class="traveler-card__wrap">
-                <div class="traveler-card__wrap traveler-card__wrap--img traveler-card__wrap--img--round">
-                  <img class="traveler-card__image" src="http://placehold.it/70x70" width="70" height="70" alt="Путешественник">
-                  <div class="traveler-card__to-like">
-                    <label class="traveler-card__label">
-                      <input class="traveler-card__checkbox" type="checkbox" disabled checked>Нравится
-                    </label>
-                  </div>
-                </div>
-                <div class="traveler-card__wrap-vertical">
-                  <h3 class="traveler-card__name">Петя Демин</h3>
-                  <div class="traveler-card__wrap">
-                    <h4 class="visually-hidden">Рейтинг</h4>
-                    <p class="traveler-card__rate">1,5 m</p>
-                  </div>
-                </div>
-              </div>
-              <div class="traveler-card__wrap">
-                <h4 class="visually-hidden">Теги</h4>
-                <p class="traveler-card__tag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-              </div>
-              <div class="traveler-card__wrap-decorate">
                 <h4 class="traveler-card__subtitle">Хочет посетить:</h4>
                 <ul class="traveler-card__flag-list flag-list">
-                  <li class="flag-list__item flag-list__item--srilanka" aria-label="Шри-Ланка">Шри-Ланка</li>
-                  <li class="flag-list__item flag-list__item--thailand" aria-label="Thailand">Таиланд</li>
-                  <li class="flag-list__item flag-list__item--seychelles" aria-label="Сейшельские острова">Сейшелы</li>
+                  <li class="flag-list__item flag-list__item--srilanka">
+                    <span class="flag-list__text">Шри-Ланка</span>
+                  </li>
+                  <li class="flag-list__item flag-list__item--thailand">
+                    <span class="flag-list__text">Таиланд</span>
+                  </li>
+                  <li class="flag-list__item flag-list__item--seychelles">
+                    <span class="flag-list__text">Сейшелы</span>
+                  </li>
                 </ul>
               </div>
               <div class="traveler-card__wrap">
@@ -315,155 +247,7 @@
                 </div>
                 <div class="traveler-card__wrap-decorate">
                   <h4 class="traveler-card__subtitle">Левел:</h4>
-                  <p class="traveler-card__level">80</p>
-                </div>
-              </div>
-              <button class="traveler-card__btn">Позвать!</button>
-            </div>
-          </li>
-          <li class="traveler-list__item">
-            <div class="traveler-card">
-              <div class="traveler-card__have-online">
-                <label class="traveler-card__label">
-                  <input class="traveler-card__checkbox" type="checkbox" disabled>Онлайн
-                </label>
-              </div>
-              <div class="traveler-card__wrap">
-                <div class="traveler-card__wrap traveler-card__wrap--img traveler-card__wrap--img--round traveler-card__wrap--heart traveler-card__wrap--heart--active">
-                  <img class="traveler-card__image" src="http://placehold.it/70x70" width="70" height="70" alt="Путешественник">
-                  <div class="traveler-card__to-like">
-                    <label class="traveler-card__label">
-                      <input class="traveler-card__checkbox" type="checkbox" disabled checked>Нравится
-                    </label>
-                  </div>
-                </div>
-                <div class="traveler-card__wrap-vertical">
-                  <h3 class="traveler-card__name">Таня Фирсова</h3>
-                  <div class="traveler-card__wrap">
-                    <h4 class="visually-hidden">Рейтинг</h4>
-                    <p class="traveler-card__rate">1,5 m</p>
-                  </div>
-                </div>
-              </div>
-              <div class="traveler-card__wrap">
-                <h4 class="visually-hidden">Теги</h4>
-                <p class="traveler-card__tag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-              </div>
-              <div class="traveler-card__wrap-decorate">
-                <h4 class="traveler-card__subtitle">Хочет посетить:</h4>
-                <ul class="traveler-card__flag-list flag-list">
-                  <li class="flag-list__item flag-list__item--srilanka" aria-label="Шри-Ланка">Шри-Ланка</li>
-                  <li class="flag-list__item flag-list__item--thailand" aria-label="Thailand">Таиланд</li>
-                  <li class="flag-list__item flag-list__item--seychelles" aria-label="Сейшельские острова">Сейшелы</li>
-                </ul>
-              </div>
-              <div class="traveler-card__wrap">
-                <div class="traveler-card__wrap-decorate">
-                  <h4 class="traveler-card__subtitle">Транспорт:</h4>
-                  <ul class="traveler-card__travel-modes travel-modes">
-                    <li class="travel-modes__item">
-                      <label class="travel-modes__label">
-                        <input class="travel-modes__checkbox travel-modes__checkbox--air" type="checkbox" disabled checked>
-                        Самолёт
-                      </label>
-                    </li>
-                    <li class="travel-modes__item">
-                      <label class="travel-modes__label">
-                        <input class="travel-modes__checkbox travel-modes__checkbox--mass-transit" type="checkbox" disabled>
-                        Автобус
-                      </label>
-                    </li>
-                    <li class="travel-modes__item">
-                      <label class="travel-modes__label">
-                        <input class="travel-modes__checkbox travel-modes__checkbox--bicycle" type="checkbox" disabled>
-                        Велосипед
-                      </label>
-                    </li>
-                    <li class="travel-modes__item">
-                      <label class="travel-modes__label">
-                        <input class="travel-modes__checkbox travel-modes__checkbox--pedestrian" type="checkbox" disabled>
-                        Пешеход
-                      </label>
-                    </li>
-                  </ul>
-                </div>
-                <div class="traveler-card__wrap-decorate">
-                  <h4 class="traveler-card__subtitle">Левел:</h4>
-                  <p class="traveler-card__level">80</p>
-                </div>
-              </div>
-              <button class="traveler-card__btn">Позвать!</button>
-            </div>
-          </li>
-          <li class="traveler-list__item">
-            <div class="traveler-card">
-              <div class="traveler-card__have-online">
-                <label class="traveler-card__label">
-                  <input class="traveler-card__checkbox" type="checkbox" disabled>Онлайн
-                </label>
-              </div>
-              <div class="traveler-card__wrap">
-                <div class="traveler-card__wrap traveler-card__wrap--img traveler-card__wrap--img--round traveler-card__wrap--heart traveler-card__wrap--heart--active">
-                  <img class="traveler-card__image" src="http://placehold.it/70x70" width="70" height="70" alt="Путешественник">
-                  <div class="traveler-card__to-like">
-                    <label class="traveler-card__label">
-                      <input class="traveler-card__checkbox" type="checkbox" disabled checked>Нравится
-                    </label>
-                  </div>
-                </div>
-                <div class="traveler-card__wrap-vertical">
-                  <h3 class="traveler-card__name">Таня Фирсова</h3>
-                  <div class="traveler-card__wrap">
-                    <h4 class="visually-hidden">Рейтинг</h4>
-                    <p class="traveler-card__rate">1,5 m</p>
-                  </div>
-                </div>
-              </div>
-              <div class="traveler-card__wrap">
-                <h4 class="visually-hidden">Теги</h4>
-                <p class="traveler-card__tag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-              </div>
-              <div class="traveler-card__wrap-decorate">
-                <h4 class="traveler-card__subtitle">Хочет посетить:</h4>
-                <ul class="traveler-card__flag-list flag-list">
-                  <li class="flag-list__item flag-list__item--srilanka" aria-label="Шри-Ланка">Шри-Ланка</li>
-                  <li class="flag-list__item flag-list__item--thailand" aria-label="Thailand">Таиланд</li>
-                  <li class="flag-list__item flag-list__item--seychelles" aria-label="Сейшельские острова">Сейшелы</li>
-                </ul>
-              </div>
-              <div class="traveler-card__wrap">
-                <div class="traveler-card__wrap-decorate">
-                  <h4 class="traveler-card__subtitle">Транспорт:</h4>
-                  <ul class="traveler-card__travel-modes travel-modes">
-                    <li class="travel-modes__item">
-                      <label class="travel-modes__label">
-                        <input class="travel-modes__checkbox travel-modes__checkbox--air" type="checkbox" disabled checked>
-                        Самолёт
-                      </label>
-                    </li>
-                    <li class="travel-modes__item">
-                      <label class="travel-modes__label">
-                        <input class="travel-modes__checkbox travel-modes__checkbox--mass-transit" type="checkbox" disabled>
-                        Автобус
-                      </label>
-                    </li>
-                    <li class="travel-modes__item">
-                      <label class="travel-modes__label">
-                        <input class="travel-modes__checkbox travel-modes__checkbox--bicycle" type="checkbox" disabled>
-                        Велосипед
-                      </label>
-                    </li>
-                    <li class="travel-modes__item">
-                      <label class="travel-modes__label">
-                        <input class="travel-modes__checkbox travel-modes__checkbox--pedestrian" type="checkbox" disabled>
-                        Пешеход
-                      </label>
-                    </li>
-                  </ul>
-                </div>
-                <div class="traveler-card__wrap-decorate">
-                  <h4 class="traveler-card__subtitle">Левел:</h4>
-                  <p class="traveler-card__level">80</p>
+                  <p class="traveler-card__level">99</p>
                 </div>
               </div>
               <button class="traveler-card__btn">Позвать!</button>
@@ -478,13 +262,13 @@
       </a>
       <ul class="page-footer__social-list social-list">
         <li class="social-list__item">
-          <a class="social-list__link" href="https://facebook.com/" target="_blank">Facebook</a>
+          <a class="social-list__link" href="https://facebook.com/" target="_blank" aria-label="Facebook">Facebook</a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://vk.com/" target="_blank">ВКонтакте</a>
+          <a class="social-list__link" href="https://vk.com/" target="_blank" aria-label="ВКонтакте">ВКонтакте</a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://www.instagram.com/" target="_blank">Instagram</a>
+          <a class="social-list__link" href="https://www.instagram.com/" target="_blank" aria-label="Instagram">Instagram</a>
         </li>
       </ul>
       <p class="page-footer__copyright copyright">
