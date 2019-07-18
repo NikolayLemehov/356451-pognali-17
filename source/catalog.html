@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="Погнали?">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item  site-list__item--active">
+            <a href="#">О сервисе</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Направления</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Попутчики</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="#">Авторизация</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list contact-list">
+          <li class="contact-list__item">
+            <a class="contact-list__link contact-list__link--phone" href="tel:88005558628">8 800 555-86-28</a>
+          </li>
+          <li class="contact-list__item">
+            <a class="contact-list__link contact-list__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://facebook.com/" target="_blank" aria-label="Facebook">Facebook</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://vk.com/" target="_blank" aria-label="ВКонтакте">ВКонтакте</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://www.instagram.com/" target="_blank" aria-label="Instagram">Instagram</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="page-header__title">Направления</h1>
+    </header>
+    <main>
+      <form class="extended-filter" action="https://echo.htmlacademy.ru">
+        <div class="extended-filter__wrapper choose-country">
+          <div class="choose-country__wrapper choose-country__wrapper--close" style="display: block;">
+            <div class="choose-country__text">Фильтрация по странам</div>
+            <button class="choose-country__btn choose-country__btn--open">Показать больше</button>
+          </div>
+          <div class="choose-country__wrapper choose-country__wrapper--open" style="display: none;">
+            <div class="choose-country__text">Выберите страну</div>
+            <button class="choose-country__btn choose-country__btn--close">Свернуть</button>
+            <ul class="choose-country__continent continent-filter">
+              <li class="continent-filter__item">
+                <input class="continent-filter__checkbox" id="continent-1" type="checkbox" checked>
+                <label class="continent-filter__label" for="continent-1">Европа</label>
+              </li>
+              <li class="continent-filter__item">
+                <input class="continent-filter__checkbox" id="continent-2" type="checkbox">
+                <label class="continent-filter__label" for="continent-2">Азия</label>
+              </li>
+              <li class="continent-filter__item">
+                <input class="continent-filter__checkbox" id="continent-3" type="checkbox">
+                <label class="continent-filter__label" for="continent-3">Америка</label>
+              </li>
+              <li class="continent-filter__item">
+                <input class="continent-filter__checkbox" id="continent-4" type="checkbox">
+                <label class="continent-filter__label" for="continent-4">Острова</label>
+              </li>
+            </ul>
+            <ul class="choose-country__alphabet alphabet-list">
+              <li class="alphabet-list__item">А</li>
+              <li class="alphabet-list__item">Б</li>
+              <li class="alphabet-list__item">В</li>
+              <li class="alphabet-list__item">Г</li>
+              <li class="alphabet-list__item">Д</li>
+              <li class="alphabet-list__item">Е</li>
+              <li class="alphabet-list__item">Ё</li>
+              <li class="alphabet-list__item">Ж</li>
+              <li class="alphabet-list__item">З</li>
+              <li class="alphabet-list__item">И</li>
+              <li class="alphabet-list__item">Й</li>
+              <li class="alphabet-list__item">К</li>
+              <li class="alphabet-list__item">Л</li>
+              <li class="alphabet-list__item">М</li>
+              <li class="alphabet-list__item">Н</li>
+              <li class="alphabet-list__item">О</li>
+              <li class="alphabet-list__item">П</li>
+              <li class="alphabet-list__item">Р</li>
+              <li class="alphabet-list__item">С</li>
+              <li class="alphabet-list__item">Т</li>
+              <li class="alphabet-list__item">У</li>
+              <li class="alphabet-list__item">Ф</li>
+              <li class="alphabet-list__item">Х</li>
+              <li class="alphabet-list__item">Ц</li>
+              <li class="alphabet-list__item">Ч</li>
+              <li class="alphabet-list__item">Ш</li>
+              <li class="alphabet-list__item">Щ</li>
+              <li class="alphabet-list__item">Э</li>
+              <li class="alphabet-list__item">Ю</li>
+              <li class="alphabet-list__item">Я</li>
+            </ul>
+            <ul class="choose-country__country filtered-countries">
+              <li class="filtered-countries__item">Афганистан</li>
+              <li class="filtered-countries__item">Албания</li>
+              <li class="filtered-countries__item">Алгерия</li>
+              <li class="filtered-countries__item">Андорра</li>
+              <li class="filtered-countries__item">Аргентина</li>
+              <li class="filtered-countries__item">Армения</li>
+              <li class="filtered-countries__item">Австралия</li>
+              <li class="filtered-countries__item">Австрия</li>
+              <li class="filtered-countries__item">Азербайджанм</li>
+            </ul>
+            <button class="choose-country__btn choose-country__btn--close choose-country__btn--close--full">
+              Свернуть
+            </button>
+          </div>
+        </div>
+      </form>
+      <form class="main-filter" action="https://echo.htmlacademy.ru">
+        <h2 class="main-filter__title">Подберите идеального попутчика</h2>
+        <fieldset class="main-filter__hobby">
+          <legend class="main-filter__legend">Хобби</legend>
+        </fieldset>
+        <fieldset class="main-filter__music music-fieldset">
+          <legend class="main-filter__legend">Музыка</legend>
+          <label class="music-fieldset__label">
+            <input class="music-fieldset__checkbox" type="checkbox" name="music-1" checked>Тяжелый рок
+          </label>
+          <label class="music-fieldset__label">
+            <input class="music-fieldset__checkbox" type="checkbox" name="music-2">Русский рэп
+          </label>
+          <label class="music-fieldset__label">
+            <input class="music-fieldset__checkbox" type="checkbox" name="music-3">Евроденс
+          </label>
+        </fieldset>
+        <fieldset class="main-filter__food">
+          <legend class="main-filter__legend">Еда</legend>
+        </fieldset>
+        <fieldset class="main-filter__transport travel-modes">
+          <legend class="main-filter__legend">Транспорт</legend>
+          <label class="travel-modes__label">
+            <input class="travel-modes__item travel-modes__item--air" type="checkbox" name="transport-1" checked>Самолёт
+          </label>
+          <label class="travel-modes__label">
+            <input class="travel-modes__item travel-modes__item--mass-transit" type="checkbox" name="transport-2" checked>Автобус
+          </label>
+          <label class="travel-modes__label">
+            <input class="travel-modes__item travel-modes__item--bicycle" type="checkbox" name="transport-3">Велосипед
+          </label>
+          <label class="travel-modes__label">
+            <input class="travel-modes__item travel-modes__item--pedestrian" type="checkbox" name="transport-4" checked>Пешеход
+          </label>
+        </fieldset>
+        <fieldset class="main-filter__level level">
+          <legend class="main-filter__legend">Левел</legend>
+          <label class="level__label">От
+            <input class="level__from" type="text" name="from" value="30">
+          </label>
+          <label class="level__label">До
+            <input class="level__from" type="text" name="from" value="100">
+          </label>
+        </fieldset>
+        <button class="main-filter__show" type="submit">Показать</button>
+      </form>
+      <section class="follow-traveler">
+        <ul class="follow-traveler__list traveler-list">
+          <li class="traveler-list__item">
+            <div class="traveler-card">
+              <div class="traveler-card__have-online have-online">
+                <input class="visually-hidden" id="have-online" type="checkbox" disabled>
+                <label class="have-online__label" for="have-online">Онлайн</label>
+              </div>
+              <div class="traveler-card__wrap">
+                <div class="traveler-card__wrap traveler-card__wrap--img traveler-card__wrap--img--round">
+                  <img class="traveler-card__image" src="http://placehold.it/70x70" width="70" height="70" alt="Путешественник">
+                  <div class="traveler-card__to-like">
+                    <label class="traveler-card__label">
+                      <input class="traveler-card__checkbox" type="checkbox" disabled checked>Нравится
+                    </label>
+                  </div>
+                </div>
+                <div class="traveler-card__wrap-vertical">
+                  <h3 class="traveler-card__name">Таня Фирсова</h3>
+                  <div class="traveler-card__wrap">
+                    <h4 class="visually-hidden">Рейтинг</h4>
+                    <p class="traveler-card__rate">1,5 m</p>
+                  </div>
+                </div>
+              </div>
+              <div class="traveler-card__wrap">
+                <h4 class="visually-hidden">Теги</h4>
+                <p class="traveler-card__tag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+              </div>
+              <div class="traveler-card__wrap-decorate">
+                <h4 class="traveler-card__subtitle">Хочет посетить:</h4>
+                <ul class="traveler-card__flag-list flag-list">
+                  <li class="flag-list__item flag-list__item--srilanka">
+                    <span class="flag-list__text">Шри-Ланка</span>
+                  </li>
+                  <li class="flag-list__item flag-list__item--thailand">
+                    <span class="flag-list__text">Таиланд</span>
+                  </li>
+                  <li class="flag-list__item flag-list__item--seychelles">
+                    <span class="flag-list__text">Сейшелы</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="traveler-card__wrap">
+                <div class="traveler-card__wrap-decorate">
+                  <h4 class="traveler-card__subtitle">Транспорт:</h4>
+                  <ul class="traveler-card__travel-modes travel-modes">
+                    <li class="travel-modes__item">
+                      <label class="travel-modes__label">
+                        <input class="travel-modes__checkbox travel-modes__checkbox--air" type="checkbox" disabled checked>
+                        Самолёт
+                      </label>
+                    </li>
+                    <li class="travel-modes__item">
+                      <label class="travel-modes__label">
+                        <input class="travel-modes__checkbox travel-modes__checkbox--mass-transit" type="checkbox" disabled>
+                        Автобус
+                      </label>
+                    </li>
+                    <li class="travel-modes__item">
+                      <label class="travel-modes__label">
+                        <input class="travel-modes__checkbox travel-modes__checkbox--bicycle" type="checkbox" disabled>
+                        Велосипед
+                      </label>
+                    </li>
+                    <li class="travel-modes__item">
+                      <label class="travel-modes__label">
+                        <input class="travel-modes__checkbox travel-modes__checkbox--pedestrian" type="checkbox" disabled>
+                        Пешеход
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="traveler-card__wrap-decorate">
+                  <h4 class="traveler-card__subtitle">Левел:</h4>
+                  <p class="traveler-card__level">99</p>
+                </div>
+              </div>
+              <button class="traveler-card__btn">Позвать!</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="Погнали?">
+      </a>
+      <ul class="page-footer__social-list social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://facebook.com/" target="_blank" aria-label="Facebook">Facebook</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://vk.com/" target="_blank" aria-label="ВКонтакте">ВКонтакте</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://www.instagram.com/" target="_blank" aria-label="Instagram">Instagram</a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">HTML Academy</a>
+      </p>
+    </footer>
+  </body>
+</html>
