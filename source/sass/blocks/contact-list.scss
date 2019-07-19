@@ -1,0 +1,16 @@
+.contact-list {
+  list-style: none;
+}
+
+.contact-list__link {
+  @include blogger-sans(700);
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #192144;
+  background-color: #ffffff;
+
+  &--mail {
+    text-transform: uppercase;
+  }
+}

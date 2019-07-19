@@ -1,8 +1,13 @@
+.user-list {
+  list-style: none;
+}
+
 .user-list__login {
   @include blogger-sans(700);
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
+  text-decoration: none;
   color: #161c35;
   background-color: #ffd74b;
 }

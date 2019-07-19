@@ -1,0 +1,18 @@
+.social-list {
+  list-style: none;
+}
+
+.social-list__link {
+  font-size: 0;
+
+  &::before {
+    content: "";
+    background: 0 0 no-repeat;
+  }
+
+  &--fb::before {
+    width: 11px;
+    height: 21px;
+    background-image: url("../../img/facebook.svg");
+  }
+}
