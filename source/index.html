@@ -3,14 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="Погнали?">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="page-header__main-nav main-nav">
+        <a class="main-nav__logo logo">
+          <img class="logo__image logo__image--open-menu" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?">
+        </a>
+        <button class="main-nav__toggle main-nav__toggle--open-menu" type="button">Меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item  site-list__item--active">
             <a href="#">О сервисе</a>
@@ -289,7 +293,8 @@
       </ul>
       <p class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">HTML
+          Academy</a>
       </p>
     </footer>
   </body>
