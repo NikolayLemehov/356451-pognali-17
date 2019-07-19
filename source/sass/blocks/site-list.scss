@@ -1,0 +1,14 @@
+.site-list {
+  list-style: none;
+}
+
+.site-list__link {
+  @include blogger-sans(700);
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #192144;
+
+  background-color: #ffffff;
+}
