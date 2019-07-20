@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  //font-size: 18px;
+  //line-height: 27px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  //color: #f7f4f1;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.sprite-background-icon {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.cloud {
+  @include bg-image(64px, 64px, "sprite.svg#cloud-view");
+}
+
+.cloud-blue {
+  @include bg-image(64px, 64px, "sprite.svg#cloud-view-blue");
+}
+
+.cloud-computing {
+  @include bg-image(64px, 64px, "sprite.svg#cloud-computing-view");
+}
+
+.cloud-computing-blue {
+  @include bg-image(64px, 64px, "sprite.svg#cloud-computing-view-blue");
+}

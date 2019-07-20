@@ -2,15 +2,85 @@
   list-style: none;
 }
 
+.contact-list__item {
+  &--menu {
+    display: flex;
+    height: 45px;
+    background-color: rgba(21, 255, 0, 0.11);
+  }
+
+  &--caption {
+    height: 40px;
+  }
+}
+
 .contact-list__link {
-  @include blogger-sans(700);
+  position: relative;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   text-decoration: none;
   color: #192144;
-  background-color: #ffffff;
+  //background-color: #ffffff;
+  background-color: rgba(255, 0, 158, 0.14);
 
-  &--mail {
+  &--caption {
+    @include square(40px);
+    font-size: 0;
+    //background-color: rgba(255, 136, 0, 0.12);
+    border-radius: 50%;
+  }
+
+  &--menu--mail {
     text-transform: uppercase;
+  }
+}
+
+.contact-list__round {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: no-repeat 0 0;
+  }
+
+  &--menu {
+    left: -40px;
+    top: -15px;
+
+    @include square(45px);
+    background: rgba(19, 0, 255, 0.16) no-repeat 0 0;
+
+    &--phone::before {
+      @include bg-image(18px, 18px, "contacts-phone.svg");
+    }
+
+    &--mail::before {
+      @include bg-image(18px, 13px, "contacts-mail.svg");
+    }
+  }
+
+  &--caption {
+    @include square(100%);
+    background: rgba(19, 0, 255, 0.26) no-repeat 0 0;
+
+    &--phone::before {
+      @include bg-image(18px, 18px, "topmenu-phone.svg");
+    }
+
+    &--mail::before {
+      @include bg-image(18px, 14px, "topmenu-mail.svg");
+    }
   }
 }

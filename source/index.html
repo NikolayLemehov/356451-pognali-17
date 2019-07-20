@@ -9,12 +9,19 @@
   </head>
   <body>
     <header class="page-header">
+      <div class="test">
+        <div class="sprite-background-icon cloud"></div>
+        <div class="sprite-background-icon cloud-blue"></div>
+
+        <div class="sprite-background-icon cloud-computing"></div>
+        <div class="sprite-background-icon cloud-computing-blue"></div>
+      </div>
       <nav class="page-header__main-nav main-nav">
         <a class="main-nav__logo logo">
           <img class="logo__image logo__image--open-menu" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?">
         </a>
         <button class="main-nav__toggle main-nav__toggle--open-menu" type="button">Меню</button>
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__site-list site-list">
           <li class="site-list__item  site-list__item--active">
             <a class="site-list__link" href="#">О сервисе</a>
           </li>
@@ -25,20 +32,26 @@
             <a class="site-list__link" href="catalog.html">Попутчики</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
+        <ul class="main-nav__user-list user-list">
           <li class="user-list__item">
             <a class="user-list__login" href="#">Авторизация</a>
           </li>
         </ul>
-        <ul class="main-nav__list contact-list">
-          <li class="contact-list__item">
-            <a class="contact-list__link contact-list__link--phone" href="tel:88005558628">8 800 555-86-28</a>
+        <ul class="main-nav__contact-list contact-list">
+          <li class="contact-list__item contact-list__item--menu">
+            <a class="contact-list__link contact-list__link--menu contact-list__link--menu--phone" href="tel:88005558628">
+              <span class="contact-list__round contact-list__round--menu  contact-list__round--menu--phone"></span>
+              8 800 555-86-28
+            </a>
           </li>
-          <li class="contact-list__item">
-            <a class="contact-list__link contact-list__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <li class="contact-list__item contact-list__item--menu">
+            <a class="contact-list__link contact-list__link--menu contact-list__link--menu--mail" href="mailto:mail@htmlacademy.ru">
+              <span class="contact-list__round contact-list__round--menu  contact-list__round--menu--mail"></span>
+              mail@htmlacademy.ru
+            </a>
           </li>
         </ul>
-        <ul class="main-nav__list social-list">
+        <ul class="main-nav__social-list social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--fb" href="https://facebook.com/" target="_blank" aria-label="Facebook">Facebook</a>
           </li>
@@ -52,17 +65,25 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="caption">
+      <section class="page-main__caption caption">
         <h1 class="caption__title">В путешествие с крутыми попутчиками!</h1>
-        <ul class="page-main__list contact-list">
-          <li class="contact-list__item">
-            <a class="contact-list__link contact-list__link--phone" href="tel:88005558628">8 800 555-86-28</a>
+        <ul class="caption__contact-list contact-list">
+          <li class="contact-list__item contact-list__item--caption">
+            <a class="contact-list__link contact-list__link--caption contact-list__link--caption--phone"
+               href="tel:88005558628">
+              <span class="contact-list__round contact-list__round--caption  contact-list__round--caption--phone"></span>
+              8 800 555-86-28
+            </a>
           </li>
-          <li class="contact-list__item">
-            <a class="contact-list__link contact-list__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <li class="contact-list__item contact-list__item--caption">
+            <a class="contact-list__link contact-list__link--caption contact-list__link--caption--mail"
+               href="mailto:mail@htmlacademy.ru">
+              <span class="contact-list__round contact-list__round--caption  contact-list__round--caption--mail"></span>
+              mail@htmlacademy.ru
+            </a>
           </li>
         </ul>
-        <ul class="page-main__list user-list">
+        <ul class="caption__user-list user-list">
           <li class="user-list__item">
             <a class="user-list__login" href="#">Авторизация</a>
           </li>
@@ -70,7 +91,7 @@
       </section>
       <section class="about-us">
         <div class="about-us__quote blockquote">
-          <q class="blockquote__quote">«Лучшее приложение, что я видел в жизни!»</q>
+          <q class="blockquote__quote">Лучшее приложение, что я видел в жизни!</q>
           <cite class="blockquote__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
         </div>
         <ul class="about-us__step-list step-list">
@@ -85,8 +106,8 @@
             Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
             Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
           </p>
-          <p class="about-us__text">
-            <b>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b>
+          <p class="about-us__text about-us__text--bold">
+            А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
           </p>
         </div>
       </section>
@@ -139,22 +160,31 @@
           Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому
           маршрут для хайкинга.
         </p>
-        <p class="follow-traveler__text">
+        <p class="follow-traveler__text follow-traveler__text--bold">
           <b>Теперь можно легко найти единомышленников!</b>
         </p>
         <ul class="follow-traveler__list traveler-list">
           <li class="traveler-list__item">
             <div class="traveler-card">
               <div class="traveler-card__wrap traveler-card__wrap--img">
-                <img class="traveler-card__image" src="http://placehold.it/270x270" width="270" height="270" alt="Путешественник">
+                <img class="traveler-card__image" src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Путешественник">
               </div>
               <div class="traveler-card__wrap traveler-card__wrap--information">
                 <ul class="traveler-card__flag-list flag-list">
-                  <li class="flag-list__item flag-list__item--srilanka"><span class="visually-hidden">Шри-Ланка</span>
+                  <li class="flag-list__item flag-list__item--srilanka">
+                    <span class="visually-hidden">
+                    Шри-Ланка
+                  </span>
                   </li>
-                  <li class="flag-list__item flag-list__item--thailand"><span class="visually-hidden">Таиланд</span>
+                  <li class="flag-list__item flag-list__item--thailand">
+                    <span class="visually-hidden">
+                    Таиланд
+                  </span>
                   </li>
-                  <li class="flag-list__item flag-list__item--seychelles"><span class="visually-hidden">Сейшельские острова</span>
+                  <li class="flag-list__item flag-list__item--seychelles">
+                    <span class="visually-hidden">
+                    Сейшелы
+                  </span>
                   </li>
                 </ul>
                 <h3 class="traveler-card__name">Таня Фирсова</h3>
@@ -187,7 +217,7 @@
           <li class="traveler-list__item">
             <div class="traveler-card">
               <div class="traveler-card__wrap traveler-card__wrap--img">
-                <img class="traveler-card__image" src="http://placehold.it/270x270" width="270" height="270" alt="Путешественник">
+                <img class="traveler-card__image" src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Путешественник">
               </div>
               <div class="traveler-card__wrap traveler-card__wrap--information">
                 <ul class="traveler-card__flag-list flag-list">
@@ -241,6 +271,28 @@
           </li>
         </ul>
         <a class="add-profile__business-price" href="#">Показать тарифы для бизнеса</a>
+        <div class="add-profile__busyness-price busyness-price">
+          <h3 class="busyness-price__title">Бизнес-тарифы</h3>
+          <ul class="busyness-price__price-list price-list">
+            <li class="price-list__item">
+              <p class="price-list__service">Реклама у блоггера</p>
+              <p class="price-list__cost">300 000 руб./пост</p>
+            </li>
+            <li class="price-list__item">
+              <p class="price-list__service">Накрутка подписчиков</p>
+              <p class="price-list__cost">от 1 руб./шт.</p>
+            </li>
+            <li class="price-list__item">
+              <p class="price-list__service">Лайки от ботов</p>
+              <p class="price-list__cost">от 20 коп./лайк</p>
+            </li>
+            <li class="price-list__item">
+              <p class="price-list__service">Ваш продакт-плейсмент</p>
+              <p class="price-list__cost">Индивидуально</p>
+            </li>
+          </ul>
+          <a class="busyness-price__business-price" href="#">Закрыть окно</a>
+        </div>
       </section>
       <section class="user-nav">
         <h2 class="user-nav__title">Заинтересовались?</h2>
@@ -252,16 +304,22 @@
           <label class="visually-hidden" for="email">Авторизация</label>
           <input class="registration__email" id="email" type="email" placeholder="E-mail">
           <button class="registration__link" type="submit" aria-label="Перейти на страницу регистрации">
-            Страница регистрации
+            Регистрация
           </button>
         </form>
         <p class="user-nav__text">Остались вопросы? Мы с радостью на них ответим!</p>
         <ul class="user-nav__contact contact-list">
-          <li class="contact-list__item">
-            <a class="contact-list__link contact-list__link--phone" href="tel:88005558628">8 800 555-86-28</a>
+          <li class="contact-list__item contact-list__item--menu">
+            <a class="contact-list__link contact-list__link--menu contact-list__link--menu--phone" href="tel:88005558628">
+              <span class="contact-list__round contact-list__round--menu  contact-list__round--menu--phone"></span>
+              8 800 555-86-28
+            </a>
           </li>
-          <li class="contact-list__item">
-            <a class="contact-list__link contact-list__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <li class="contact-list__item contact-list__item--menu">
+            <a class="contact-list__link contact-list__link--menu contact-list__link--menu--mail" href="mailto:mail@htmlacademy.ru">
+              <span class="contact-list__round contact-list__round--menu  contact-list__round--menu--phone"></span>
+              mail@htmlacademy.ru
+            </a>
           </li>
         </ul>
       </section>

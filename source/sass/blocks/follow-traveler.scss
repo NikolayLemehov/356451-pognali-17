@@ -1,0 +1,30 @@
+.follow-traveler {
+  color: #ffffff;
+  background-color: #192144;
+}
+
+.follow-traveler__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ff8d30;
+}
+
+.follow-traveler__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.follow-traveler__all {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #1d2e5b;
+  background-color: #ffd74b;
+}

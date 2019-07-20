@@ -1,0 +1,10 @@
+@mixin bg-image($width: 20px, $height: 20px, $img: "dots.svg") {
+  width: $width;
+  height: $height;
+  background-image: url("../img/#{$img}");
+}
+
+@mixin square($side: 20px) {
+  width: $side;
+  height: $side;
+}

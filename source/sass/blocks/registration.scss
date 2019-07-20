@@ -1,0 +1,30 @@
+.registration {
+  position: relative;
+  height: 62px;
+}
+
+.registration__email {
+  @include square(100%);
+  border: none;
+  border-radius: 10px;
+}
+
+.registration__link {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  font-size: 0;
+  background-color: #ffd74b;
+  border: none;
+  border-radius: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

@@ -1,3 +1,14 @@
 .main-nav {
+  position: relative;
   background: $white;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.main-nav__contact-list {
+  display: block;
 }

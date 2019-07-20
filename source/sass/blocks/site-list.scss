@@ -3,7 +3,7 @@
 }
 
 .site-list__link {
-  @include blogger-sans(700);
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;

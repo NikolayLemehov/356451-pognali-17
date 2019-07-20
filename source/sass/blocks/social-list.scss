@@ -1,18 +1,44 @@
 .social-list {
+  display: flex;
   list-style: none;
 }
 
+.social-list__item {
+  @include square(45px);
+  background-color: rgba(0, 64, 255, 0.15);
+
+  &:nth-child(2) {
+    background-color: rgba(0, 64, 255, 0.3);
+  }
+}
+
 .social-list__link {
+  position: relative;
+  display: block;
+
+  @include square(100%);
   font-size: 0;
 
   &::before {
     content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
     background: 0 0 no-repeat;
   }
 
   &--fb::before {
-    width: 11px;
-    height: 21px;
-    background-image: url("../../img/facebook.svg");
+    @include bg-image(11px, 21px, "facebook.svg");
+    background-color: rgba(153, 0, 81, 0.13);
+  }
+
+  &--vk::before {
+    @include bg-image(30px, 15px, "vk.svg");
+    background-color: rgba(0, 153, 52, 0.13);
+  }
+
+  &--inst::before {
+    @include bg-image(23px, 23px, "instagram.svg");
+    background-color: rgba(153, 0, 81, 0.13);
   }
 }

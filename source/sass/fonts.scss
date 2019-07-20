@@ -25,9 +25,3 @@
   font-weight: 700;
   font-style: normal;
 }
-
-// $weight 300(light) | 400(regular) | 500(medium) | 700(bold)
-@mixin blogger-sans($weight: 400) {
-  font-family: "Blogger Sans", "Arial", sans-serif;
-  font-weight: $weight;
-}
