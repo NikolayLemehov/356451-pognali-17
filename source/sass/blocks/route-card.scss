@@ -1,8 +1,62 @@
-.route-card__inner {
+.route-card {
+  //временно
+  background-color: rgba(204, 204, 204, 0.05);
+  //временно
+  //margin-bottom: 50px;
+}
+
+.route-card__img {
+  background-color: #bccaf5;
+  border-radius: 10px 10px 0 0;
+
+  &--thailand {
+    @include bg-image(270px, 110px, "thailand-mobile@1x.jpg");
+  }
+
+  &--france {
+    @include bg-image(270px, 110px, "france-mobile@1x.jpg");
+  }
+
+  &--czech {
+    @include bg-image(270px, 110px, "czech-mobile@1x.jpg");
+  }
+}
+
+.route-card__wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -11px;
+  padding: 27px 24px 21px 25px;
   background-color: #ffffff;
+  border-radius: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 0;
+    border-radius: 2px;
+    transform: translateY(-50%);
+  }
+
+  &--thailand::before {
+    @include bg-sprite-image(35px, 24px, "flags-sprite.png", -120px, -188px);
+  }
+
+  &--france::before {
+    @include bg-sprite-image(35px, 24px, "flags-sprite.png", -190px, -98px);
+  }
+
+  &--czech::before {
+    @include bg-sprite-image(35px, 24px, "flags-sprite.png", -190px, -10px);
+  }
 }
 
 .route-card__country {
+  width: 140px;
+  margin: 0;
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
@@ -10,14 +64,28 @@
 }
 
 .route-card__user-quantity {
+  position: relative;
+  margin: 0;
+  padding-left: 25px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 30px;
-  color: #444444;
-  opacity: 0.3;
+  line-height: 24px;
+
+  color: fade_out(#444444, 1 - 0.3);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 5px;
+
+    @include bg-image(11px, 11px, "user.svg");
+    opacity: 0.1;
+  }
 }
 
 .route-card__text {
+  margin: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -26,10 +94,5 @@
 }
 
 .route__all {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-  text-decoration: none;
-  color: #1d2e5b;
-  background-color: #ffd74b;
+  margin: 25px 0 20px;
 }

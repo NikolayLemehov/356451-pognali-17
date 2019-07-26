@@ -1,21 +1,46 @@
 .user-nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 101px;
   color: #ffffff;
   background-color: #192144;
 }
 
 .user-nav__title {
+  margin: 0 0 20px 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
   color: #ff8d30;
 }
 
 .user-nav__text {
+  margin: 0 0 0 0;
+  padding: 0 13px 0;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
+  text-align: center;
 }
 
 .user-nav__authorization {
   color: #ffd74b;
+  transition: $duration;
+
+  &:hover {
+    color: #ff8d30;
+  }
+
+  &:active {
+    color: fade_out(#ff8d30, 1 - 0.3);
+  }
+}
+
+.user-nav__form {
+  margin: 29px 0;
+}
+
+.user-nav__contact {
+  margin: 18px 0;
 }

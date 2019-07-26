@@ -1,0 +1,82 @@
+.get-route {
+  padding-top: 64px;
+  background-color: #ffd74b;
+}
+
+.get-route__address {
+  position: relative;
+  margin-bottom: 31px;
+  padding: 0 2px 0 62px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #192144;
+  //
+  //&::before {
+  //  content: "";
+  //  position: absolute;
+  //  left: 0;
+  //  top: -2px;
+  //
+  //  @include square(45px);
+  //  @include bg-image(14px, 22px, "contacts-location.svg");
+  //  background-color: #121936;
+  //  border-radius: 50%;
+  //}
+}
+
+.get-route__image {
+  position: absolute;
+  left: 0;
+  top: -2px;
+
+  @include square(45px);
+  background-color: #121936;
+  border-radius: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 6px);
+    top: calc(50% - 10px);
+
+    @include bg-image(14px, 22px, "contacts-location.svg");
+  }
+}
+
+.get-route__link {
+  display: block;
+  margin: 25px 0;
+  padding: 20px 60px 18px 21px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #1d2e5b;
+  border: 3px solid #192144;
+
+  &::after {
+    right: 12px;
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-color: #192144;
+  }
+
+  &:hover::after {
+    border-left-color: #ffffff;
+  }
+
+  &:active {
+    color: fade_out(#ffffff, 1 - 0.3);
+    background-color: #192144;
+  }
+
+  &:active::after {
+    border-left-color: fade_out(#ffffff, 1 - 0.3);
+    opacity: 1;
+  }
+}

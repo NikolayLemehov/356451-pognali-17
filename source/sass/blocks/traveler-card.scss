@@ -2,3 +2,70 @@
   color: #444444;
   background-color: #ffffff;
 }
+
+.traveler-card__img-wrap {
+  position: relative;
+}
+
+.traveler-card__image {
+  display: block;
+}
+
+.traveler-card__level {
+  position: absolute;
+  left: 18px;
+  top: 17px;
+}
+
+.traveler-card__information-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //padding-top: 10px;
+}
+
+.traveler-card__name {
+  position: relative;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  color: #1d2e5b;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 6px;
+
+    @include square(5px);
+    border-radius: 50%;
+  }
+
+  &--active::before {
+    background-color: #81e31e;
+  }
+
+  &--inactive::before {
+    background-color: #f97676;
+  }
+}
+
+.traveler-card__tag {
+  width: 200px;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #444444;
+
+  &--shift {
+    padding: 0 0 0 15px;
+  }
+}
+
+.traveler-card__travel-modes {
+  margin: 0 0 17px 0;
+}

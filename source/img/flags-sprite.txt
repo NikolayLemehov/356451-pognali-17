@@ -1,0 +1,96 @@
+https://www.toptal.com/developers/css/sprite-generator/
+
+.bg-australia@1x {
+    width: 35px; height: 24px;
+    background: url('css_sprites.png') -10px -144px;
+}
+
+x
+.bg-belgium@1x {
+    width: 35px; height: 24px;
+    background: url('css_sprites.png') -65px -144px;
+}
+
+x
+.bg-bosnia-and-herzegovina@1x {
+    width: 35px; height: 24px;
+    background: url('css_sprites.png') -120px -144px;
+}
+
+x
+.bg-bosnia-and-herzegovina@2x {
+    width: 70px; height: 47px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+x
+.bg-czech@1x {
+    width: 35px; height: 24px;
+    background: url('css_sprites.png') -190px -10px;
+}
+
+x
+.bg-czech@2x {
+    width: 70px; height: 47px;
+    background: url('css_sprites.png') -100px -10px;
+}
+
+x
+.bg-dominica@1x {
+    width: 35px; height: 24px;
+    background: url('css_sprites.png') -190px -54px;
+}
+
+x
+.bg-france@1x {
+    width: 35px; height: 24px;
+    background: url('css_sprites.png') -190px -98px;
+}
+
+x
+.bg-france@2x {
+    width: 70px; height: 47px;
+    background: url('css_sprites.png') -10px -77px;
+}
+
+x
+.bg-germany@1x {
+    width: 35px; height: 24px;
+    background: url('css_sprites.png') -190px -142px;
+}
+
+x
+.bg-seychelles@1x {
+    width: 35px; height: 24px;
+    background: url('css_sprites.png') -10px -188px;
+}
+
+x
+.bg-sri-lanka@1x {
+    width: 35px; height: 24px;
+    background: url('css_sprites.png') -65px -188px;
+}
+
+x
+.bg-thailand@1x {
+    width: 35px; height: 24px;
+    background: url('css_sprites.png') -120px -188px;
+}
+
+x
+.bg-thailand@2x {
+    width: 70px; height: 47px;
+    background: url('css_sprites.png') -100px -77px;
+}
+
+x
+.bg-united-kingdom@1x {
+    width: 35px; height: 24px;
+    background: url('css_sprites.png') -175px -188px;
+}
+
+x
+.bg-united-states-of-america@1x {
+    width: 35px; height: 24px;
+    background: url('css_sprites.png') -245px -10px;
+}

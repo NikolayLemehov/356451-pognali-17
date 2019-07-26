@@ -1,3 +1,36 @@
 .travel-modes {
+  display: flex;
+  padding: 0;
   list-style: none;
+}
+
+.travel-modes__checkbox:checked + .travel-modes__img {
+  fill: #1d2e5b;
+}
+
+.travel-modes__img {
+  fill: fade-out(#000000, 1 - 0.15);
+
+  &--plane {
+    width: 19px;
+    height: 21px;
+    margin-right: 17px;
+  }
+
+  &--bus {
+    width: 17px;
+    height: 21px;
+    margin-right: 13px;
+  }
+
+  &--bike {
+    width: 24px;
+    height: 21px;
+    margin-right: 10px;
+  }
+
+  &--run {
+    width: 20px;
+    height: 21px;
+  }
 }

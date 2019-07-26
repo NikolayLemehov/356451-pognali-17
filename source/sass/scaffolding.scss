@@ -3,10 +3,13 @@ html {
 }
 
 body {
-  min-width: 320px;
-  margin: 0;
+  //min-width: 320px;
+  //временно
+  width: 320px;
+  //margin: 0;
+  //временно
+  margin: 0 auto;
   padding: 0;
-
   //font-size: 18px;
   //line-height: 27px;
   font-family: "Blogger Sans", "Arial", sans-serif;
@@ -40,26 +43,46 @@ input[type="radio"].visually-hidden {
   box-sizing: inherit;
 }
 
-.sprite-background-icon {
-  width: 100px;
-  height: 100px;
-  display: inline-block;
-  margin-right: 30px;
-  cursor: pointer;
+.display-none {
+  display: none;
 }
 
-.cloud {
-  @include bg-image(64px, 64px, "sprite.svg#cloud-view");
-}
+.btn-1 {
+  position: relative;
+  display: block;
+  margin: 25px 0 20px;
+  padding: 25px 60px 21px 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #1d2e5b;
+  background-color: #ffd74b;
+  border-radius: 10px;
+  transition: $duration;
 
-.cloud-blue {
-  @include bg-image(64px, 64px, "sprite.svg#cloud-view-blue");
-}
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    border: 7px solid transparent;
+    border-left: 10px solid #1d2e5b;
+    //@include bg-image(10px, 14px, "triangle-arrow-right.svg");
+    transform: translateY(-50%);
+    transition: $duration;
+  }
 
-.cloud-computing {
-  @include bg-image(64px, 64px, "sprite.svg#cloud-computing-view");
-}
+  &:hover {
+    background-color: #ffbd30;
+  }
 
-.cloud-computing-blue {
-  @include bg-image(64px, 64px, "sprite.svg#cloud-computing-view-blue");
+  &:active {
+    color: fade_out(#1d2e5b, 1 - 0.3);
+    background-color: #ffbd30;
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }

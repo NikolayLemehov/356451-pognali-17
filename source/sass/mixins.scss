@@ -4,6 +4,12 @@
   background-image: url("../img/#{$img}");
 }
 
+//https://www.toptal.com/developers/css/sprite-generator/
+@mixin bg-sprite-image($width: 20px, $height: 20px, $sprite: "", $left: -1px, $top: -1px) {
+  @include bg-image($width, $height, $sprite);
+  background-position: $left $top;
+}
+
 @mixin square($side: 20px) {
   width: $side;
   height: $side;

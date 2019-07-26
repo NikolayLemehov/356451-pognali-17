@@ -1,9 +1,51 @@
 .price-list {
   list-style: none;
+  counter-reset: list;
+
+  &--busyness .price-list__item::after {
+    display: none;
+  }
 }
 
 .price-list__item {
+  position: relative;
+  padding: 10.6px 0;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
+  border-bottom: 1px solid fade_out(#000000, 1 - 0.05);
+
+  &:first-child {
+    border-top: 1px solid fade_out(#000000, 1 - 0.05);
+  }
+
+  &::after {
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    right: -44px;
+    top: 3.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 0 1px;
+
+    @include square(34px);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    background-color: #ffa530;
+    border-radius: 50%;
+  }
+}
+
+.price-list__service {
+  margin: 0;
+}
+
+.price-list__cost {
+  margin: 0;
 }

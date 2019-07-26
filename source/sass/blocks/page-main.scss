@@ -1,0 +1,41 @@
+.page-main__item {
+  position: relative;
+  margin-top: -30px;
+  padding: 30px 25px 10px;
+  border-radius: 0 0 30px 30px;
+
+  &--caption {
+    z-index: 10;
+  }
+
+  &--about-us {
+    z-index: 9;
+  }
+
+  &--route {
+    z-index: 8;
+  }
+
+  &--follow-traveler {
+    z-index: 7;
+  }
+
+  &--add-profile {
+    z-index: 6;
+  }
+
+  &--user-nav {
+    z-index: 5;
+  }
+
+  &--get-route {
+    z-index: 4;
+  }
+
+  &--map {
+    z-index: 1;
+    padding: 0;
+    border-radius: 0;
+    margin-top: -35px;
+  }
+}

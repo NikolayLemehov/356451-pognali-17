@@ -1,9 +1,16 @@
 .route {
+  padding-top: 90px;
+  padding-bottom: 10px;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color: #444444;
   background-color: #edeff6;
+}
+
+.route__content-wrap {
+  margin-bottom: 60px;
+  padding: 0 45px 0 25px;
 }
 
 .route__title {

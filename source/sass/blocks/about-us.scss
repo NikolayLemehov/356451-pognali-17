@@ -14,6 +14,11 @@
   background-color: #192144;
 }
 
-.about-us__text--bold {
-  font-weight: 700;
+.about-us__text {
+  margin: 0;
+  padding: 0;
+
+  &--bold {
+    font-weight: 700;
+  }
 }

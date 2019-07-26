@@ -1,3 +1,19 @@
 .route-list {
+  padding: 0;
   list-style: none;
+}
+
+.route-list__item {
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    @include bg-image(320px, 81px, "fade.png");
+  }
 }

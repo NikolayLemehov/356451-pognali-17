@@ -1,6 +1,10 @@
 .main-nav {
   position: relative;
-  background: $white;
+  background-color: #192144;
+
+  &--open-menu {
+    background: #ffffff;
+  }
 }
 
 .main-nav__toggle {
