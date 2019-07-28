@@ -1,9 +1,38 @@
 .about-us {
+  padding-bottom: 63px;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
   background-color: #192144;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    right: calc(50% + 47px);
+    bottom: 220px;
+    width: 1132px;
+    height: 132px;
+    border-radius: 20px;
+    background-color: #141b3b;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: calc(50% - 292px / 2 + 4px);
+    bottom: 0;
+    background: no-repeat 0 0;
+
+    @include bg-image(292px, 352px, "about-mobile@1x.png");
+  }
+}
+
+.about-us__wrapper {
+  padding: 0 25px;
 }
 
 .about-us__title {
@@ -11,11 +40,10 @@
   font-size: 24px;
   line-height: 24px;
   color: #ff8d30;
-  background-color: #192144;
 }
 
 .about-us__text {
-  margin: 0;
+  margin: 0 0 18px 0;
   padding: 0;
 
   &--bold {

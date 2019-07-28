@@ -1,11 +1,48 @@
 .step-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  counter-reset: list;
 }
 
 .step-list__item {
+  position: relative;
+  width: 270px;
+  min-height: 80px + 10px;
+  margin-bottom: -10px;
+  padding: 22px 90px calc(20px + 10px) 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   color: #161c35;
   background-color: #ff8d30;
+  border-radius: 10px 10px 0 0;
+
+  &:nth-child(2) {
+    background-color: #ffa530;
+  }
+
+  &:nth-child(3) {
+    background-color: #ffbd30;
+  }
+
+  &:nth-child(4) {
+    min-height: 80px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    background-color: #ffd74b;
+    border-radius: 10px;
+  }
+
+  &::after {
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffffff;
+  }
 }

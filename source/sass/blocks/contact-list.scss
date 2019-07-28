@@ -14,8 +14,6 @@
     height: 45px;
     //decorative-indent
     padding-left: 10px;
-    //временно
-    background-color: rgba(21, 255, 0, 0.11);
   }
 }
 
@@ -27,9 +25,6 @@
   line-height: 22px;
   text-decoration: none;
   color: #192144;
-  //временно
-  background-color: rgba(255, 0, 158, 0.14);
-  //duplicate in .contact-list__round & .contact-list__icon
   transition: $duration;
 
   &--menu {
@@ -52,6 +47,14 @@
 
     &--header {
       color: #192144;
+
+      &:hover {
+        color: fade_out(#192144, 1 - 0.6);
+      }
+
+      &:active {
+        color: fade_out(#192144, 1 - 0.3);
+      }
     }
 
     &--main {
@@ -106,7 +109,7 @@
   &--caption {
     //decorative-indent
     left: -10px;
-    top: -11.5px;
+    top: -12.5px;
 
     @include square(45px);
     background-color: #121936;

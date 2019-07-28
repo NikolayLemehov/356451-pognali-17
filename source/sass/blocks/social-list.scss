@@ -6,6 +6,12 @@
   padding: 0 0 38px;
   list-style: none;
   border-bottom: 1px solid fade_out(#000000, 1 - 0.05);
+
+  &--header {
+    margin: 0 0 29px 2px;
+    padding: 0;
+    border-bottom: none;
+  }
 }
 
 .social-list__link {
@@ -17,19 +23,11 @@
   border-radius: 50%;
   transition: $duration;
 
-  &--header:active .social-list__img {
-    opacity: 0.3;
-  }
-
   &--footer {
     background-color: #ffd74b;
 
     &:hover {
       background-color: #ffbd30;
-    }
-
-    &:active .social-list__img {
-      opacity: 0.3;
     }
   }
 }
@@ -78,4 +76,16 @@
       height: 18px;
     }
   }
+}
+
+.social-list__link--header:hover .social-list__img {
+  fill: fade_out(#000000, 1 - 0.4);
+}
+
+.social-list__link--header:active .social-list__img {
+  fill: fade_out(#000000, 1 - 0.1);
+}
+
+.social-list__link--footer:active .social-list__img {
+  opacity: 0.3;
 }

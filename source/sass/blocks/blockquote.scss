@@ -1,14 +1,19 @@
 .blockquote {
+  display: flex;
+  flex-direction: column;
+  padding: 0 75px 0 25px;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  background-color: #192144;
 }
 
 .blockquote__quote {
+  margin: 0 0 18px;
   font-weight: 300;
 }
 
 .blockquote__author {
+  margin: 0 0 10px;
   font-weight: 700;
+  font-style: normal;
 }

@@ -1,4 +1,8 @@
-@mixin bg-image($width: 20px, $height: 20px, $img: "dots.svg") {
+@mixin bg-simple-image($img: "logo-mobile-blue@1x.png") {
+  background-image: url("../img/#{$img}");
+}
+
+@mixin bg-image($width: 20px, $height: 20px, $img: "logo-mobile-blue@1x.png") {
   width: $width;
   height: $height;
   background-image: url("../img/#{$img}");
@@ -13,4 +17,39 @@
 @mixin square($side: 20px) {
   width: $side;
   height: $side;
+}
+
+// ----- example
+//
+//$img-array: (
+//  "img1.png",
+//  "img2.jpg",
+//  "img3.jpg",
+//);
+//
+//.class {
+//  background-image: #{-concat-img($img-array)};
+//}
+//
+// ----- result
+//
+//.class {
+//  background-image: url(../img/img1.png), url(../img/img2.jpg), url(../img/img3.jpg);
+//}
+
+@function -concat-img($arr_img) {
+  $stroke: "";
+  $prefix: "../img/";
+
+  @each $img in $arr_img {
+    @if $stroke != "" {
+      $stroke: $stroke + ", " + "url(" + $prefix + $img + ")";
+    }
+
+    @else {
+      $stroke: "url(" + $prefix + $img + ")";
+    }
+  }
+
+  @return $stroke;
 }

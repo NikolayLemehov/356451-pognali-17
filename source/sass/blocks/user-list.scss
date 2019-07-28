@@ -1,13 +1,16 @@
 .user-list {
   list-style: none;
+  padding: 0;
+}
+
+.user-list__item {
+  display: flex;
+  width: 100%;
 }
 
 .user-list__login {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #161c35;
-  background-color: #ffd74b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
