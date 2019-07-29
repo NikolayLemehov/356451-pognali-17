@@ -4,15 +4,10 @@
 }
 
 .contact-list__item {
-  &--menu {
-    //height: 40px;
-  }
-
   &--caption {
     display: flex;
     align-items: center;
     height: 45px;
-    //decorative-indent
     padding-left: 10px;
   }
 }

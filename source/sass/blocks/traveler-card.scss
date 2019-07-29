@@ -1,6 +1,11 @@
 .traveler-card {
   color: #444444;
   background-color: #ffffff;
+
+  &--catalog {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .traveler-card__img-wrap {

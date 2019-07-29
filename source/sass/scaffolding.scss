@@ -51,6 +51,11 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
+//временно класс
+.test-d-none * {
+  display: none;
+}
+
 .nowrap {
   white-space: nowrap;
 }
