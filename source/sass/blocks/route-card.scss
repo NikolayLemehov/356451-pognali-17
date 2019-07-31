@@ -39,18 +39,21 @@
     top: 0;
     border-radius: 2px;
     transform: translateY(-50%);
+    width: 35px;
+    height: 24px;
+    background-position-x: -10px;
   }
 
   &--thailand::before {
-    @include bg-sprite-image(35px, 24px, "flags-sprite.png", -120px, -188px);
+    @include bg-sprite-simple-image("flags-sprite.png", -786px);
   }
 
   &--france::before {
-    @include bg-sprite-image(35px, 24px, "flags-sprite.png", -190px, -98px);
+    @include bg-sprite-simple-image("flags-sprite.png", -610px);
   }
 
   &--czech::before {
-    @include bg-sprite-image(35px, 24px, "flags-sprite.png", -190px, -10px);
+    @include bg-sprite-simple-image("flags-sprite.png", -522px);
   }
 }
 

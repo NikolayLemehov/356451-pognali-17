@@ -5,30 +5,126 @@
   margin: 0 0 3px -19px;
   padding: 0;
   list-style: none;
-  transform: translateY(-50%);
+
+  &--main {
+    justify-content: center;
+    transform: translateY(-50%);
+    margin-left: -19px;
+
+    .flag-list__item {
+      margin: 0 0 0 19px;
+    }
+
+    .flag-list__img {
+      position: static;
+      margin: 0;
+      width: 35px;
+      height: 24px;
+
+      &--srilanka {
+        @include bg-sprite-simple-image("flags-sprite.png", -742px);
+      }
+
+      &--thailand {
+        @include bg-sprite-simple-image("flags-sprite.png", -786px);
+      }
+
+      &--seychelles {
+        @include bg-sprite-simple-image("flags-sprite.png", -698px);
+      }
+
+      &--belgium {
+        @include bg-sprite-simple-image("flags-sprite.png", -434px);
+      }
+
+      &--czech {
+        @include bg-sprite-simple-image("flags-sprite.png", -522px);
+      }
+    }
+  }
+
+  &--catalog {
+    flex-direction: column;
+
+    .flag-list__item {
+      margin: 0 0 10px 0;
+    }
+
+    .flag-list__img {
+      position: relative;
+      left: 1px;
+      top: -3px;
+      //display: block;
+      width: 26px;
+      height: 18px;
+      margin: 0 15px 0 0;
+      //временно
+      background-color: rgba(0, 0, 0, 0.03);
+      border-radius: 2px;
+      background-position-x: -10px;
+
+      &--srilanka {
+        @include bg-sprite-simple-image("flags-sprite.png", -238px);
+      }
+
+      &--thailand {
+        @include bg-sprite-simple-image("flags-sprite.png", -276px);
+      }
+
+      &--seychelles {
+        @include bg-sprite-simple-image("flags-sprite.png", -200px);
+      }
+
+      &--belgium {
+        @include bg-sprite-simple-image("flags-sprite.png", -48px);
+      }
+
+      &--czech {
+        @include bg-sprite-simple-image("flags-sprite.png", -86px);
+      }
+
+      &--united_states_of_america {
+        @include bg-sprite-simple-image("flags-sprite.png", -352px);
+      }
+
+      &--australia {
+        @include bg-sprite-simple-image("flags-sprite.png", -10px);
+      }
+
+      &--dominica {
+        @include bg-sprite-simple-image("flags-sprite.png", -124px);
+      }
+
+      &--united_kingdom {
+        @include bg-sprite-simple-image("flags-sprite.png", -314px);
+      }
+
+      &--germany {
+        @include bg-sprite-simple-image("flags-sprite.png", -162px);
+      }
+    }
+  }
 }
 
 .flag-list__item {
+  display: flex;
   margin-left: 19px;
+  padding: 0;
+}
+
+.flag-list__img {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.03);
   border-radius: 2px;
+  background-position-x: -10px;
+}
 
-  &--srilanka {
-    @include bg-sprite-image(35px, 24px, "flags-sprite.png", -65px, -188px);
-  }
-
-  &--thailand {
-    @include bg-sprite-image(35px, 24px, "flags-sprite.png", -120px, -188px);
-  }
-
-  &--seychelles {
-    @include bg-sprite-image(35px, 24px, "flags-sprite.png", -10px, -188px);
-  }
-
-  &--belgium {
-    @include bg-sprite-image(35px, 24px, "flags-sprite.png", -65px, -144px);
-  }
-
-  &--czech {
-    @include bg-sprite-image(35px, 24px, "flags-sprite.png", -190px, -10px);
-  }
+.flag-list__text {
+  position: relative;
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #1d2e5b;
 }

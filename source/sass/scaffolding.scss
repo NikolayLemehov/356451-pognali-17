@@ -70,6 +70,7 @@ input[type="radio"].visually-hidden {
   color: #1d2e5b; //default
   background-color: #ffd74b;
   border-radius: 10px; //default
+  border: none;
   transition: $duration;
 
   &::after { //default

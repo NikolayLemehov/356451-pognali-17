@@ -14,10 +14,34 @@
   background-position: $left $top;
 }
 
+//for vertical sprite
+@mixin bg-sprite-simple-image($sprite: "", $top: -10px) {
+  @include bg-simple-image($sprite);
+  background-position-y: $top;
+}
+
 @mixin square($side: 20px) {
   width: $side;
   height: $side;
 }
+
+@mixin level-percent($radius: 50) {
+  $circumference: 2 * $radius * $pi;
+
+  @for $i from 1 through 100 {
+    $percent: $i; //%
+
+    &--#{$percent} {
+      stroke-dasharray: ($percent / 100) * $circumference, $circumference;
+    }
+  }
+}
+
+//&--97 {
+//  $percent: 97; //%
+//  stroke-dasharray: ($percent / 100) * $circumference, $circumference;
+//}
+
 
 // ----- example
 //

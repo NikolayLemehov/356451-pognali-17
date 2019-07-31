@@ -2,6 +2,59 @@
   display: flex;
   padding: 0;
   list-style: none;
+
+  &--main {
+    margin: 0 0 0 1px;
+  }
+
+  &--catalog {
+    margin: 0 0 0 25px;
+
+    .travel-modes__label {
+      display: block;
+      width: 32.25px;
+      height: 32px;
+      background-color: #edeff6;
+      border-radius: 20px;
+    }
+
+    .travel-modes__img {
+      position: absolute;
+      margin: 0;
+
+      &--plane {
+        left: 8px;
+        top: 8px;
+        width: 14px;
+        height: 16px;
+      }
+
+      &--bus {
+        left: 10px;
+        top: 8px;
+        width: 13px;
+        height: 16px;
+      }
+
+      &--bike {
+        left: 7px;
+        top: 7px;
+        width: 19px;
+        height: 17px;
+      }
+
+      &--run {
+        left: 9px;
+        top: 8px;
+        width: 15px;
+        height: 17px;
+      }
+    }
+  }
+}
+
+.travel-modes__label {
+  position: relative;
 }
 
 .travel-modes__checkbox:checked + .travel-modes__img {

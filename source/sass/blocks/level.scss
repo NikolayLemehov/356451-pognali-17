@@ -1,26 +1,55 @@
 .level {
-  width: 60px;
-  height: 60px;
+  $width-disk: 3; //px
+  $width-box: 100; //svg
+  $stroke-width: $width-disk * 2;
   fill: transparent;
-  background-color: fade_out(#000000, 1 - 0.6);
   stroke: #ff8d30;
-  stroke-width: 6;
   border-radius: 50%;
+  overflow: hidden;
 
-  &--97 {
-    stroke-dasharray: (97 / 100) * $circumference, $circumference;
+  @include level-percent ($radius: 50);
+
+  &--main {
+    $width-container: 60; //px
+    stroke-width: $width-box / $width-container * $stroke-width;
+    width: #{$width-container}px;
+    height: #{$width-container}px;
+    background-color: fade_out(#000000, 1 - 0.6);
   }
 
-  &--82 {
-    stroke-dasharray: (82 / 100) * $circumference, $circumference;
+  &--catalog {
+    $width-container: 45; //px
+    stroke-width: $width-box / $width-container * $stroke-width;
+    width: #{$width-container}px;
+    height: #{$width-container}px;
+    background-color: transparent;
+
+    .level__content {
+      left: 52%;
+      top: 49%;
+    }
+
+    .level__number {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 18px;
+      text-align: center;
+      color: #1d2e5b;
+    }
+
+    .level__text {
+      display: none;
+    }
   }
 }
 
 .level__svg-image {
+  display: block;
   transform: rotate(-90deg);
   color: #054654;
   background: transparent;
   width: 100%;
+  height: 100%;
 }
 
 .level__content {
@@ -31,7 +60,6 @@
   flex-direction: column;
   padding: 5px 1px 0 0;
   color: #ffffff;
-  //width: 100%;
   transform: translate(-50%, -50%);
 }
 
@@ -39,7 +67,6 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
-  //border-bottom: 1px solid red;
 }
 
 .level__text {
@@ -59,4 +86,3 @@
     background-color: fade_out(#ffffff, 1 - 0.3);
   }
 }
-
