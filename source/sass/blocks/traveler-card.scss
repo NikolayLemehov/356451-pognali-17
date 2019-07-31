@@ -68,6 +68,10 @@
       margin-bottom: 15px;
     }
 
+    .traveler-card__tag {
+      width: 200px;
+    }
+
     .traveler-card__transport-wrap {
       order: 5;
     }
@@ -117,6 +121,7 @@
     }
 
     .traveler-card__tag {
+      width: 170px;
       font-size: 15px;
       text-align: left;
     }
@@ -128,8 +133,10 @@
     }
 
     .traveler-card__flag-list {
-      margin: 0 0 9px 24px;
-      //transform: none;
+      //временно
+      //совпадает только с первой карточкой
+      //margin: 0 0 9px 24px;
+      margin: 0 0 12.7px 24px;
     }
 
     .traveler-card__transport-wrap {
@@ -240,7 +247,6 @@
 }
 
 .traveler-card__tag {
-  width: 200px;
   margin: 0;
   font-weight: 400;
   font-size: 16px;

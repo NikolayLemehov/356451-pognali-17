@@ -2,7 +2,13 @@
   list-style: none;
   padding: 0;
 
+  &--main {
+    margin-bottom: 9px;
+  }
+
   &--catalog {
+    margin-bottom: 10px;
+
     .traveler-list__item {
       border-radius: 20px;
     }

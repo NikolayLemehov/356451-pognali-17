@@ -1,7 +1,42 @@
 .follow-traveler {
+  display: flex;
+  flex-direction: column;
   padding-top: 81px;
   color: #ffffff;
-  background-color: #192144;
+
+  &--main {
+    background-color: #192144;
+    background-position: 0 340px, 152px 68px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 61px 71px, 143px 143px;
+    $img-array: (
+      "rogovaya-back-mobile.png@61w1x.png",
+      "smolov-back-desktop.png@143w1x.png",
+    );
+    background-image: #{-concat-img($img-array)};
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: -19px;
+      top: 68px;
+      width: 132px;
+      height: 132px;
+      background-color: #141b3b;
+      border-radius: 20px;
+    }
+
+    .follow-traveler__content-wrap {
+      margin-bottom: 18px;
+    }
+  }
+
+  &--catalog {
+    padding-bottom: 80px;
+    border-radius: 0;
+  }
 }
 
 .follow-traveler__content-wrap {
@@ -30,5 +65,96 @@
 }
 
 .follow-traveler__all {
-  margin: 20px 0 19px;
+  margin: 0 0 19px;
+}
+
+.follow-traveler__show-more {
+  position: relative;
+  align-self: center;
+  margin: 0 1px 19px 0;
+  padding: 0 0 0 33px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  //text-align: center;
+  color: #1d2e5b;
+  background-color: transparent;
+  border: none;
+  transition: $duration;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 18px;
+    height: 18px;
+
+    @include bg-simple-image("show-more-plus.svg");
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.follow-traveler__control-arrow {
+  display: flex;
+  height: 50px;
+}
+
+.follow-traveler__arrow {
+  position: relative;
+  flex-grow: 1;
+  border: none;
+  background-color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    border: 10px solid transparent;
+    transition: $duration;
+  }
+
+  &--left {
+    margin-right: 0.5px;
+    border-radius: 20px 0 0 20px;
+
+    &::before {
+      left: 53px;
+      border-right: 10px solid #192144;
+    }
+
+    &:hover::before {
+      border-right-color: fade_out(#192144, 1 - 0.6);
+    }
+
+    &:active::before {
+      border-right-color: fade_out(#192144, 1 - 0.3);
+    }
+  }
+
+  &--right {
+    margin-left: 0.5px;
+    border-radius: 0 20px 20px 0;
+
+    &::before {
+      right: 52px;
+      border-left: 10px solid #192144;
+    }
+
+    &:hover::before {
+      border-left-color: fade_out(#192144, 1 - 0.6);
+    }
+
+    &:active::before {
+      border-left-color: fade_out(#192144, 1 - 0.3);
+    }
+  }
 }
