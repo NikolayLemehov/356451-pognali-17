@@ -29,16 +29,16 @@
   height: $side;
 }
 
-@mixin level-percent($radius: 50) {
+@mixin level-percent($percent: 1, $radius: 50) {
   $circumference: 2 * $radius * $pi;
 
-  @for $i from 1 through 100 {
-    $percent: $i; //%
+  //@for $i from 1 through 100 {
+  //  $percent: $i; //%
 
-    &--#{$percent} {
-      stroke-dasharray: ($percent / 100) * $circumference, $circumference;
-    }
+  &--#{$percent} {
+    stroke-dasharray: ($percent / 100) * $circumference, $circumference;
   }
+  //}
 }
 
 //&--97 {

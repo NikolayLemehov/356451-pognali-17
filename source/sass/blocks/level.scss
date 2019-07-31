@@ -2,12 +2,18 @@
   $width-disk: 3; //px
   $width-box: 100; //svg
   $stroke-width: $width-disk * 2;
+  $radius: 50; //svg
   fill: transparent;
   stroke: #ff8d30;
   border-radius: 50%;
   overflow: hidden;
 
-  @include level-percent ($radius: 50);
+  @include level-percent (99, $radius);
+  @include level-percent (98, $radius);
+  @include level-percent (97, $radius);
+  @include level-percent (80, $radius);
+  @include level-percent (50, $radius);
+  @include level-percent (25, $radius);
 
   &--main {
     $width-container: 60; //px
