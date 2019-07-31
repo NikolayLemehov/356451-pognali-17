@@ -2,6 +2,10 @@
   background-image: url("../img/#{$img}");
 }
 
+@mixin bg-simple-2-image($img1: "", $img2: "") {
+  background-image: url("../img/#{$img1}"), url("../img/#{$img2}");
+}
+
 @mixin bg-image($width: 20px, $height: 20px, $img: "logo-mobile-blue@1x.png") {
   width: $width;
   height: $height;
@@ -61,19 +65,19 @@
 //  background-image: url(../img/img1.png), url(../img/img2.jpg), url(../img/img3.jpg);
 //}
 
-@function -concat-img($arr_img) {
-  $stroke: "";
-  $prefix: "../img/";
-
-  @each $img in $arr_img {
-    @if $stroke != "" {
-      $stroke: $stroke + ", " + "url(" + $prefix + $img + ")";
-    }
-
-    @else {
-      $stroke: "url(" + $prefix + $img + ")";
-    }
-  }
-
-  @return $stroke;
-}
+//@function -concat-img($arr_img) {
+//  $stroke: "";
+//  $prefix: "../img/";
+//
+//  @each $img in $arr_img {
+//    @if $stroke != "" {
+//      $stroke: $stroke + ", " + "url(" + $prefix + $img + ")";
+//    }
+//
+//    @else {
+//      $stroke: "url(" + $prefix + $img + ")";
+//    }
+//  }
+//
+//  @return $stroke;
+//}

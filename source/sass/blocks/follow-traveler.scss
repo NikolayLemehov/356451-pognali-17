@@ -9,11 +9,8 @@
     background-position: 0 340px, 152px 68px;
     background-repeat: no-repeat, no-repeat;
     background-size: 61px 71px, 143px 143px;
-    $img-array: (
-      "rogovaya-back-mobile.png@61w1x.png",
-      "smolov-back-desktop.png@143w1x.png",
-    );
-    background-image: #{-concat-img($img-array)};
+
+    @include bg-simple-2-image("rogovaya-back-mobile.png@61w1x.png", "smolov-back-desktop.png@143w1x.png");
     overflow: hidden;
 
     &::after {

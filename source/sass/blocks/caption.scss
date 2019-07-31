@@ -5,11 +5,8 @@
   background-position: calc(50% + 15px) calc(100% - 285px), 0 -#{$header-m-height};
   background-repeat: no-repeat, no-repeat;
   background-size: 192px 255px, 320px 569px;
-  $img-array: (
-    "traveller-illustration-mobile@1x.png",
-    "globe-back-mobile@1x.jpg",
-  );
-  background-image: #{-concat-img($img-array)};
+
+  @include bg-simple-2-image("traveller-illustration-mobile@1x.png", "globe-back-mobile@1x.jpg");
 
   &::after {
     content: "";
