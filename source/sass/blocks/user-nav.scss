@@ -44,3 +44,35 @@
 .user-nav__contact {
   margin: 18px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .user-nav {
+    padding-top: 136px;
+    padding-bottom: 57px;
+  }
+
+  .user-nav__title {
+    margin: 0 0 57px 0;
+    padding: 0 0 0 3px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .user-nav__text {
+    padding: 0;
+    font-size: 28px;
+    line-height: 33px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .user-nav__form {
+    margin: 63px 0 59px;
+  }
+
+  .user-nav__contact {
+    margin: 41px 0 0;
+  }
+}

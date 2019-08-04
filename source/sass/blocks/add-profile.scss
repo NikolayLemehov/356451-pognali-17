@@ -48,3 +48,82 @@
     color: fade_out(#192144, 1 - 0.3);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .add-profile {
+    display: flex;
+    flex-direction: column;
+    padding-top: 134px;
+    padding-bottom: 57px;
+  }
+
+  .add-profile__content-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 55px;
+  }
+
+  .add-profile__title {
+    margin: 0 0 74px 0;
+    padding: 0 0 0 9px;
+    font-size: 45px;
+    line-height: 45px;
+
+    &::after {
+      content: "!";
+      position: static;
+      background-image: none;
+    }
+  }
+
+  .add-profile__price-list {
+    margin: 0 0 29px;
+  }
+
+  .add-profile__business-price {
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    color: #132576;
+    transition: $duration;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      transition: $duration;
+    }
+
+    &::before {
+      left: -90px;
+      top: -25px;
+      width: 67px;
+      height: 67px;
+      background-color: #e2e5f2;
+      border-radius: 50%;
+    }
+
+    &::after {
+      left: -65px;
+      top: -3px;
+
+      @include bg-image(17px, 21px, "business.svg");
+    }
+
+    &:hover {
+      color: fade_out(#132576, 1 - 0.7);
+    }
+
+    &:active {
+      color: fade_out(#132576, 1 - 0.3);
+    }
+
+    &:hover::after {
+      opacity: 0.7;
+    }
+
+    &:active::after {
+      opacity: 0.3;
+    }
+  }
+}

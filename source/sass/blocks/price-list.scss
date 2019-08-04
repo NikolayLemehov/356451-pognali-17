@@ -16,7 +16,7 @@
   border-bottom: 1px solid fade_out(#000000, 1 - 0.05);
 
   &:first-child {
-    border-top: 1px solid fade_out(#000000, 1 - 0.05);
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.05);
   }
 
   &::after {
@@ -48,4 +48,75 @@
 
 .price-list__cost {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .price-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -35px;
+      top: -43px;
+      z-index: -1;
+      width: 198px;
+      height: calc(100% + 86px);
+      background-color: #e2e5f2;
+      border-radius: 20px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 11px;
+      bottom: -117px;
+      z-index: 1;
+
+      @include bg-image(99px, 99px, "rates-mobile@1x.png");
+    }
+  }
+
+  .price-list__item {
+    display: flex;
+    justify-content: space-between;
+    min-height: 66px;
+    padding: 16.8px 0 15.2px;
+    font-size: 28px;
+    line-height: 33px;
+
+    &::after {
+      right: auto;
+      left: -90px;
+      top: -1.5px;
+      padding: 5px 0 0 1px;
+
+      @include square(67px);
+      font-size: 28px;
+      line-height: 28px;
+      background-color: #ffa530;
+    }
+
+    //&:first-child::after {
+    //  top: -1.5px;
+    //min-height: 67px;
+    //padding: 16.8px 0 15.8px;
+    //}
+  }
+
+  .price-list__item:nth-child(2)::after {
+    background-color: #ffbd30;
+  }
+
+  .price-list__item:nth-child(3)::after {
+    background-color: #ffd74b;
+  }
+
+  .price-list__cost {
+    width: 200px;
+    text-align: right;
+  }
 }

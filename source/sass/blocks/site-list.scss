@@ -54,3 +54,23 @@
 .site-list__link:active .site-list__text::before {
   color: fade_out(#ffd74b, 1 - 0.3);
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    padding: 0 0 0 57px;
+  }
+
+  .site-list__item {
+    text-align: left;
+  }
+
+  .site-list__link {
+    font-size: 60px;
+    line-height: 71.01px;
+  }
+
+  .site-list__text::before {
+    font-size: 60px;
+    line-height: 71.01px;
+  }
+}

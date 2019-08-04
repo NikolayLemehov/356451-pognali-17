@@ -13,7 +13,27 @@
     position: absolute;
     left: 0;
     bottom: 0;
+    background-repeat: repeat-x;
 
-    @include bg-image(320px, 81px, "fade.png");
+    @include bg-image(100%, 81px, "fade.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .route-list__item:first-child {
+    position: relative;
+    overflow: visible;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: -35px;
+      top: -39px;
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+    }
   }
 }

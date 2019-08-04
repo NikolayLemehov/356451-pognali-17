@@ -3,9 +3,9 @@ html {
 }
 
 body {
-  //min-width: 320px;
+  min-width: 320px;
   //временно
-  width: 320px;
+  //width: 320px;
   //margin: 0;
   //временно
   margin: 0 auto;
@@ -58,101 +58,4 @@ input[type="radio"].visually-hidden {
 
 .nowrap {
   white-space: nowrap;
-}
-
-.btn {
-  position: relative;
-  display: block;
-  font-weight: 700;
-  font-size: 18px; //default
-  line-height: 18px; //default
-  text-decoration: none;
-  color: #1d2e5b; //default
-  background-color: #ffd74b;
-  border-radius: 10px; //default
-  border: none;
-  transition: $duration;
-
-  &::after { //default
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 15px; //default
-    border: 7px solid transparent;
-    border-left: 10px solid #1d2e5b;
-    transform: translateY(-50%);
-    transition: $duration;
-  }
-
-  &:hover {
-    background-color: #ffbd30; //default
-  }
-
-  &--1 {
-    margin: 25px 0 20px;
-    padding: 25px 60px 21px 24px;
-
-    &::after {
-      right: 15px;
-    }
-
-    &:active {
-      color: fade_out(#1d2e5b, 1 - 0.3);
-      background-color: #ffbd30;
-
-      &::after {
-        opacity: 0.3;
-      }
-    }
-  }
-
-  &--2 {
-    margin: 25px 0;
-    padding: 20px 60px 18px 21px;
-    border: 3px solid #192144;
-
-    &::after {
-      right: 12px;
-    }
-
-    &:hover {
-      color: #ffffff;
-      background-color: #192144;
-    }
-
-    &:hover::after {
-      border-left-color: #ffffff;
-    }
-
-    &:active {
-      color: fade_out(#ffffff, 1 - 0.3);
-      background-color: #192144;
-    }
-
-    &:active::after {
-      border-left-color: fade_out(#ffffff, 1 - 0.3);
-    }
-  }
-
-  &--3 {
-    padding: 7px 20px 3px;
-    font-size: 17px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #161c35;
-    border-radius: 20px;
-
-    &::after {
-      display: none;
-    }
-
-    &:active {
-      color: fade_out(#161c35, 1 - 0.3);
-    }
-  }
-}
-
-.main-nav__user-list .btn--3 {
-  min-height: 50px;
-  border-radius: 25px;
 }

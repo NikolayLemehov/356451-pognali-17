@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   background-color: #161c35;
-  background-position: calc(50% + 15px) calc(100% - 285px), 0 -#{$header-m-height};
+  background-position: calc(50% + 15px) calc(100% - 285px), 0 -#{$header-mobile-min-height};
   background-repeat: no-repeat, no-repeat;
   background-size: 192px 255px, 320px 569px;
 
@@ -40,4 +40,32 @@
   display: flex;
   margin: 0 0 27px 0;
   flex-grow: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .caption {
+    padding-top: 31px;
+    padding-bottom: 351px;
+    background-color: #182044;
+    background-position: calc(50% + 86px) calc(100% - 140px), 50% 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 372px 451px, 1479px 612px;
+
+    @include bg-simple-2-image("traveller-illustration-tablet@1x.png", "globe-back-tablet@1x.jpg");
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .caption__title {
+    margin: 0 0 86px 0;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .caption__contact-list,
+  .caption__user-list {
+    display: none;
+  }
 }

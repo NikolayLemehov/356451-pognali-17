@@ -1,0 +1,124 @@
+.btn {
+  position: relative;
+  display: block;
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px; //default
+  line-height: 18px; //default
+  text-decoration: none;
+  color: #1d2e5b; //default
+  background-color: #ffd74b;
+  border-radius: 10px; //default
+  border: none;
+  transition: $duration;
+
+  &::after { //default
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px; //default
+    border: 7px solid transparent;
+    border-left: 10px solid #1d2e5b;
+    transform: translateY(-50%);
+    transition: $duration;
+  }
+
+  &:hover {
+    background-color: #ffbd30; //default
+  }
+
+  &--1 {
+    margin: 25px 0 20px;
+    padding: 23px 60px 21px 23px;
+
+    &::after {
+      right: 16px;
+    }
+
+    &:active {
+      color: fade_out(#1d2e5b, 1 - 0.3);
+      background-color: #ffbd30;
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &--2 {
+    margin: 25px 0;
+    padding: 20px 60px 18px 21px;
+    border: 3px solid #192144;
+
+    &::after {
+      right: 12px;
+    }
+
+    &:hover {
+      color: #ffffff;
+      background-color: #192144;
+    }
+
+    &:hover::after {
+      border-left-color: #ffffff;
+    }
+
+    &:active {
+      color: fade_out(#ffffff, 1 - 0.3);
+      background-color: #192144;
+    }
+
+    &:active::after {
+      border-left-color: fade_out(#ffffff, 1 - 0.3);
+    }
+  }
+
+  &--3 {
+    padding: 7px 20px 3px;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #161c35;
+    border-radius: 20px;
+
+    &::after {
+      display: none;
+    }
+
+    &:active {
+      color: fade_out(#161c35, 1 - 0.3);
+    }
+  }
+}
+
+.main-nav__user-list .btn--3 {
+  min-height: 50px;
+  border-radius: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .btn {
+    border-radius: 20px;
+    font-size: 24px;
+    line-height: 24px;
+
+    &::after {
+      top: 51%;
+      right: 28px;
+    }
+
+    &--1 {
+      padding: 30px 60px 27px 33px;
+    }
+
+    &--2 {
+      padding: 27px 80px 24px 33px;
+    }
+
+    &--3 {
+      padding: 7px 29px 3px 28px;
+      font-size: 20px;
+      border-radius: 25px;
+    }
+  }
+}

@@ -33,3 +33,30 @@
     @include bg-image(14px, 22px, "contacts-location.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .get-route {
+    padding-top: 130px;
+    padding-bottom: 60px;
+  }
+
+  .get-route__address {
+    margin-bottom: 61px;
+    padding: 0 0 0 93px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .get-route__image {
+    top: -23px;
+
+    @include square(68px);
+
+    &::after {
+      left: 23px;
+      top: 20px;
+      width: 21px;
+      height: 32px;
+    }
+  }
+}

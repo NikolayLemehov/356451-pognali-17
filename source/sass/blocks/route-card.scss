@@ -8,17 +8,19 @@
 .route-card__img {
   background-color: #bccaf5;
   border-radius: 10px 10px 0 0;
+  width: 270px;
+  height: 110px;
 
   &--thailand {
-    @include bg-image(270px, 110px, "thailand-mobile@1x.jpg");
+    @include bg-simple-image("thailand-mobile@1x.jpg");
   }
 
   &--france {
-    @include bg-image(270px, 110px, "france-mobile@1x.jpg");
+    @include bg-simple-image("france-mobile@1x.jpg");
   }
 
   &--czech {
-    @include bg-image(270px, 110px, "czech-mobile@1x.jpg");
+    @include bg-simple-image("czech-mobile@1x.jpg");
   }
 }
 
@@ -73,7 +75,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-
   color: fade_out(#444444, 1 - 0.3);
 
   &::before {
@@ -96,6 +97,92 @@
   opacity: 0.3;
 }
 
-.route__all {
-  margin: 25px 0 20px;
+@media (min-width: $tablet-width) {
+  .route-card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .route-card__wrapper {
+    order: 1;
+    position: static;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 31px 24px 16px 30px;
+    border-radius: 0;
+
+    &::before {
+      left: auto;
+      right: 150px;
+      top: 16px;
+      border-radius: 6px;
+      transform: none;
+      width: 70px;
+      height: 47px;
+    }
+
+    &--thailand::before {
+      @include bg-sprite-simple-image("flags-sprite.png", -1679px);
+    }
+
+    &--france::before {
+      @include bg-sprite-simple-image("flags-sprite.png", -1612px);
+    }
+
+    &--czech::before {
+      @include bg-sprite-simple-image("flags-sprite.png", -1545px);
+    }
+  }
+
+  .route-card__img {
+    order: 2;
+    border-radius: 0;
+    width: 186px;
+    height: 140px;
+
+    &--thailand {
+      @include bg-simple-image("thailand-desktop@1x.jpg");
+    }
+
+    &--france {
+      @include bg-simple-image("france-desktop@1x.jpg");
+    }
+
+    &--czech {
+      @include bg-simple-image("czech-desktop@1x.jpg");
+    }
+  }
+
+  .route-card__country {
+    order: 1;
+    margin-bottom: 6px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .route-card__text {
+    order: 2;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 17.7px;
+  }
+
+  .route-card__user-quantity {
+    order: 3;
+    padding-left: 29px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before {
+      left: 0;
+      top: 3px;
+
+      @include bg-image(20px, 20px, "user.svg");
+    }
+  }
 }

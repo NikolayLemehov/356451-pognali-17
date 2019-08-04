@@ -48,5 +48,87 @@
 
   &--bold {
     font-weight: 700;
+
+    span {
+      display: none;
+    }
+  }
+}
+
+.about-us__all {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    margin-top: -140px;
+    padding-top: 278px;
+    padding-bottom: 68px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .about-us__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 318px 0 0;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+    }
+
+    &::before {
+      left: -35px;
+      top: -42px;
+      width: calc(100% + 70px);
+      height: 213px;
+      background-color: #141b3b;
+      border-radius: 20px;
+    }
+
+    &::after {
+      right: -67px;
+      top: 6px;
+      background: no-repeat 0 0;
+
+      @include bg-image(376px, 548px, "about-tablet@1x.png");
+    }
+  }
+
+  .about-us__title {
+    position: relative;
+    margin: 0 0 39px -1px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .about-us__text {
+    &--normal {
+      margin: 0 0 32px 0;
+      font-size: 28px;
+      line-height: 33px;
+    }
+
+    &--bold {
+      margin: 0 0 26px 0;
+      font-size: 21px;
+      line-height: 25px;
+
+      span {
+        display: inline;
+      }
+    }
+  }
+
+  .about-us__all {
+    display: block;
+    margin-right: 26px;
   }
 }

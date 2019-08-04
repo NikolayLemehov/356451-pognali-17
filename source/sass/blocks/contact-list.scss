@@ -102,7 +102,6 @@
   }
 
   &--caption {
-    //decorative-indent
     left: -10px;
     top: -12.5px;
 
@@ -157,6 +156,46 @@
     &--mail {
       width: 18px;
       height: 13px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contact-list__item {
+    &--caption {
+      height: 68px;
+    }
+  }
+
+  .contact-list__link {
+    font-size: 28px;
+    line-height: 28px;
+
+    &--caption {
+      padding-left: 81px;
+    }
+  }
+
+  .contact-list__round {
+    &--caption {
+      left: -10px;
+      top: -22.5px;
+
+      @include square(68px);
+    }
+  }
+
+  .contact-list__icon {
+    &--caption {
+      &--phone {
+        width: 27px;
+        height: 27px;
+      }
+
+      &--mail {
+        width: 27px;
+        height: 20px;
+      }
     }
   }
 }
