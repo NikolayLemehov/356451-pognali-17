@@ -5,6 +5,7 @@
   color: #ffffff;
 
   &--main {
+    padding-bottom: 30px;
     background-color: #192144;
     background-position: 0 340px, 152px 68px;
     background-repeat: no-repeat, no-repeat;
@@ -26,11 +27,11 @@
     }
 
     .follow-traveler__content-wrap {
-      margin-bottom: 18px;
+      margin-bottom: 35px;
     }
 
     .follow-traveler__list {
-      margin: 0 0 9px 0;
+      margin: 0 0 10px 0;
     }
   }
 
@@ -63,6 +64,10 @@
   font-size: 16px;
   line-height: 22px;
 
+  br {
+    display: none;
+  }
+
   &--bold {
     margin: 21px 0;
     font-weight: 700;
@@ -70,7 +75,7 @@
 }
 
 .follow-traveler__all {
-  margin: 0 0 19px;
+  margin: 0;
 }
 
 .follow-traveler__show-more {
@@ -167,7 +172,7 @@
 @media (min-width: $tablet-width) {
   .follow-traveler {
     padding-top: 201px;
-    padding-bottom: 69px;
+    padding-bottom: 88px;
 
     &--main {
       background-position: calc(50% + 166px) 140px, calc(50% - 273px) 486px;
@@ -213,6 +218,10 @@
     margin: 0;
     font-size: 28px;
     line-height: 33px;
+
+    br {
+      display: inline;
+    }
 
     &--normal {
       margin-bottom: 40px;

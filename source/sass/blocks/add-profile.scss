@@ -4,12 +4,14 @@
 }
 
 .add-profile__content-wrap {
-  padding: 0 0 0 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 52px 0 0 25px;
 }
 
 .add-profile__title {
   position: relative;
-  margin: 50px 0 44px;
+  margin: 0 0 44px 0;
   padding-right: 120px;
   font-weight: 700;
   font-size: 24px;
@@ -19,14 +21,15 @@
   &::after {
     content: "";
     position: absolute;
-    right: 0;
-    top: -14px;
+    right: 1px;
+    top: -15px;
 
     @include bg-image(99px, 99px, "rates-mobile@1x.png");
   }
 }
 
 .add-profile__price-list {
+  margin: 0;
   padding: 0 45px 0 0;
 }
 

@@ -64,13 +64,22 @@
     text-align: left;
   }
 
-  .site-list__link {
-    font-size: 60px;
-    line-height: 71.01px;
-  }
-
+  .site-list__link,
   .site-list__text::before {
     font-size: 60px;
     line-height: 71.01px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link,
+  .site-list__text::before {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .site-list__link {
+    color: #ffffff;
+    background-color: #182044;
   }
 }

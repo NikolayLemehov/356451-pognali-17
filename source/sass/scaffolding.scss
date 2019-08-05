@@ -59,3 +59,22 @@ input[type="radio"].visually-hidden {
 .nowrap {
   white-space: nowrap;
 }
+
+//временно
+@media (max-width: $mobile-width-only) {
+  .nowrap-mobile {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  .nowrap-tablet {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nowrap-desktop {
+    white-space: nowrap;
+  }
+}

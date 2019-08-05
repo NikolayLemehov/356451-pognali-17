@@ -40,6 +40,14 @@
     background-color: #ffa530;
     border-radius: 50%;
   }
+
+  &:nth-child(2)::after {
+    background-color: #ffbd30;
+  }
+
+  &:nth-child(3)::after {
+    background-color: #ffd74b;
+  }
 }
 
 .price-list__service {

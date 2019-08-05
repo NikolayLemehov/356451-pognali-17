@@ -65,6 +65,35 @@
   }
 }
 
+.page-main__title {
+  padding: 20px 0 0 25px;
+  background-color: #161c35;
+  border-radius: 0 0 20px 20px;
+}
+
+.page-main__title-text {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 0 9px 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+  color: #ffffff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 5px;
+    background-color: #ff8d30;
+    border-radius: 2.4px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-main {
     width: $tablet-width;

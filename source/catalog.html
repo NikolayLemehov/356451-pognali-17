@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
-        <a class="main-nav__logo" href="index.html#temp">
+    <header class="page-header page-header--no-index">
+      <nav class="page-header__main-nav main-nav main-nav--closed">
+        <a class="main-nav__logo" href="index.html">
           <img class="main-nav__logo-image" src="img/logo-mobile-blue@1x.png" width="100" height="19"
             alt="Погнали?">
         </a>
@@ -95,10 +95,12 @@
           </li>
         </ul>
       </nav>
-      <!--<h1 class="page-header__title">Направления</h1>-->
     </header>
     <main class="page-main page-main--catalog">
-      <h1 class="visually-hidden">Попутчики</h1>
+      <div class="page-main__title">
+        <h1 class="page-main__title-text">Попутчики</h1>
+      </div>
+      <!--<h2 class="visually-hidden">Попутчики</h2>-->
       <form class="extended-filter visually-hidden temp" action="https://echo.htmlacademy.ru">
         <div class="extended-filter__wrapper choose-country">
           <div class="choose-country__wrapper choose-country__wrapper--close" style="display: block;">

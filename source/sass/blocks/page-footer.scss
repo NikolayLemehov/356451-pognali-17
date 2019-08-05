@@ -46,12 +46,13 @@
     width: $tablet-width;
     margin-top: -95px;
     padding-top: 47px;
+    padding-bottom: 45px;
     padding-left: 40px;
     border-radius: 60px 60px 0 0;
   }
 
   .page-footer__logo {
-    margin: 0 90px 0 0;
+    margin: -1px 90px 0 0;
 
     @include bg-image(164px, 42px, "logo-tablet-blue@1x.png");
   }
