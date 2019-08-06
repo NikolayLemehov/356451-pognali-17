@@ -234,3 +234,38 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .follow-traveler {
+    &--main {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 190px;
+      padding-bottom: 53px;
+      background-position: 191px 445px, 547px 193px;
+
+      &::after {
+        left: 60px;
+        top: 128px;
+      }
+
+      .follow-traveler__list {
+        margin: 0;
+        padding: 3px 0 0 0;
+      }
+
+      .follow-traveler__content-wrap {
+        margin-bottom: 0;
+        padding: 0 0 0 71px;
+      }
+
+      .follow-traveler__all {
+        position: relative;
+        left: 71px;
+        top: -81px;
+        min-width: 280px;
+      }
+    }
+  }
+}

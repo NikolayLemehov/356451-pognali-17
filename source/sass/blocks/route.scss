@@ -73,3 +73,52 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .route {
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: none;
+    padding-top: 148px;
+    padding-bottom: 58px;
+  }
+
+  .route__list {
+    order: 1;
+    width: 50%;
+    margin: 0;
+  }
+
+  .route__content-wrap {
+    position: relative;
+    order: 2;
+    width: 50%;
+    margin: 0;
+    padding: 78px 50px 0 140px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      top: 0;
+      width: 289px;
+      height: 575px;
+      background-repeat: no-repeat;
+      background-position: right top;
+
+      @include bg-simple-image("flags-back@1x.png");
+    }
+  }
+
+  .route__title {
+    margin-left: 2px;
+  }
+
+  .route__all {
+    order: 3;
+    min-width: 274px;
+    left: 804px;
+    bottom: 81px;
+  }
+}

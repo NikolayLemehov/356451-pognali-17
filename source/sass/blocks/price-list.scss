@@ -107,12 +107,6 @@
       line-height: 28px;
       background-color: #ffa530;
     }
-
-    //&:first-child::after {
-    //  top: -1.5px;
-    //min-height: 67px;
-    //padding: 16.8px 0 15.8px;
-    //}
   }
 
   .price-list__item:nth-child(2)::after {
@@ -126,5 +120,31 @@
   .price-list__cost {
     width: 200px;
     text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price-list {
+    padding: 0 345px 0 161px;
+
+    &::after {
+      right: 186px;
+      top: -52px;
+      width: 444px;
+      height: calc(100% + 102px);
+      //background-color: #e2e5f2;
+    }
+
+    &::before {
+      right: 74px;
+      bottom: calc(50% - 99px);
+
+      @include bg-image(198px, 198px, "rates@1x.png");
+    }
+  }
+
+  .add-profile__business-price {
+    margin-left: 161px;
+    align-self: flex-start;
   }
 }

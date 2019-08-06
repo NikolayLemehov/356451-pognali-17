@@ -186,3 +186,18 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .route-card__wrapper {
+    padding: 24px 24px 16px 30px;
+
+    &::before {
+      right: 151px;
+      top: 23px;
+    }
+  }
+
+  .route-card__text {
+    margin-bottom: 22px;
+  }
+}

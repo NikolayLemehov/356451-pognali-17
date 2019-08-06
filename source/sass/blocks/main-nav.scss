@@ -236,7 +236,6 @@
     .main-nav__contact-list {
       order: 5;
       margin: 0 0 112px 0;
-      padding-left: 57px;
     }
 
     .main-nav__social-list {
@@ -308,14 +307,16 @@
 
       .main-nav__site-list {
         order: 2;
-        display: block;
+        display: flex;
         width: auto;
+        margin: 0;
       }
 
       .main-nav__contact-list {
         order: 3;
-        display: block;
+        display: flex;
         width: auto;
+        margin: 0;
       }
 
       .main-nav__user-list {

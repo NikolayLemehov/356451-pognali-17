@@ -72,3 +72,9 @@
     padding: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: $desktop-width;
+  }
+}

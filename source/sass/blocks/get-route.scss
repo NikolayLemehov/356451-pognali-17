@@ -60,3 +60,36 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .get-route {
+    display: flex;
+    justify-content: space-between;
+    padding: 119px 134px 60px 283px;
+  }
+
+  .get-route__address {
+    align-self: center;
+    margin: 0;
+    padding: 0 0 0 121px;
+  }
+
+  .get-route__image {
+    top: -32px;
+
+    @include square(90px);
+
+    &::after {
+      left: 31px;
+      top: 26px;
+      width: 28px;
+      height: 43px;
+    }
+  }
+
+  .get-route__link {
+    margin: 0;
+    //padding: 0;
+    padding: 27px 64px 24px 32px;
+  }
+}

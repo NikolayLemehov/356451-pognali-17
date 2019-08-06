@@ -132,3 +132,62 @@
     margin-right: 26px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    //margin-top: -140px;
+    //padding-top: 278px;
+    padding-bottom: 163px;
+    //
+    //&::before,
+    //&::after {
+    //  display: none;
+    //}
+  }
+
+  .about-us__wrapper {
+    padding: 0 638px 0 71px;
+    //
+    //  &::before,
+    //  &::after {
+    //    content: "";
+    //    position: absolute;
+    //    z-index: -1;
+    //  }
+    //
+    &::before {
+      left: 1px;
+      top: -61px;
+      width: 213px;
+      height: 213px;
+    }
+
+    &::after {
+      right: 0;
+      top: -47px;
+
+      @include bg-image(630px, 665px, "about-desktop@1x.png");
+    }
+  }
+
+  .about-us__title {
+    margin: 0 0 58px -1px;
+  }
+
+  .about-us__text {
+    &--normal {
+      margin: 0 0 38px 0;
+    }
+
+    &--bold {
+      margin: 0 144px 84px 0;
+    }
+  }
+
+  .about-us__all {
+    align-self: flex-start;
+    display: block;
+    min-width: 274px;
+    margin: 0;
+  }
+}

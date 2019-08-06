@@ -161,6 +161,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contact-list {
+    padding-left: 57px;
+  }
+
   .contact-list__item {
     &--caption {
       height: 68px;
@@ -197,5 +201,52 @@
         height: 20px;
       }
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-list {
+    display: flex;
+    //временно
+    //align-self: flex-start;
+    //временно
+    //padding: 0 0 0 223px;
+    padding: 0;
+
+    &--bottom-main {
+      .contact-list__item {
+        padding: 0;
+        margin-left: 111px;
+      }
+
+      .contact-list__link {
+        padding: 0 0 0 122px;
+      }
+
+      .contact-list__round {
+        left: 0;
+        top: -34px;
+
+        @include square(90px);
+      }
+    }
+
+    .contact-list__icon {
+      &--caption {
+        &--phone {
+          width: 36px;
+          height: 36px;
+        }
+
+        &--mail {
+          width: 36px;
+          height: 26px;
+        }
+      }
+    }
+  }
+
+  .contact-list__link--caption--header {
+    font-size: 0;
   }
 }
