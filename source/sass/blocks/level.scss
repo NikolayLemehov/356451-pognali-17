@@ -1,0 +1,94 @@
+.level {
+  $width-disk: 3; //px
+  $width-box: 100; //svg
+  $stroke-width: $width-disk * 2;
+  $radius: 50; //svg
+  fill: transparent;
+  stroke: #ff8d30;
+  border-radius: 50%;
+  overflow: hidden;
+
+  @include level-percent (99, $radius);
+  @include level-percent (98, $radius);
+  @include level-percent (97, $radius);
+  @include level-percent (80, $radius);
+  @include level-percent (50, $radius);
+  @include level-percent (25, $radius);
+
+  &--main {
+    $width-container: 60; //px
+    stroke-width: $width-box / $width-container * $stroke-width;
+    width: #{$width-container}px;
+    height: #{$width-container}px;
+    background-color: fade_out(#000000, 1 - 0.6);
+  }
+
+  &--catalog {
+    $width-container: 45; //px
+    stroke-width: $width-box / $width-container * $stroke-width;
+    width: #{$width-container}px;
+    height: #{$width-container}px;
+    background-color: transparent;
+
+    .level__content {
+      left: 52%;
+      top: 49%;
+    }
+
+    .level__number {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 18px;
+      text-align: center;
+      color: #1d2e5b;
+    }
+
+    .level__text {
+      display: none;
+    }
+  }
+}
+
+.level__svg-image {
+  display: block;
+  transform: rotate(-90deg);
+  color: #054654;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.level__content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 1px 0 0;
+  color: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.level__number {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.level__text {
+  position: relative;
+  margin: 2px 0 0 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    width: 31px;
+    height: 1px;
+    background-color: fade_out(#ffffff, 1 - 0.3);
+  }
+}

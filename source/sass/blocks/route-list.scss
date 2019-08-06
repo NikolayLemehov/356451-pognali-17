@@ -1,0 +1,62 @@
+.route-list {
+  padding: 0;
+  list-style: none;
+}
+
+.route-list__item {
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-repeat: repeat-x;
+
+    @include bg-image(100%, 81px, "fade.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .route-list__item:first-child {
+    position: relative;
+    overflow: visible;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: -35px;
+      top: -39px;
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .route-list {
+    position: relative;
+    padding: 73px 30px 0 71px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 1px;
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+    }
+  }
+
+  .route-list__item::before {
+    display: none;
+  }
+}

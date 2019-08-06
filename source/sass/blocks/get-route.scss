@@ -1,0 +1,95 @@
+.get-route {
+  padding-top: 64px;
+  background-color: #ffd74b;
+}
+
+.get-route__address {
+  position: relative;
+  margin-bottom: 31px;
+  padding: 0 2px 0 62px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #192144;
+}
+
+.get-route__image {
+  position: absolute;
+  left: 0;
+  top: -2px;
+
+  @include square(45px);
+  background-color: #121936;
+  border-radius: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 6px);
+    top: calc(50% - 10px);
+
+    @include bg-image(14px, 22px, "contacts-location.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .get-route {
+    padding-top: 130px;
+    padding-bottom: 60px;
+  }
+
+  .get-route__address {
+    margin-bottom: 61px;
+    padding: 0 0 0 93px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .get-route__image {
+    top: -23px;
+
+    @include square(68px);
+
+    &::after {
+      left: 23px;
+      top: 20px;
+      width: 21px;
+      height: 32px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .get-route {
+    display: flex;
+    justify-content: space-between;
+    padding: 119px 134px 60px 283px;
+  }
+
+  .get-route__address {
+    align-self: center;
+    margin: 0;
+    padding: 0 0 0 121px;
+  }
+
+  .get-route__image {
+    top: -32px;
+
+    @include square(90px);
+
+    &::after {
+      left: 31px;
+      top: 26px;
+      width: 28px;
+      height: 43px;
+    }
+  }
+
+  .get-route__link {
+    margin: 0;
+    //padding: 0;
+    padding: 27px 64px 24px 32px;
+  }
+}

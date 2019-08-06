@@ -1,0 +1,83 @@
+@mixin bg-simple-image($img: "logo-mobile-blue@1x.png") {
+  background-image: url("../img/#{$img}");
+}
+
+@mixin bg-simple-2-image($img1: "", $img2: "") {
+  background-image: url("../img/#{$img1}"), url("../img/#{$img2}");
+}
+
+@mixin bg-image($width: 20px, $height: 20px, $img: "logo-mobile-blue@1x.png") {
+  width: $width;
+  height: $height;
+  background-image: url("../img/#{$img}");
+}
+
+//https://www.toptal.com/developers/css/sprite-generator/
+@mixin bg-sprite-image($width: 20px, $height: 20px, $sprite: "", $left: -1px, $top: -1px) {
+  @include bg-image($width, $height, $sprite);
+  background-position: $left $top;
+}
+
+//for vertical sprite
+@mixin bg-sprite-simple-image($sprite: "", $top: -10px) {
+  @include bg-simple-image($sprite);
+  background-position-y: $top;
+}
+
+@mixin square($side: 20px) {
+  width: $side;
+  height: $side;
+}
+
+@mixin level-percent($percent: 1, $radius: 50) {
+  $circumference: 2 * $radius * $pi;
+
+  //@for $i from 1 through 100 {
+  //  $percent: $i; //%
+
+  &--#{$percent} {
+    stroke-dasharray: ($percent / 100) * $circumference, $circumference;
+  }
+  //}
+}
+
+//&--97 {
+//  $percent: 97; //%
+//  stroke-dasharray: ($percent / 100) * $circumference, $circumference;
+//}
+
+
+// ----- example
+//
+//$img-array: (
+//  "img1.png",
+//  "img2.jpg",
+//  "img3.jpg",
+//);
+//
+//.class {
+//  background-image: #{-concat-img($img-array)};
+//}
+//
+// ----- result
+//
+//.class {
+//  background-image: url(../img/img1.png), url(../img/img2.jpg), url(../img/img3.jpg);
+//}
+
+//@function -concat-img($arr_img) {
+//  $stroke: "";
+//  $prefix: "../img/";
+//
+//  @each $img in $arr_img {
+//    @if $stroke != "" {
+//      $stroke: $stroke + ", " + "url(" + $prefix + $img + ")";
+//    }
+//
+//    @else {
+//      $stroke: "url(" + $prefix + $img + ")";
+//    }
+//  }
+//
+//  @return $stroke;
+//}

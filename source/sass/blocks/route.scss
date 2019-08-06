@@ -1,0 +1,124 @@
+.route {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-top: 81px;
+  padding-bottom: 30px;
+  background-color: #edeff6;
+}
+
+.route__content-wrap {
+  margin-bottom: 44px;
+  padding: 0 45px 0 25px;
+}
+
+.route__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ff8d30;
+}
+
+.route__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+.route__list {
+  margin: 0 0 16px 0;
+}
+
+.route__all {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .route {
+    padding-top: 133px;
+    padding-bottom: 80px;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 199px) 140px;
+
+    @include bg-simple-image("flags-back@1x.png");
+  }
+
+  .route__content-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 104px -1px;
+    padding: 0;
+  }
+
+  .route__title {
+    margin: 0 0 58px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .route__text {
+    width: 352px;
+    margin: 0;
+    padding: 0 0 0 1px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .route__list {
+    margin: 0 0 37px 0;
+  }
+
+  .route__all {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .route {
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: none;
+    padding-top: 148px;
+    padding-bottom: 58px;
+  }
+
+  .route__list {
+    order: 1;
+    width: 50%;
+    margin: 0;
+  }
+
+  .route__content-wrap {
+    position: relative;
+    order: 2;
+    width: 50%;
+    margin: 0;
+    padding: 78px 50px 0 140px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      top: 0;
+      width: 289px;
+      height: 575px;
+      background-repeat: no-repeat;
+      background-position: right top;
+
+      @include bg-simple-image("flags-back@1x.png");
+    }
+  }
+
+  .route__title {
+    margin-left: 2px;
+  }
+
+  .route__all {
+    order: 3;
+    min-width: 274px;
+    left: 804px;
+    bottom: 81px;
+  }
+}

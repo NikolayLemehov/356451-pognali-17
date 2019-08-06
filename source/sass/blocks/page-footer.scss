@@ -1,0 +1,80 @@
+.page-footer {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  //временно
+  //margin-top: -240px;
+  padding: 38px 25px 1px;
+  background-color: #ffffff;
+  border-radius: 30px 30px 0 0;
+
+  &--main {
+    margin-top: -50px;
+  }
+
+  &--catalog {
+    margin-top: -34px;
+    z-index: 20;
+  }
+}
+
+.page-footer__logo {
+  display: inline-block;
+  align-self: center;
+  margin-bottom: 38px;
+}
+
+.page-footer__social-list {
+  padding-bottom: 36px;
+}
+
+.page-footer__logo-image {
+  display: block;
+}
+
+.page-footer__copyright {
+  padding: 13px 0 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    width: $tablet-width;
+    margin-top: -95px;
+    padding-top: 47px;
+    padding-bottom: 45px;
+    padding-left: 40px;
+    border-radius: 60px 60px 0 0;
+  }
+
+  .page-footer__logo {
+    margin: -1px 90px 0 0;
+
+    @include bg-image(164px, 42px, "logo-tablet-blue@1x.png");
+  }
+
+  .page-footer__logo-image {
+    display: none;
+  }
+
+  .page-footer__social-list {
+    width: auto;
+    margin: 1px 100px 0 0;
+    padding: 0;
+  }
+
+  .page-footer__copyright {
+    width: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: $desktop-width;
+  }
+}

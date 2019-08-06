@@ -1,0 +1,16 @@
+.map {
+  background-color: #e7e6cd;
+  height: 356px;
+  overflow: hidden;
+}
+
+.map__img {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 616px;
+    border-radius: 0;
+  }
+}

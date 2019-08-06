@@ -1,0 +1,33 @@
+.toggle {
+  //временно
+  //background-color: transparent;
+  //display: block;
+  //width: 70px;
+  //height: 50px;
+  //border: none;
+
+  &--open-menu .toggle__img--close-menu {
+    //display: none;
+  }
+
+  &--open-menu .toggle__img--open-menu {
+    //display: block;
+  }
+}
+
+.toggle__img {
+  &--close-menu {
+    //display: block;
+    //width: 25px;
+    //height: 11px;
+    //fill: #ffffff;
+  }
+
+  &--open-menu {
+    //display: none;
+    //width: 19px;
+    //height: 19px;
+    //fill: #cccccc;
+    //background-color: #010101;
+  }
+}

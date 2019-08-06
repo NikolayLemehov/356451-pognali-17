@@ -1,0 +1,150 @@
+.price-list {
+  list-style: none;
+  counter-reset: list;
+
+  &--busyness .price-list__item::after {
+    display: none;
+  }
+}
+
+.price-list__item {
+  position: relative;
+  padding: 10.6px 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  border-bottom: 1px solid fade_out(#000000, 1 - 0.05);
+
+  &:first-child {
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  &::after {
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    right: -44px;
+    top: 3.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 0 1px;
+
+    @include square(34px);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    background-color: #ffa530;
+    border-radius: 50%;
+  }
+
+  &:nth-child(2)::after {
+    background-color: #ffbd30;
+  }
+
+  &:nth-child(3)::after {
+    background-color: #ffd74b;
+  }
+}
+
+.price-list__service {
+  margin: 0;
+}
+
+.price-list__cost {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .price-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -35px;
+      top: -43px;
+      z-index: -1;
+      width: 198px;
+      height: calc(100% + 86px);
+      background-color: #e2e5f2;
+      border-radius: 20px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 11px;
+      bottom: -117px;
+      z-index: 1;
+
+      @include bg-image(99px, 99px, "rates-mobile@1x.png");
+    }
+  }
+
+  .price-list__item {
+    display: flex;
+    justify-content: space-between;
+    min-height: 66px;
+    padding: 16.8px 0 15.2px;
+    font-size: 28px;
+    line-height: 33px;
+
+    &::after {
+      right: auto;
+      left: -90px;
+      top: -1.5px;
+      padding: 5px 0 0 1px;
+
+      @include square(67px);
+      font-size: 28px;
+      line-height: 28px;
+      background-color: #ffa530;
+    }
+  }
+
+  .price-list__item:nth-child(2)::after {
+    background-color: #ffbd30;
+  }
+
+  .price-list__item:nth-child(3)::after {
+    background-color: #ffd74b;
+  }
+
+  .price-list__cost {
+    width: 200px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price-list {
+    padding: 0 345px 0 161px;
+
+    &::after {
+      right: 186px;
+      top: -52px;
+      width: 444px;
+      height: calc(100% + 102px);
+      //background-color: #e2e5f2;
+    }
+
+    &::before {
+      right: 74px;
+      bottom: calc(50% - 99px);
+
+      @include bg-image(198px, 198px, "rates@1x.png");
+    }
+  }
+
+  .add-profile__business-price {
+    margin-left: 161px;
+    align-self: flex-start;
+  }
+}

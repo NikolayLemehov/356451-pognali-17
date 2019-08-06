@@ -1,0 +1,16 @@
+.user-list {
+  list-style: none;
+  padding: 0;
+}
+
+.user-list__item {
+  display: flex;
+  width: 100%;
+}
+
+.user-list__login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

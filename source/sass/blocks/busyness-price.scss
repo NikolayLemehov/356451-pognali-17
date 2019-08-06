@@ -1,0 +1,57 @@
+.busyness-price {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  //top: 0;
+  display: none;
+  flex-direction: column;
+  width: 270px;
+  height: 443px;
+  padding: 32px 0 0 0;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
+  overflow: hidden;
+  //временно
+  //border: 1px solid rgba(177, 255, 0, 0.38);
+
+  &--visible {
+    display: flex;
+  }
+}
+
+.busyness-price__title {
+  margin: 0 0 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #ff8d30;
+}
+
+.busyness-price__price-list {
+  margin: 0 0 auto 0;
+  padding: 0 0 0 26px;
+}
+
+.busyness-price__close {
+  padding: 23px 0 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #192144;
+  background-color: #f3f4f8;
+  transition: $duration;
+
+  &:hover {
+    background-color: #edeff6;
+  }
+
+  &:active {
+    background-color: #edeff6;
+    color: fade_out(#192144, 1 - 0.3);
+  }
+}

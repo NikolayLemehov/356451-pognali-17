@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  //временно
+  //width: 320px;
+  //margin: 0;
+  //временно
+  margin: 0 auto;
+  padding: 0;
+  //font-size: 18px;
+  //line-height: 27px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  //color: #f7f4f1;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-flex {
+  display: flex;
+}
+
+//временно класс
+.test-d-none * {
+  display: none;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+//временно
+@media (max-width: $mobile-width-only) {
+  .nowrap-mobile {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  .nowrap-tablet {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nowrap-desktop {
+    white-space: nowrap;
+  }
+}

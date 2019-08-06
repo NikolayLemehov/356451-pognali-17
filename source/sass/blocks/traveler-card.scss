@@ -1,0 +1,376 @@
+.traveler-card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  color: #444444;
+  background-color: #ffffff;
+
+  &--main {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 17px;
+
+    .traveler-card__btn,
+    .traveler-card__like-wrap {
+      display: none;
+    }
+
+    .traveler-card__level-wrap {
+      position: absolute;
+      left: 17px;
+      top: 16px;
+    }
+
+    .traveler-card__img-wrap {
+      order: 1;
+      width: 270px;
+      height: 270px;
+      background: #192144 no-repeat 0 0;
+
+      &--firsova {
+        @include bg-simple-image("firsova-mobile@270w1x.jpg");
+      }
+
+      &--demin {
+        @include bg-simple-image("demin-mobile@270w1x.jpg");
+      }
+    }
+
+    .traveler-card__image {
+      display: none;
+    }
+
+    .traveler-card__country-wrap {
+      order: 2;
+    }
+
+    .traveler-card__name {
+      order: 3;
+
+      br {
+        display: none;
+      }
+    }
+
+    .traveler-card__tag-wrap {
+      order: 4;
+      margin-bottom: 15px;
+    }
+
+    .traveler-card__tag {
+      width: 200px;
+    }
+
+    .traveler-card__transport-wrap {
+      order: 5;
+    }
+  }
+
+  &--catalog {
+    padding: 15px 0 5px;
+
+    .traveler-card__img-wrap {
+      order: 1;
+      position: absolute;
+      left: 18px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .traveler-card__name {
+      order: 2;
+      width: 100%;
+      margin: 0 0 5px 0;
+      padding: 0 0 0 104px;
+
+      &::before {
+        left: auto;
+        right: 22px;
+        top: 8px;
+
+        @include square(6px);
+      }
+    }
+
+    .traveler-card__like-wrap {
+      order: 3;
+      width: 100%;
+      margin: 0 0 17px 0;
+      padding: 0 0 0 104px;
+    }
+
+    .traveler-card__rate {
+      margin: 0;
+    }
+
+    .traveler-card__tag-wrap {
+      order: 4;
+      margin: 0 0 21px 0;
+      padding: 0 0 0 26px;
+    }
+
+    .traveler-card__tag {
+      width: 170px;
+      font-size: 15px;
+      text-align: left;
+    }
+
+    .traveler-card__country-wrap {
+      order: 5;
+      width: 100%;
+      border-top: 1px solid #edeff6;
+    }
+
+    .traveler-card__flag-list {
+      //временно
+      //совпадает только с первой карточкой
+      //margin: 0 0 9px 24px;
+      margin: 0 0 12.7px 24px;
+    }
+
+    .traveler-card__transport-wrap {
+      order: 6;
+      margin: 0;
+      padding: 0 27px 0 0;
+      border-top: 1px solid #edeff6;
+    }
+
+    .traveler-card__level-wrap {
+      order: 7;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      margin: 0 0 14px 0;
+      border-top: 1px solid #edeff6;
+    }
+
+    .traveler-card__level {
+      position: relative;
+      left: 0;
+      top: 0;
+      margin: -1px 0 0 24px;
+    }
+
+    .traveler-card__btn {
+      order: 8;
+      width: 100%;
+      margin: 0 20px 17px;
+    }
+  }
+}
+
+.traveler-card__subtitle {
+  position: relative;
+  left: 15px;
+  top: -10px;
+  display: inline-block;
+  margin: 0 0 7px 0;
+  padding: 0 8px 0 12px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: lowercase;
+  color: #444444;
+  background-color: #ffffff;
+
+  &--transport {
+    margin: 0 0 4px 0;
+    padding: 0 14px 0 12px;
+  }
+
+  &--level {
+    top: -8px;
+    align-self: flex-start;
+    margin: 0 0 -1px 0;
+    padding: 0 12px 0 12px;
+  }
+}
+
+.traveler-card__img-wrap {
+  position: relative;
+}
+
+.traveler-card__image {
+  display: block;
+}
+
+.traveler-card__information-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //padding-top: 10px;
+}
+
+.traveler-card__name {
+  position: relative;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  color: #1d2e5b;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 6px;
+
+    @include square(5px);
+    border-radius: 50%;
+  }
+
+  &--active::before {
+    background-color: #81e31e;
+  }
+
+  &--inactive::before {
+    background-color: #f97676;
+  }
+}
+
+.traveler-card__tag-wrap {
+  margin: 0;
+}
+
+.traveler-card__tag {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #444444;
+
+  &--shift {
+    padding: 0 0 0 15px;
+  }
+}
+
+.traveler-card__travel-modes {
+  margin: 0 0 17px 0;
+}
+
+.traveler-card__like-wrap {
+  position: relative;
+}
+
+.traveler-card__heart {
+  position: absolute;
+  left: 67px;
+  top: -8px;
+
+  @include square(31px);
+  background-color: #edeff6;
+  border-radius: 50%;
+  transition: $duration;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 11px;
+
+    @include bg-image(13px, 11px, "heart.svg");
+    opacity: 0.3;
+  }
+}
+
+.traveler-card__like-checkbox:hover + .traveler-card__heart {
+  background-color: #e2e5f2;
+}
+
+.traveler-card__like-checkbox:hover + .traveler-card__heart::before {
+  opacity: 0.5;
+}
+
+.traveler-card__like-checkbox:active + .traveler-card__heart {
+  background-color: #e2e5f2;
+}
+
+.traveler-card__like-checkbox:active + .traveler-card__heart::before {
+  opacity: 0.1;
+}
+
+.traveler-card__like-checkbox:checked + .traveler-card__heart {
+  background-color: #f9eaea;
+}
+
+.traveler-card__like-checkbox:checked + .traveler-card__heart::before {
+  @include bg-image(13px, 11px, "heart-active.svg");
+  opacity: 1;
+}
+
+.traveler-card__like-checkbox:checked:hover + .traveler-card__heart {
+  background-color: #f9d8d8;
+}
+
+.traveler-card__like-checkbox:checked:active + .traveler-card__heart {
+  background-color: #f9d8d8;
+}
+
+.traveler-card__like-checkbox:checked:active + .traveler-card__heart::before {
+  opacity: 0.3;
+}
+
+.traveler-card__rate {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #161c35;
+}
+
+@media (min-width: $tablet-width) {
+  .traveler-card {
+    padding-bottom: 24px;
+
+    &--main {
+      .traveler-card__level-wrap {
+        left: 20px;
+        top: 20px;
+      }
+
+      .traveler-card__img-wrap {
+        width: 285px;
+        height: 285px;
+
+        &--firsova {
+          @include bg-simple-image("firsova-desktop@1x.jpg");
+        }
+
+        &--demin {
+          @include bg-simple-image("demin-desktop@1x.jpg");
+        }
+      }
+
+      .traveler-card__country-wrap {
+        margin-bottom: 4px;
+      }
+
+      .traveler-card__name {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 21px;
+
+        &::before {
+          left: -21px;
+          top: 8px;
+          width: 7px;
+          height: 7px;
+        }
+      }
+
+      .traveler-card__tag-wrap {
+        margin-bottom: 24px;
+      }
+
+      .traveler-card__tag {
+        width: 263px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+}
