@@ -288,39 +288,57 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    align-items: flex-start; //временно
     width: $desktop-width;
     min-height: $header-desktop-min-height;
+    padding: 49px 60px 0;
+    background-color: #161c34;
 
     &--opened,
     &--closed,
     &--nojs {
-      .main-nav__toggle {
+      .main-nav__toggle,
+      .main-nav__social-list {
         display: none;
       }
 
       .main-nav__logo {
         order: 1;
+        margin: -2px 0 0 0;
 
-        //временно
         @include bg-image(200px, 52px, "logo-desktop-white@1x.png");
       }
 
       .main-nav__site-list {
+        position: relative;
         order: 2;
         display: flex;
         width: auto;
-        margin: 0;
+        max-width: 800px;
+        margin: 13px 0 0 -34px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 74px;
+          top: 12px;
+          width: 60px;
+          height: 2px;
+          background-color: #ffffff;
+          border-radius: 1px;
+        }
       }
 
       .main-nav__contact-list {
         order: 3;
         display: flex;
         width: auto;
-        margin: 0;
+        margin: 0 0 0 auto;
       }
 
       .main-nav__user-list {
         order: 4;
+        min-width: 189px;
       }
     }
   }

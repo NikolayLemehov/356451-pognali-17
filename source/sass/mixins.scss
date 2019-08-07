@@ -32,52 +32,20 @@
 @mixin level-percent($percent: 1, $radius: 50) {
   $circumference: 2 * $radius * $pi;
 
-  //@for $i from 1 through 100 {
-  //  $percent: $i; //%
-
   &--#{$percent} {
     stroke-dasharray: ($percent / 100) * $circumference, $circumference;
   }
-  //}
 }
 
-//&--97 {
-//  $percent: 97; //%
-//  stroke-dasharray: ($percent / 100) * $circumference, $circumference;
-//}
-
-
-// ----- example
-//
-//$img-array: (
-//  "img1.png",
-//  "img2.jpg",
-//  "img3.jpg",
-//);
-//
-//.class {
-//  background-image: #{-concat-img($img-array)};
-//}
-//
-// ----- result
-//
-//.class {
-//  background-image: url(../img/img1.png), url(../img/img2.jpg), url(../img/img3.jpg);
-//}
-
-//@function -concat-img($arr_img) {
-//  $stroke: "";
-//  $prefix: "../img/";
-//
-//  @each $img in $arr_img {
-//    @if $stroke != "" {
-//      $stroke: $stroke + ", " + "url(" + $prefix + $img + ")";
-//    }
-//
-//    @else {
-//      $stroke: "url(" + $prefix + $img + ")";
-//    }
-//  }
-//
-//  @return $stroke;
-//}
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

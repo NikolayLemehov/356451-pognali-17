@@ -45,6 +45,10 @@
   margin: 18px 0;
 }
 
+.user-nav__text-desktop {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .user-nav {
     padding-top: 136px;

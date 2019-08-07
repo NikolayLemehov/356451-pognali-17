@@ -125,5 +125,9 @@
   .page-main__item {
     width: $desktop-width;
     padding: 60px 60px 10px;
+
+    &--steps {
+      margin-top: -290px;
+    }
   }
 }

@@ -69,3 +69,31 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .caption {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 110px;
+    padding-bottom: 330px;
+    padding-left: 127px;
+    background-color: #161c34;
+    background-position: calc(50% + 99px) calc(100%), 50% 100%;
+    //background-repeat: no-repeat, no-repeat;
+    background-size: 431px 640px, 1800px 750px;
+
+    @include bg-simple-2-image("traveller-illustration-desktop@1x.png", "globe-back-desktop@1x.jpg");
+  }
+
+  .caption__title {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .caption__quote {
+    margin: 0 -12px 15px 0;
+  }
+}
