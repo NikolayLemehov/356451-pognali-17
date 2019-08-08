@@ -18,17 +18,22 @@
 @media (min-width: $tablet-width) {
   .traveler-list {
     display: flex;
-    //временно
-    justify-content: flex-start;
-    flex-wrap: wrap;
 
     &--main {
-      //display: flex;
-      //margin-left: -30px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
 
       .traveler-list__item {
         margin-left: 48px;
         border-radius: 20px;
+      }
+    }
+
+    &--catalog {
+      flex-direction: column;
+
+      .traveler-list__item {
+        margin: 0 0 40px 0;
       }
     }
   }

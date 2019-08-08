@@ -66,6 +66,8 @@
 }
 
 .page-main__title {
+  position: relative;
+  z-index: 10;
   padding: 20px 0 0 25px;
   background-color: #161c35;
   border-radius: 0 0 20px 20px;
@@ -97,6 +99,20 @@
 @media (min-width: $tablet-width) {
   .page-main {
     width: $tablet-width;
+
+    &--catalog {
+      .page-main__item {
+        padding: 60px 40px 10px;
+
+        &--follow-traveler {
+          padding-bottom: 120px;
+        }
+      }
+    }
+  }
+
+  .page-main__title {
+    background-color: #182044;
   }
 
   .page-main__item {

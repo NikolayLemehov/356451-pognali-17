@@ -83,7 +83,7 @@
         @include bg-sprite-simple-image("flags-sprite.png", -86px);
       }
 
-      &--united_states_of_america {
+      &--united-states-of-america {
         @include bg-sprite-simple-image("flags-sprite.png", -352px);
       }
 
@@ -95,7 +95,7 @@
         @include bg-sprite-simple-image("flags-sprite.png", -124px);
       }
 
-      &--united_kingdom {
+      &--united-kingdom {
         @include bg-sprite-simple-image("flags-sprite.png", -314px);
       }
 
@@ -127,4 +127,70 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #1d2e5b;
+}
+
+@media (min-width: $tablet-width) {
+  .flag-list {
+    &--catalog {
+      flex-direction: row;
+
+      .flag-list__item {
+        margin: 0 29px 0 0;
+      }
+
+      .flag-list__img {
+        //position: static;
+        left: 0;
+        top: 0;
+        margin: 0 10px 0 0;
+        width: 35px;
+        height: 24px;
+
+        &--srilanka {
+          @include bg-sprite-simple-image("flags-sprite.png", -742px);
+        }
+
+        &--thailand {
+          @include bg-sprite-simple-image("flags-sprite.png", -786px);
+        }
+
+        &--seychelles {
+          @include bg-sprite-simple-image("flags-sprite.png", -698px);
+        }
+
+        &--belgium {
+          @include bg-sprite-simple-image("flags-sprite.png", -434px);
+        }
+
+        &--czech {
+          @include bg-sprite-simple-image("flags-sprite.png", -522px);
+        }
+
+        &--united-states-of-america {
+          @include bg-sprite-simple-image("flags-sprite.png", -874px);
+        }
+
+        &--australia {
+          @include bg-sprite-simple-image("flags-sprite.png", -390px);
+        }
+
+        &--dominica {
+          @include bg-sprite-simple-image("flags-sprite.png", -566px);
+        }
+
+        &--united-kingdom {
+          @include bg-sprite-simple-image("flags-sprite.png", -830px);
+        }
+
+        &--germany {
+          @include bg-sprite-simple-image("flags-sprite.png", -654px);
+        }
+      }
+
+      .flag-list__text {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
 }

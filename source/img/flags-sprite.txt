@@ -262,49 +262,49 @@ x
 }
 
 x
-.bg-united_kingdom@26w1x {
+.bg-united-kingdom@26w1x {
     width: 26px; height: 18px;
     background: url('css_sprites.png') -10px -314px;
 }
 
 x
-.bg-united_kingdom@26w2x {
+.bg-united-kingdom@26w2x {
     width: 52px; height: 36px;
     background: url('css_sprites.png') -10px -1366px;
 }
 
 x
-.bg-united_kingdom@35w1x {
+.bg-united-kingdom@35w1x {
     width: 35px; height: 24px;
     background: url('css_sprites.png') -10px -830px;
 }
 
 x
-.bg-united_kingdom@35w2x {
+.bg-united-kingdom@35w2x {
     width: 70px; height: 48px;
     background: url('css_sprites.png') -10px -2426px;
 }
 
 x
-.bg-united_states_of_america@26w1x {
+.bg-united-states-of-america@26w1x {
     width: 26px; height: 18px;
     background: url('css_sprites.png') -10px -352px;
 }
 
 x
-.bg-united_states_of_america@26w2x {
+.bg-united-states-of-america@26w2x {
     width: 52px; height: 36px;
     background: url('css_sprites.png') -10px -1422px;
 }
 
 x
-.bg-united_states_of_america@35w1x {
+.bg-united-states-of-america@35w1x {
     width: 35px; height: 24px;
     background: url('css_sprites.png') -10px -874px;
 }
 
 x
-.bg-united_states_of_america@35w2x {
+.bg-united-states-of-america@35w2x {
     width: 70px; height: 48px;
     background: url('css_sprites.png') -10px -2494px;
 }

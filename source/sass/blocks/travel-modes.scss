@@ -87,3 +87,38 @@
     height: 21px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .travel-modes {
+    &--catalog {
+      flex-direction: column;
+      margin: 15px 0 0 0;
+
+      .travel-modes__label {
+        background-color: transparent;
+      }
+
+      .travel-modes__img {
+        &--plane {
+          width: 19px;
+          height: 21px;
+        }
+
+        &--bus {
+          width: 17px;
+          height: 21px;
+        }
+
+        &--bike {
+          width: 24px;
+          height: 21px;
+        }
+
+        &--run {
+          width: 20px;
+          height: 21px;
+        }
+      }
+    }
+  }
+}
