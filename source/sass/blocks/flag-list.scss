@@ -194,3 +194,27 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .flag-list {
+    &--catalog {
+      flex-direction: column;
+
+      .flag-list__item {
+        margin: 0 0 7px 0;
+      }
+
+      .flag-list__img {
+        //position: static;
+        left: 0;
+        top: 0;
+        margin: 0 19px 0 0;
+      }
+
+      .flag-list__text {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+}

@@ -122,3 +122,18 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .travel-modes {
+    &--catalog {
+      flex-direction: row;
+      margin: 0;
+
+      .travel-modes__img {
+        &--plane {
+          left: 6px;
+        }
+      }
+    }
+  }
+}

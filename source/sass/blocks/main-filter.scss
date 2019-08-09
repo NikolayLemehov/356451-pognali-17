@@ -1,0 +1,10 @@
+.main-filter {
+  min-height: 400px;
+  background-color: rgba(255, 0, 0, 0.17);
+}
+
+@media (min-width: $desktop-width) {
+  .main-filter {
+    width: 285px;
+  }
+}
