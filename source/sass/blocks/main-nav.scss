@@ -115,6 +115,10 @@
   }
 }
 
+.page-header--no-index .main-nav--closed {
+  background-color: #161c35;
+}
+
 .page-header--scrolled {
   .main-nav {
     min-height: $header-mobile-min-height;
@@ -225,7 +229,7 @@
       order: 3;
       display: block;
       margin: 0;
-      width: auto;
+      width: 188px;
     }
 
     .main-nav__site-list {

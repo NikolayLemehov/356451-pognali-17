@@ -101,6 +101,7 @@
     <main class="page-main page-main--catalog">
       <div class="page-main__title">
         <h1 class="page-main__title-text">Попутчики</h1>
+        <a class="page-main__return" href="index.html">На главную</a>
       </div>
       <div class="page-main__item page-main__item--extended-filter extended-filter visually-hidden temp">
         <div class="extended-filter__wrapper choose-country">
@@ -628,9 +629,26 @@
           </ul>
           <button class="follow-traveler__show-more">Показать еще</button>
           <div class="follow-traveler__control-arrow control-arrow">
-
-            <button class="follow-traveler__arrow follow-traveler__arrow--left"></button>
-            <button class="follow-traveler__arrow follow-traveler__arrow--right"></button>
+            <ul class="control-arrow__pagination pagination">
+              <li class="pagination__item pagination__item--active">
+                <a class="pagination__link" href="#">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">4</a>
+              </li>
+            </ul>
+            <a class="control-arrow__arrow control-arrow__arrow--left" href="#">
+              <span class="visually-hidden">предыдущая</span>
+            </a>
+            <a class="control-arrow__arrow control-arrow__arrow--right" href="#">
+              <span class="visually-hidden">следующая</span>
+            </a>
           </div>
         </section>
       </div>
