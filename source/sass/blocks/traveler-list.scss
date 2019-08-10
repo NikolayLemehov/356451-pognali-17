@@ -13,6 +13,10 @@
   margin-bottom: 10px;
   border-radius: 10px;
   overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 6px 21px 0 fade_out(#000000, 1 -  0.08);
+  }
 }
 
 @media (min-width: $tablet-width) {
