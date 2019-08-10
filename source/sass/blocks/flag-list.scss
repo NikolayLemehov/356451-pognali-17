@@ -12,7 +12,42 @@
     margin-left: -19px;
 
     .flag-list__item {
+      position: relative;
       margin: 0 0 0 19px;
+
+      &:hover .flag-list__text {
+        @include visually-hidden-inactive;
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        bottom: -72px;
+        transform: translateX(-50%);
+        min-height: 57px;
+        padding: 17px 21px 16px;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: none;
+        white-space: nowrap;
+        color: #ffffff;
+        background-color: #101d41;
+        border-radius: 4px;
+
+        &::before {
+          //$side: 10px;
+          content: "";
+          position: absolute;
+          left: calc(50% - 7px);
+          top: -6px;
+          width: 14px;
+          height: 14px;
+          background-color: #101d41;
+          transform-origin: center center;
+          transform: rotate(45deg);
+          border-radius: 1.5px 0 0 0;
+        }
+      }
     }
 
     .flag-list__img {

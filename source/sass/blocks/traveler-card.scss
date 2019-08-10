@@ -4,11 +4,19 @@
   flex-wrap: wrap;
   color: #444444;
   background-color: #ffffff;
+  //временно
+  //overflow: hidden;
+  transition: $duration;
+
+  &:hover {
+    box-shadow: 0 6px 21px 0 fade_out(#000000, 1 -  0.08);
+  }
 
   &--main {
     flex-direction: column;
     align-items: center;
-    padding-bottom: 17px;
+    padding-bottom: 22px;
+    border-radius: 10px;
 
     .traveler-card__btn,
     .traveler-card__like-wrap {
@@ -25,6 +33,11 @@
       order: 1;
       width: 270px;
       height: 270px;
+      border-radius: 10px 10px 0 0;
+      overflow: hidden;
+    }
+
+    .traveler-card__img-inner {
       background: #192144 no-repeat 0 0;
 
       &--firsova {
@@ -68,6 +81,7 @@
 
   &--catalog {
     padding: 15px 0 5px;
+    border-radius: 20px;
 
     .traveler-card__img-wrap {
       order: 1;
@@ -118,14 +132,14 @@
     .traveler-card__country-wrap {
       order: 5;
       width: 100%;
+      //временно, усредняет все карточки
+      margin: 0 0 12.7px 0;
+      //margin: 0 0 9px 0;
       border-top: 1px solid #edeff6;
     }
 
     .traveler-card__flag-list {
-      //временно
-      //совпадает только с первой карточкой
-      //margin: 0 0 9px 24px;
-      margin: 0 0 12.7px 24px;
+      margin: 0 0 0 24px;
     }
 
     .traveler-card__transport-wrap {
@@ -154,6 +168,7 @@
 
     .traveler-card__btn {
       order: 8;
+      position: relative;
       width: 100%;
       margin: 0 20px 17px;
     }
@@ -190,6 +205,17 @@
 
 .traveler-card__img-wrap {
   position: relative;
+  display: flex;
+  //overflow: hidden;
+}
+
+.traveler-card__img-inner {
+  width: 100%;
+  transition: $duration;
+}
+
+.traveler-card:hover .traveler-card__img-inner {
+  transform: scale(1.03);
 }
 
 .traveler-card__image {
@@ -212,6 +238,7 @@
   line-height: 21px;
   text-decoration: none;
   color: #1d2e5b;
+  transition: $duration;
 
   &:hover {
     color: fade_out(#1d2e5b, 1 - 0.7);
@@ -258,7 +285,7 @@
 }
 
 .traveler-card__travel-modes {
-  margin: 0 0 17px 0;
+  //margin: 0 0 17px 0;
 }
 
 .traveler-card__like-wrap {
@@ -333,9 +360,11 @@
 
 @media (min-width: $tablet-width) {
   .traveler-card {
-    padding-bottom: 24px;
+    padding-bottom: 29px;
 
     &--main {
+      border-radius: 20px;
+
       .traveler-card__level-wrap {
         left: 20px;
         top: 20px;
@@ -344,6 +373,12 @@
       .traveler-card__img-wrap {
         width: 285px;
         height: 285px;
+        border-radius: 20px 20px 0 0;
+      }
+
+      .traveler-card__img-inner {
+        width: 100%;
+        height: 100%;
 
         &--firsova {
           @include bg-simple-image("firsova-desktop@1x.jpg");
@@ -383,7 +418,7 @@
     }
 
     &--catalog {
-      padding-bottom: 20px;
+      padding: 38px 0 20px 0;
 
       .traveler-card__img-wrap {
         order: 1;
@@ -391,8 +426,11 @@
         top: 35px;
         width: 190px;
         height: 190px;
-        background: no-repeat 0 0;
         border-radius: 18px;
+      }
+
+      .traveler-card__img-inner {
+        background: no-repeat 0 0;
 
         &--firsova {
           @include bg-simple-image("firsova-tablet@190w1x.jpg");
@@ -444,7 +482,8 @@
 
       .traveler-card__tag-wrap {
         order: 3;
-        margin: 66px 123px 0 261px;
+        min-height: 93px;
+        margin: 43px 130px 0 261px;
         padding: 0;
       }
 
@@ -457,7 +496,7 @@
       .traveler-card__transport-wrap {
         order: 4;
         width: auto;
-        margin: 0 0 16px 0;
+        margin: 0;
         padding: 0;
         border: none;
       }
@@ -575,9 +614,16 @@
         order: 1;
         left: 0;
         top: 0;
+        display: flex;
         width: 285px;
         height: 285px;
-        border-radius: 0;
+        border-radius: 20px 0 0 20px;
+        background: none;
+      }
+
+      .traveler-card__img-inner {
+        width: 100%;
+        //height: 100%;
 
         &--firsova {
           @include bg-simple-image("firsova-desktop@1x.jpg");
@@ -612,14 +658,14 @@
       .traveler-card__tag-wrap {
         order: 3;
         min-height: 88px;
-        margin: 80px 97px 0 347px;
+        margin: 57px 97px 0 347px;
       }
 
       .traveler-card__country-wrap {
         order: 4;
         width: auto;
         border: none;
-        margin: 34px 0 0 0;
+        margin: 11px 0 0 0;
       }
 
       .traveler-card__subtitle--flag {
@@ -638,12 +684,12 @@
       .traveler-card__like-wrap {
         order: 6;
         width: 125px;
-        margin: 5px 54px 0 0;
+        margin: 5px 60px 0 0;
       }
 
       .traveler-card__transport-wrap {
         order: 7;
-        margin: 12px 49px 0 0;
+        margin: 20px 52px 0 0;
       }
 
       .traveler-card__level-wrap {

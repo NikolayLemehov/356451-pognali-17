@@ -4,7 +4,24 @@
   list-style: none;
 
   &--main {
-    margin: 0 0 0 1px;
+    //margin: 0 0 0 1px;
+    .travel-modes__item {
+      &--plane {
+        margin: 0 17px 0 0;
+      }
+
+      &--bus {
+        margin: 0 13px 0 0;
+      }
+
+      &--bike {
+        margin: 0 10px 0 0;
+      }
+
+      &--run {
+        margin: 0;
+      }
+    }
   }
 
   &--catalog {
@@ -12,10 +29,10 @@
 
     .travel-modes__label {
       display: block;
-      width: 32.25px;
+      width: 32px;
       height: 32px;
       background-color: #edeff6;
-      border-radius: 20px;
+      border-radius: 50%;
     }
 
     .travel-modes__img {
@@ -55,6 +72,7 @@
 
 .travel-modes__label {
   position: relative;
+  display: block;
 }
 
 .travel-modes__checkbox:checked + .travel-modes__img {
@@ -62,24 +80,22 @@
 }
 
 .travel-modes__img {
+  display: block;
   fill: fade-out(#000000, 1 - 0.15);
 
   &--plane {
     width: 19px;
     height: 21px;
-    margin-right: 17px;
   }
 
   &--bus {
     width: 17px;
     height: 21px;
-    margin-right: 13px;
   }
 
   &--bike {
     width: 24px;
     height: 21px;
-    margin-right: 10px;
   }
 
   &--run {
@@ -88,17 +104,77 @@
   }
 }
 
+.travel-modes__text {
+  @include visually-hidden;
+}
+
+.travel-modes__label:hover .travel-modes__text {
+  @include visually-hidden-inactive;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: -72px;
+  transform: translateX(-50%);
+  min-height: 57px;
+  padding: 17px 21px 16px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: none;
+  white-space: nowrap;
+  text-align: center;
+  color: #ffffff;
+  background-color: #101d41;
+  border-radius: 4px;
+
+  &::before {
+    //$side: 10px;
+    content: "";
+    position: absolute;
+    left: calc(50% - 7px);
+    top: -6px;
+    width: 14px;
+    height: 14px;
+    background-color: #101d41;
+    transform-origin: center center;
+    transform: rotate(45deg);
+    border-radius: 1.5px 0 0 0;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .travel-modes {
     &--catalog {
       flex-direction: column;
-      margin: 15px 0 0 0;
+      margin: 0;
+
+      .travel-modes__item {
+        &--plane {
+          margin: 0 0 11px 0;
+        }
+
+        &--bus {
+          margin: 0 0 9px 3px;
+        }
+
+        &--bike {
+          margin: 0 0 13px 0;
+        }
+
+        &--run {
+          margin: 0 0 0 2px;
+        }
+      }
 
       .travel-modes__label {
+        width: auto;
+        height: auto;
         background-color: transparent;
       }
 
       .travel-modes__img {
+        position: static;
+
         &--plane {
           width: 19px;
           height: 21px;
@@ -129,9 +205,27 @@
       flex-direction: row;
       margin: 0;
 
+      .travel-modes__item {
+        &--plane {
+          margin: 0 17px 0 0;
+        }
+
+        &--bus {
+          margin: 0 13px 0 0;
+        }
+
+        &--bike {
+          margin: 0 10px 0 0;
+        }
+
+        &--run {
+          margin: 0;
+        }
+      }
+
       .travel-modes__img {
         &--plane {
-          left: 6px;
+          //left: 6px;
         }
       }
     }

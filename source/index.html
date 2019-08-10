@@ -222,8 +222,10 @@
             <div class="traveler-card traveler-card--main">
               <a class="traveler-card__name traveler-card__name--inactive" href="#">Таня<br> Фирсова</a>
               <div class="traveler-card__img-wrap traveler-card__img-wrap--firsova">
-                <img class="traveler-card__image" src="img/firsova-mobile@1x.png" width="70" height="70"
-                  alt="Путешественник">
+                  <div class="traveler-card__img-inner traveler-card__img-inner--firsova">
+                    <img class="traveler-card__image" src="img/firsova-mobile@1x.png" width="70" height="70"
+                      alt="Путешественник">
+                  </div>
               </div>
               <div class="traveler-card__level-wrap">
                 <h4 class="traveler-card__subtitle visually-hidden">Левел:</h4>
@@ -274,44 +276,44 @@
               <div class="traveler-card__transport-wrap">
                 <h4 class="traveler-card__subtitle visually-hidden">Транспорт:</h4>
                 <ul class="traveler-card__travel-modes travel-modes travel-modes--main">
-                  <li class="travel-modes__item">
+                  <li class="travel-modes__item travel-modes__item--plane">
                     <label class="travel-modes__label">
                       <input class="visually-hidden travel-modes__checkbox"
                         type="checkbox" disabled checked>
                       <svg class="travel-modes__img travel-modes__img--plane" width="19" height="21">
                         <use xlink:href="#plane"></use>
                       </svg>
-                      <span class="visually-hidden">Самолёт</span>
+                      <span class="travel-modes__text">Авиаперелет</span>
                     </label>
                   </li>
-                  <li class="travel-modes__item">
+                  <li class="travel-modes__item travel-modes__item--bus">
                     <label class="travel-modes__label">
                       <input class="visually-hidden travel-modes__checkbox"
                         type="checkbox" disabled>
                       <svg class="travel-modes__img travel-modes__img--bus" width="17" height="21">
                         <use xlink:href="#bus"></use>
                       </svg>
-                      <span class="visually-hidden">Автобус</span>
+                      <span class="travel-modes__text">Автотранспорт</span>
                     </label>
                   </li>
-                  <li class="travel-modes__item">
+                  <li class="travel-modes__item travel-modes__item--bike">
                     <label class="travel-modes__label">
                       <input class="visually-hidden travel-modes__checkbox"
                         type="checkbox" disabled>
                       <svg class="travel-modes__img travel-modes__img--bike" width="24" height="21">
                         <use xlink:href="#bike"></use>
                       </svg>
-                      <span class="visually-hidden">Велосипед</span>
+                      <span class="travel-modes__text">Велосипед</span>
                     </label>
                   </li>
-                  <li class="travel-modes__item">
+                  <li class="travel-modes__item travel-modes__item--run">
                     <label class="travel-modes__label">
                       <input class="visually-hidden travel-modes__checkbox"
                         type="checkbox" disabled>
                       <svg class="travel-modes__img travel-modes__img--run" width="20" height="21">
                         <use xlink:href="#run"></use>
                       </svg>
-                      <span class="visually-hidden">Пешеход</span>
+                      <span class="travel-modes__text">Пешком</span>
                     </label>
                   </li>
                 </ul>
@@ -323,8 +325,10 @@
             <div class="traveler-card traveler-card--main">
               <a class="traveler-card__name traveler-card__name--active" href="#">Петя<br> Демин</a>
               <div class="traveler-card__img-wrap traveler-card__img-wrap--demin">
-                <img class="traveler-card__image" src="img/demin-mobile@1x.png" width="70" height="70"
-                  alt="Путешественник">
+                  <div class="traveler-card__img-inner traveler-card__img-inner--demin">
+                    <img class="traveler-card__image" src="img/demin-mobile@1x.png" width="70" height="70"
+                      alt="Путешественник">
+                  </div>
               </div>
               <div class="traveler-card__level-wrap">
                 <h4 class="traveler-card__subtitle visually-hidden">Левел:</h4>
@@ -345,7 +349,7 @@
                   <label class="traveler-card__label">
                     <input class="visually-hidden traveler-card__like-checkbox" type="checkbox" name="like" checked>
                     <span class="traveler-card__heart"></span>
-                    <span class="visually-hidden">Нравится</span>
+                    <span class="travel-modes__text">Нравится</span>
                   </label>
                   <button class="visually-hidden" type="submit">Отправить</button>
                 </form>
@@ -371,44 +375,44 @@
               <div class="traveler-card__transport-wrap">
                 <h4 class="traveler-card__subtitle visually-hidden">Транспорт:</h4>
                 <ul class="traveler-card__travel-modes travel-modes travel-modes--main">
-                  <li class="travel-modes__item">
+                  <li class="travel-modes__item travel-modes__item--plane">
                     <label class="travel-modes__label">
                       <input class="visually-hidden travel-modes__checkbox"
                         type="checkbox" disabled checked>
                       <svg class="travel-modes__img travel-modes__img--plane" width="19" height="21">
                         <use xlink:href="#plane"></use>
                       </svg>
-                      <span class="visually-hidden">Самолёт</span>
+                      <span class="travel-modes__text">Авиаперелет</span>
                     </label>
                   </li>
-                  <li class="travel-modes__item">
+                  <li class="travel-modes__item travel-modes__item--bus">
                     <label class="travel-modes__label">
                       <input class="visually-hidden travel-modes__checkbox"
                         type="checkbox" disabled checked>
                       <svg class="travel-modes__img travel-modes__img--bus" width="17" height="21">
                         <use xlink:href="#bus"></use>
                       </svg>
-                      <span class="visually-hidden">Автобус</span>
+                      <span class="travel-modes__text">Автотранспорт</span>
                     </label>
                   </li>
-                  <li class="travel-modes__item">
+                  <li class="travel-modes__item travel-modes__item--bike">
                     <label class="travel-modes__label">
                       <input class="visually-hidden travel-modes__checkbox"
                         type="checkbox" disabled>
                       <svg class="travel-modes__img travel-modes__img--bike" width="24" height="21">
                         <use xlink:href="#bike"></use>
                       </svg>
-                      <span class="visually-hidden">Велосипед</span>
+                      <span class="travel-modes__text">Велосипед</span>
                     </label>
                   </li>
-                  <li class="travel-modes__item">
+                  <li class="travel-modes__item travel-modes__item--run">
                     <label class="travel-modes__label">
                       <input class="visually-hidden travel-modes__checkbox"
                         type="checkbox" disabled checked>
                       <svg class="travel-modes__img travel-modes__img--run" width="20" height="21">
                         <use xlink:href="#run"></use>
                       </svg>
-                      <span class="visually-hidden">Пешеход</span>
+                      <span class="travel-modes__text">Пешком</span>
                     </label>
                   </li>
                 </ul>
