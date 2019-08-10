@@ -543,10 +543,10 @@
 @media (min-width: $desktop-width) {
   .traveler-card {
     padding-bottom: 0;
-    align-items: flex-start;
-    align-content: flex-start;
 
     &--catalog {
+      align-items: flex-start;
+      align-content: flex-start;
       padding-bottom: 20px;
       //временно
       min-height: 285px;
