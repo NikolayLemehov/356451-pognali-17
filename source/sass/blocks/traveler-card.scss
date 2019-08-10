@@ -210,7 +210,16 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
+  text-decoration: none;
   color: #1d2e5b;
+
+  &:hover {
+    color: fade_out(#1d2e5b, 1 - 0.7);
+  }
+
+  &:active {
+    color: fade_out(#1d2e5b, 1 - 0.3);
+  }
 
   &::before {
     content: "";
