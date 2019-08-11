@@ -139,6 +139,13 @@
           border-radius: 0;
         }
       }
+
+      .page-main__return {
+        display: block;
+        align-self: flex-start;
+        margin: 26px 0 0 0;
+        padding: 0 60px 0 0;
+      }
     }
   }
 
@@ -157,13 +164,6 @@
       height: 8px;
       border-radius: 4px;
     }
-  }
-
-  .page-main__return {
-    display: block;
-    align-self: flex-start;
-    margin: 26px 0 0 0;
-    padding: 0 60px 0 0;
   }
 
   .page-main__item {
