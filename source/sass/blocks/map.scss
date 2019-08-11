@@ -14,3 +14,9 @@
     border-radius: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .map {
+    height: 551px;
+  }
+}
