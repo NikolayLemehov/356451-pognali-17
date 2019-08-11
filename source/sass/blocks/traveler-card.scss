@@ -4,11 +4,19 @@
   flex-wrap: wrap;
   color: #444444;
   background-color: #ffffff;
+  //временно
+  //overflow: hidden;
+  transition: $duration;
+
+  &:hover {
+    box-shadow: 0 6px 21px 0 fade_out(#000000, 1 -  0.08);
+  }
 
   &--main {
     flex-direction: column;
     align-items: center;
-    padding-bottom: 17px;
+    padding-bottom: 22px;
+    border-radius: 10px;
 
     .traveler-card__btn,
     .traveler-card__like-wrap {
@@ -25,6 +33,11 @@
       order: 1;
       width: 270px;
       height: 270px;
+      border-radius: 10px 10px 0 0;
+      overflow: hidden;
+    }
+
+    .traveler-card__img-inner {
       background: #192144 no-repeat 0 0;
 
       &--firsova {
@@ -68,6 +81,7 @@
 
   &--catalog {
     padding: 15px 0 5px;
+    border-radius: 20px;
 
     .traveler-card__img-wrap {
       order: 1;
@@ -118,14 +132,14 @@
     .traveler-card__country-wrap {
       order: 5;
       width: 100%;
+      //временно, усредняет все карточки
+      margin: 0 0 12.7px 0;
+      //margin: 0 0 9px 0;
       border-top: 1px solid #edeff6;
     }
 
     .traveler-card__flag-list {
-      //временно
-      //совпадает только с первой карточкой
-      //margin: 0 0 9px 24px;
-      margin: 0 0 12.7px 24px;
+      margin: 0 0 0 24px;
     }
 
     .traveler-card__transport-wrap {
@@ -154,6 +168,7 @@
 
     .traveler-card__btn {
       order: 8;
+      position: relative;
       width: 100%;
       margin: 0 20px 17px;
     }
@@ -190,6 +205,17 @@
 
 .traveler-card__img-wrap {
   position: relative;
+  display: flex;
+  //overflow: hidden;
+}
+
+.traveler-card__img-inner {
+  width: 100%;
+  transition: $duration;
+}
+
+.traveler-card:hover .traveler-card__img-inner {
+  transform: scale(1.03);
 }
 
 .traveler-card__image {
@@ -210,7 +236,17 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
+  text-decoration: none;
   color: #1d2e5b;
+  transition: $duration;
+
+  &:hover {
+    color: fade_out(#1d2e5b, 1 - 0.7);
+  }
+
+  &:active {
+    color: fade_out(#1d2e5b, 1 - 0.3);
+  }
 
   &::before {
     content: "";
@@ -249,7 +285,7 @@
 }
 
 .traveler-card__travel-modes {
-  margin: 0 0 17px 0;
+  //margin: 0 0 17px 0;
 }
 
 .traveler-card__like-wrap {
@@ -298,7 +334,7 @@
 }
 
 .traveler-card__like-checkbox:checked + .traveler-card__heart::before {
-  @include bg-image(13px, 11px, "heart-active.svg");
+  @include bg-simple-image("heart-active.svg");
   opacity: 1;
 }
 
@@ -324,9 +360,11 @@
 
 @media (min-width: $tablet-width) {
   .traveler-card {
-    padding-bottom: 24px;
+    padding-bottom: 29px;
 
     &--main {
+      border-radius: 20px;
+
       .traveler-card__level-wrap {
         left: 20px;
         top: 20px;
@@ -335,6 +373,12 @@
       .traveler-card__img-wrap {
         width: 285px;
         height: 285px;
+        border-radius: 20px 20px 0 0;
+      }
+
+      .traveler-card__img-inner {
+        width: 100%;
+        height: 100%;
 
         &--firsova {
           @include bg-simple-image("firsova-desktop@1x.jpg");
@@ -370,6 +414,287 @@
         width: 263px;
         font-size: 20px;
         line-height: 24px;
+      }
+    }
+
+    &--catalog {
+      padding: 38px 0 20px 0;
+
+      .traveler-card__img-wrap {
+        order: 1;
+        left: 35px;
+        top: 35px;
+        width: 190px;
+        height: 190px;
+        border-radius: 18px;
+      }
+
+      .traveler-card__img-inner {
+        background: no-repeat 0 0;
+
+        &--firsova {
+          @include bg-simple-image("firsova-tablet@190w1x.jpg");
+        }
+
+        &--demin {
+          @include bg-simple-image("demin-tablet@190w1x.jpg");
+        }
+
+        &--smolov {
+          @include bg-simple-image("smolov-tablet@190w1x.jpg");
+        }
+
+        &--rogovaya {
+          @include bg-simple-image("rogovaya-tablet@190w1x.jpg");
+        }
+      }
+
+      .traveler-card__image {
+        display: none;
+      }
+
+      .traveler-card__name {
+        order: 2;
+        position: absolute;
+        left: 258px;
+        top: 33px;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 30px;
+        line-height: 30px;
+
+        &::before {
+          left: auto;
+          right: -30px;
+          top: 11px;
+
+          @include square(7px);
+        }
+      }
+
+      .traveler-card__name br {
+        display: none;
+      }
+
+      .traveler-card__tag-wrap {
+        order: 3;
+        min-height: 93px;
+        margin: 43px 130px 0 261px;
+        padding: 0;
+      }
+
+      .traveler-card__tag {
+        width: 230px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      .traveler-card__transport-wrap {
+        order: 4;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        border: none;
+      }
+
+      .traveler-card__subtitle--level,
+      .traveler-card__subtitle--transport {
+        @include visually-hidden;
+      }
+
+      .traveler-card__btn {
+        order: 5;
+        align-self: flex-start;
+        width: auto;
+        min-width: 148px;
+        min-height: 50px;
+        margin: 0 0 0 255px;
+        padding: 11px 29px 7px 28px;
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      .traveler-card__like-wrap {
+        order: 6;
+        display: flex;
+        width: 180px;
+        margin: 0 20px 0 0;
+        padding: 0;
+      }
+
+      .traveler-card__like-form {
+        display: flex;
+        margin: 0 8px 0 0;
+      }
+
+      .traveler-card__label {
+        display: flex;
+      }
+
+      .traveler-card__heart {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 50px;
+        height: 50px;
+
+        &::before {
+          left: 15px;
+          top: 18px;
+          width: 20px;
+          height: 17px;
+        }
+      }
+
+      .traveler-card__rate {
+        align-self: flex-start;
+        margin: 12px 0 0 0;
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      .traveler-card__level-wrap {
+        order: 7;
+        display: flex;
+        flex-grow: 0;
+        width: auto;
+        margin: -6px 0 27px 0;
+        padding: 0;
+        border: none;
+      }
+
+      .traveler-card__level {
+        margin: 0;
+      }
+
+      .traveler-card__country-wrap {
+        order: 8;
+        margin: 0;
+        padding: 0;
+      }
+
+      .traveler-card__subtitle--flag {
+        margin: 0 0 7px 56px;
+      }
+
+      .traveler-card__flag-list {
+        margin: 0 0 0 36px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .traveler-card {
+    &--catalog {
+      align-items: flex-start;
+      align-content: flex-start;
+      padding-bottom: 20px;
+      //временно
+      min-height: 285px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        left: 630px;
+        top: 40px;
+        width: 1px;
+        height: 187px;
+        opacity: 0.1;
+
+        @include bg-simple-image("vertical-line.png");
+      }
+
+      .traveler-card__img-wrap {
+        order: 1;
+        left: 0;
+        top: 0;
+        display: flex;
+        width: 285px;
+        height: 285px;
+        border-radius: 20px 0 0 20px;
+        background: none;
+      }
+
+      .traveler-card__img-inner {
+        width: 100%;
+        //height: 100%;
+
+        &--firsova {
+          @include bg-simple-image("firsova-desktop@1x.jpg");
+        }
+
+        &--demin {
+          @include bg-simple-image("demin-desktop@1x.jpg");
+        }
+
+        &--smolov {
+          @include bg-simple-image("smolov-desktop@1x.jpg");
+        }
+
+        &--rogovaya {
+          @include bg-simple-image("rogovaya-desktop@1x.jpg");
+        }
+      }
+
+      .traveler-card__name {
+        order: 2;
+        left: 344px;
+        top: 47px;
+        max-width: 270px;
+
+        &::before {
+          left: -25px;
+          right: auto;
+          top: 11px;
+        }
+      }
+
+      .traveler-card__tag-wrap {
+        order: 3;
+        min-height: 88px;
+        margin: 57px 97px 0 347px;
+      }
+
+      .traveler-card__country-wrap {
+        order: 4;
+        width: auto;
+        border: none;
+        margin: 11px 0 0 0;
+      }
+
+      .traveler-card__subtitle--flag {
+        @include visually-hidden;
+      }
+
+      .traveler-card__flag-list {
+        margin: 0;
+      }
+
+      .traveler-card__btn {
+        order: 5;
+        margin: 5px 0 0 341px;
+      }
+
+      .traveler-card__like-wrap {
+        order: 6;
+        width: 125px;
+        margin: 5px 60px 0 0;
+      }
+
+      .traveler-card__transport-wrap {
+        order: 7;
+        margin: 20px 52px 0 0;
+      }
+
+      .traveler-card__level-wrap {
+        order: 8;
+        margin: 0;
       }
     }
   }

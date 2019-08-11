@@ -27,7 +27,7 @@
   &::after {
     content: "";
     position: absolute;
-    left: calc(50% - 6px);
+    left: calc(50% - 7px);
     top: calc(50% - 10px);
 
     @include bg-image(14px, 22px, "contacts-location.svg");

@@ -114,59 +114,8 @@
 }
 
 .follow-traveler__control-arrow {
-  display: flex;
-  height: 50px;
-}
-
-.follow-traveler__arrow {
-  position: relative;
-  flex-grow: 1;
-  border: none;
-  background-color: #ffffff;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    border: 10px solid transparent;
-    transition: $duration;
-  }
-
-  &--left {
-    margin-right: 0.5px;
-    border-radius: 20px 0 0 20px;
-
-    &::before {
-      left: 53px;
-      border-right: 10px solid #192144;
-    }
-
-    &:hover::before {
-      border-right-color: fade_out(#192144, 1 - 0.6);
-    }
-
-    &:active::before {
-      border-right-color: fade_out(#192144, 1 - 0.3);
-    }
-  }
-
-  &--right {
-    margin-left: 0.5px;
-    border-radius: 0 20px 20px 0;
-
-    &::before {
-      right: 52px;
-      border-left: 10px solid #192144;
-    }
-
-    &:hover::before {
-      border-left-color: fade_out(#192144, 1 - 0.6);
-    }
-
-    &:active::before {
-      border-left-color: fade_out(#192144, 1 - 0.3);
-    }
-  }
+  //временно
+  //height: 50px;
 }
 
 @media (min-width: $tablet-width) {
@@ -175,6 +124,7 @@
     padding-bottom: 88px;
 
     &--main {
+      //display: flex;
       background-position: calc(50% + 166px) 140px, calc(50% - 273px) 486px;
       background-size: 285px 285px, 143px 143px;
 
@@ -201,8 +151,10 @@
     }
 
     &--catalog {
+      padding-bottom: 2px;
+
       .follow-traveler__list {
-        margin: 0;
+        margin: 0 0 6px 0;
       }
     }
   }
@@ -231,6 +183,22 @@
       width: 400px;
       font-size: 21px;
       line-height: 25px;
+    }
+  }
+
+  .follow-traveler__show-more {
+    margin: 0 0 47px 0;
+    padding: 0 0 0 43px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before {
+      left: -8px;
+      top: -1px;
+      width: 27px;
+      height: 27px;
+
+      @include bg-simple-image("show-more-plus.svg");
     }
   }
 }
@@ -267,5 +235,19 @@
         min-width: 280px;
       }
     }
+
+    &--catalog {
+      //временно
+      width: 950px;
+      padding-bottom: 45px;
+
+      .follow-traveler__list {
+        margin: 0 0 36px 0;
+      }
+    }
+  }
+
+  .follow-traveler__show-more {
+    margin: 0 66px 66px 0;
   }
 }

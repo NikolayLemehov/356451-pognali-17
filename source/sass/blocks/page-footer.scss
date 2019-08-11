@@ -43,16 +43,19 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     flex-direction: row;
+    justify-content: space-between;
     width: $tablet-width;
     margin-top: -95px;
-    padding-top: 47px;
-    padding-bottom: 45px;
-    padding-left: 40px;
+    padding: 47px 40px 45px 40px;
     border-radius: 60px 60px 0 0;
+
+    &--catalog {
+      margin-top: -60px;
+    }
   }
 
   .page-footer__logo {
-    margin: -1px 90px 0 0;
+    margin: -1px 0 0 0;
 
     @include bg-image(164px, 42px, "logo-tablet-blue@1x.png");
   }
@@ -63,7 +66,7 @@
 
   .page-footer__social-list {
     width: auto;
-    margin: 1px 100px 0 0;
+    margin: 1px 9px 0 0;
     padding: 0;
   }
 
@@ -76,5 +79,16 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     width: $desktop-width;
+    padding: 47px 59px 45px 61px;
+  }
+
+  .page-footer__logo {
+    margin: -2px 0 0 0;
+
+    @include bg-image(198px, 52px, "logo-desktop-blue@1x.png");
+  }
+
+  .page-footer__social-list {
+    margin: 1px 44px 0 0;
   }
 }

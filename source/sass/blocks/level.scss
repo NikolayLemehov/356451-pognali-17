@@ -28,6 +28,14 @@
     stroke-width: $width-box / $width-container * $stroke-width;
     width: #{$width-container}px;
     height: #{$width-container}px;
+
+    @media (min-width: $tablet-width) {
+      $width-container: 60; //px
+      stroke-width: $width-box / $width-container * $stroke-width;
+      width: #{$width-container}px;
+      height: #{$width-container}px;
+    }
+
     background-color: transparent;
 
     .level__content {
@@ -90,5 +98,37 @@
     width: 31px;
     height: 1px;
     background-color: fade_out(#ffffff, 1 - 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .level {
+    &--catalog {
+      .level__text {
+        display: block;
+        margin: 0;
+        text-align: center;
+        color: fade_out(#444444, 1 - 0.4);
+
+        &::before {
+          left: 0;
+          background-color: fade_out(#000000, 1 - 0.1);
+        }
+      }
+
+      .level__content {
+        top: 33px;
+        width: 31px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .level__number {
+        margin: 0 0 0 -2px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 24px;
+      }
+    }
   }
 }

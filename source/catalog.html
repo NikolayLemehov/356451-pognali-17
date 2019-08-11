@@ -9,99 +9,101 @@
   </head>
   <body>
     <header class="page-header page-header--no-index">
-      <nav class="page-header__main-nav main-nav main-nav--closed">
-        <a class="main-nav__logo" href="index.html">
-          <img class="main-nav__logo-image" src="img/logo-mobile-blue@1x.png" width="100" height="19"
-            alt="Погнали?">
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Меню</span>
-        </button>
-        <ul class="main-nav__site-list site-list">
-          <li class="site-list__item  site-list__item--active">
-            <a class="site-list__link" href="#">
-              <span class="site-list__text" data-hover="О сервисе">О сервисе</span>
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              <span class="site-list__text" data-hover="Направления">Направления</span>
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              <span class="site-list__text" data-hover="Попутчики">Попутчики</span>
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__user-list user-list">
-          <li class="user-list__item">
-            <a class="btn btn--3 user-list__login" href="#">Авторизация</a>
-          </li>
-        </ul>
-        <ul class="main-nav__contact-list contact-list">
-          <li class="contact-list__item contact-list__item--caption">
-            <a class="contact-list__link contact-list__link--caption contact-list__link--caption--header"
-              href="tel:88005558628">
-              <span class="contact-list__round contact-list__round--caption">
-                <svg class="contact-list__icon contact-list__icon--caption  contact-list__icon--caption--phone"
-                  width="18" height="18">
-                  <use xlink:href="#contacts-phone"></use>
+      <div class="page-header__container">
+        <nav class="page-header__main-nav main-nav main-nav--closed">
+          <a class="main-nav__logo" href="index.html">
+            <img class="main-nav__logo-image" src="img/logo-mobile-blue@1x.png" width="100" height="19"
+              alt="Погнали?">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+          <ul class="main-nav__site-list site-list">
+            <li class="site-list__item  site-list__item--active">
+              <a class="site-list__link" href="#">
+                <span class="site-list__text" data-hover="О сервисе">О сервисе</span>
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                <span class="site-list__text" data-hover="Направления">Направления</span>
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                <span class="site-list__text" data-hover="Попутчики">Попутчики</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__user-list user-list">
+            <li class="user-list__item">
+              <a class="btn btn--3 user-list__login" href="#">Авторизация</a>
+            </li>
+          </ul>
+          <ul class="main-nav__contact-list contact-list contact-list--menu">
+            <li class="contact-list__item contact-list__item--phone">
+              <a class="contact-list__link"
+                href="tel:88005558628">
+                <span class="contact-list__round">
+                  <svg class="contact-list__icon"
+                    width="18" height="18">
+                    <use xlink:href="#contacts-phone"></use>
+                  </svg>
+                </span>
+                <span class="contact-list__text">8 800 555-86-28</span>
+              </a>
+            </li>
+            <li class="contact-list__item contact-list__item--mail">
+              <a class="contact-list__link"
+                href="mailto:mail@htmlacademy.ru">
+                <span class="contact-list__round">
+                  <svg class="contact-list__icon"
+                    width="18" height="13">
+                    <use xlink:href="#contacts-mail"></use>
+                  </svg>
+                </span>
+                <span class="contact-list__text">mail@htmlacademy.ru</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__social-list social-list social-list--header">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--header" href="https://facebook.com/" target="_blank"
+                aria-label="Facebook">Facebook
+                <svg class="social-list__img social-list__img--header social-list__img--header--fb" width="11"
+                  height="21">
+                  <use xlink:href="#facebook"></use>
                 </svg>
-              </span>
-              8 800 555-86-28
-            </a>
-          </li>
-          <li class="contact-list__item contact-list__item--caption">
-            <a class="contact-list__link contact-list__link--caption contact-list__link--caption--header"
-              href="mailto:mail@htmlacademy.ru">
-              <span class="contact-list__round contact-list__round--caption">
-                <svg class="contact-list__icon contact-list__icon--caption  contact-list__icon--caption--mail"
-                  width="18" height="13">
-                  <use xlink:href="#contacts-mail"></use>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--header" href="https://vk.com/" target="_blank"
+                aria-label="ВКонтакте">ВКонтакте
+                <svg class="social-list__img social-list__img--header social-list__img--header--vk" width="23"
+                  height="18">
+                  <use xlink:href="#vk"></use>
                 </svg>
-              </span>
-              mail@htmlacademy.ru
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__social-list social-list social-list--header">
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--header" href="https://facebook.com/" target="_blank"
-              aria-label="Facebook">Facebook
-              <svg class="social-list__img social-list__img--header social-list__img--header--fb" width="11"
-                height="21">
-                <use xlink:href="#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--header" href="https://vk.com/" target="_blank"
-              aria-label="ВКонтакте">ВКонтакте
-              <svg class="social-list__img social-list__img--header social-list__img--header--vk" width="23"
-                height="18">
-                <use xlink:href="#vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--header" href="https://www.instagram.com/" target="_blank"
-              aria-label="Instagram">Instagram
-              <svg class="social-list__img social-list__img--header social-list__img--header--inst" width="18"
-                height="18">
-                <use xlink:href="#instagram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--header" href="https://www.instagram.com/" target="_blank"
+                aria-label="Instagram">Instagram
+                <svg class="social-list__img social-list__img--header social-list__img--header--inst" width="18"
+                  height="18">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-main page-main--catalog">
       <div class="page-main__title">
         <h1 class="page-main__title-text">Попутчики</h1>
+        <a class="page-main__return" href="index.html">На главную</a>
       </div>
-      <!--<h2 class="visually-hidden">Попутчики</h2>-->
-      <form class="extended-filter visually-hidden temp" action="https://echo.htmlacademy.ru">
+      <div class="page-main__item page-main__item--extended-filter extended-filter visually-hidden temp">
         <div class="extended-filter__wrapper choose-country">
           <div class="choose-country__wrapper choose-country__wrapper--close" style="display: block;">
             <div class="choose-country__text">Фильтрация по странам</div>
@@ -176,460 +178,488 @@
             </button>
           </div>
         </div>
-      </form>
-      <form class="main-filter visually-hidden temp" action="https://echo.htmlacademy.ru">
-        <h2 class="main-filter__title">Подберите идеального попутчика</h2>
-        <fieldset class="main-filter__hobby">
-          <legend class="main-filter__legend">Хобби</legend>
-        </fieldset>
-        <fieldset class="main-filter__music music-fieldset">
-          <legend class="main-filter__legend">Музыка</legend>
-          <label class="music-fieldset__label">
-            <input class="music-fieldset__checkbox" type="checkbox" name="music-1" checked>Тяжелый рок
-          </label>
-          <label class="music-fieldset__label">
-            <input class="music-fieldset__checkbox" type="checkbox" name="music-2">Русский рэп
-          </label>
-          <label class="music-fieldset__label">
-            <input class="music-fieldset__checkbox" type="checkbox" name="music-3">Евроденс
-          </label>
-        </fieldset>
-        <fieldset class="main-filter__food">
-          <legend class="main-filter__legend">Еда</legend>
-        </fieldset>
-        <fieldset class="main-filter__transport travel-modes">
-          <legend class="main-filter__legend">Транспорт</legend>
-          <label class="travel-modes__label">
-            <input class="travel-modes__item travel-modes__item--air" type="checkbox" name="transport-1" checked>Самолёт
-          </label>
-          <label class="travel-modes__label">
-            <input class="travel-modes__item travel-modes__item--mass-transit" type="checkbox" name="transport-2"
-              checked>Автобус
-          </label>
-          <label class="travel-modes__label">
-            <input class="travel-modes__item travel-modes__item--bicycle" type="checkbox" name="transport-3">Велосипед
-          </label>
-          <label class="travel-modes__label">
-            <input class="travel-modes__item travel-modes__item--pedestrian" type="checkbox" name="transport-4" checked>Пешеход
-          </label>
-        </fieldset>
-        <fieldset class="main-filter__level level">
-          <legend class="main-filter__legend">Левел</legend>
-          <label class="level__label">От
-            <input class="level__from" type="text" name="from" value="30">
-          </label>
-          <label class="level__label">До
-            <input class="level__from" type="text" name="from" value="100">
-          </label>
-        </fieldset>
-        <button class="main-filter__show" type="submit">Показать</button>
-      </form>
-      <div class="temp" style="height: 50px;"></div>
-      <section class="page-main__item page-main__item--follow-traveler follow-traveler follow-traveler--catalog">
-        <ul class="follow-traveler__list traveler-list traveler-list--catalog">
-          <li class="traveler-list__item">
-            <div class="traveler-card traveler-card--catalog">
-              <h3 class="traveler-card__name traveler-card__name--inactive">Таня<br> Фирсова</h3>
-              <div class="traveler-card__img-wrap traveler-card__img-wrap--round">
-                <img class="traveler-card__image" src="img/firsova-mobile@1x.png" width="70" height="70"
-                  alt="Путешественник">
-              </div>
-              <div class="traveler-card__level-wrap">
-                <h4 class="traveler-card__subtitle traveler-card__subtitle--level">Левел:</h4>
-                <div class="traveler-card__level level level--catalog level--97">
-                  <svg class="level__svg-image" width="60" height="60" viewBox="0 0 100 100" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle r="50" cx="50" cy="50"></circle>
-                  </svg>
-                  <div class="level__content">
-                    <div class="level__number">99</div>
-                    <div class="level__text">level</div>
+      </div>
+      <div class="page-main__item page-main__item--traveler-filter-wrap">
+        <form class="main-filter test-d-none" action="https://echo.htmlacademy.ru">
+          <h2 class="main-filter__title">Подберите идеального попутчика</h2>
+          <fieldset class="main-filter__hobby">
+            <legend class="main-filter__legend">Хобби</legend>
+          </fieldset>
+          <fieldset class="main-filter__music music-fieldset">
+            <legend class="main-filter__legend">Музыка</legend>
+            <label class="music-fieldset__label">
+              <input class="music-fieldset__checkbox" type="checkbox" name="music-1" checked>Тяжелый рок
+            </label>
+            <label class="music-fieldset__label">
+              <input class="music-fieldset__checkbox" type="checkbox" name="music-2">Русский рэп
+            </label>
+            <label class="music-fieldset__label">
+              <input class="music-fieldset__checkbox" type="checkbox" name="music-3">Евроденс
+            </label>
+          </fieldset>
+          <fieldset class="main-filter__food">
+            <legend class="main-filter__legend">Еда</legend>
+          </fieldset>
+          <fieldset class="main-filter__transport travel-modes">
+            <legend class="main-filter__legend">Транспорт</legend>
+            <label class="travel-modes__label">
+              <input class="travel-modes__item travel-modes__item--air" type="checkbox" name="transport-1" checked>Самолёт
+            </label>
+            <label class="travel-modes__label">
+              <input class="travel-modes__item travel-modes__item--mass-transit" type="checkbox" name="transport-2"
+                checked>Автобус
+            </label>
+            <label class="travel-modes__label">
+              <input class="travel-modes__item travel-modes__item--bicycle" type="checkbox" name="transport-3">Велосипед
+            </label>
+            <label class="travel-modes__label">
+              <input class="travel-modes__item travel-modes__item--pedestrian" type="checkbox" name="transport-4"
+                checked>Пешеход
+            </label>
+          </fieldset>
+          <fieldset class="main-filter__level level">
+            <legend class="main-filter__legend">Левел</legend>
+            <label class="level__label">От
+              <input class="level__from" type="text" name="from" value="30">
+            </label>
+            <label class="level__label">До
+              <input class="level__from" type="text" name="from" value="100">
+            </label>
+          </fieldset>
+          <button class="main-filter__show" type="submit">Показать</button>
+        </form>
+        <section class="follow-traveler follow-traveler--catalog">
+          <ul class="follow-traveler__list traveler-list traveler-list--catalog">
+            <li class="traveler-list__item">
+              <div class="traveler-card traveler-card--catalog">
+                <a class="traveler-card__name traveler-card__name--inactive" href="#">Таня<br> Фирсова</a>
+                <div class="traveler-card__img-wrap traveler-card__img-wrap--firsova">
+                  <div class="traveler-card__img-inner traveler-card__img-inner--firsova">
+                  </div>
+                  <img class="traveler-card__image" src="img/firsova-mobile@1x.png" width="70" height="70"
+                    alt="Путешественник">
+                </div>
+                <div class="traveler-card__level-wrap">
+                  <h4 class="traveler-card__subtitle traveler-card__subtitle--level">Левел:</h4>
+                  <div class="traveler-card__level level level--catalog level--98">
+                    <svg class="level__svg-image" width="60" height="60" viewBox="0 0 100 100" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle r="50" cx="50" cy="50"></circle>
+                    </svg>
+                    <div class="level__content">
+                      <div class="level__number">99</div>
+                      <div class="level__text">level</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="traveler-card__like-wrap">
-                <h4 class="visually-hidden">Рейтинг</h4>
-                <form class="traveler-card__like-form" action="https://echo.htmlacademy.ru">
-                  <label class="traveler-card__label">
-                    <input class="visually-hidden traveler-card__like-checkbox" type="checkbox" name="like" checked>
-                    <span class="traveler-card__heart"></span>
-                    <span class="visually-hidden">Нравится</span>
-                  </label>
-                  <button class="visually-hidden" type="submit">Отправить</button>
-                </form>
-                <p class="traveler-card__rate">1,5 m</p>
-              </div>
-              <div class="traveler-card__tag-wrap">
-                <h4 class="visually-hidden">Теги</h4>
-                <p class="traveler-card__tag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-              </div>
-              <div class="traveler-card__country-wrap">
-                <h4 class="traveler-card__subtitle">Хочет посетить:</h4>
-                <ul class="traveler-card__flag-list flag-list flag-list--catalog">
-                  <li class="flag-list__item">
-                    <span class="flag-list__img flag-list__img--srilanka"></span>
-                    <span class="flag-list__text">Шри-Ланка</span>
-                  </li>
-                  <li class="flag-list__item">
-                    <span class="flag-list__img flag-list__img--thailand"></span>
-                    <span class="flag-list__text">Таиланд</span>
-                  </li>
-                  <li class="flag-list__item">
-                    <span class="flag-list__img flag-list__img--seychelles"></span>
-                    <span class="flag-list__text">Сейшелы</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="traveler-card__transport-wrap">
-                <h4 class="traveler-card__subtitle traveler-card__subtitle--transport">Транспорт:</h4>
-                <ul class="traveler-card__travel-modes travel-modes travel-modes--catalog">
-                  <li class="travel-modes__item">
-                    <label class="travel-modes__label">
-                      <input class="visually-hidden travel-modes__checkbox"
-                        type="checkbox" disabled checked>
-                      <svg class="travel-modes__img travel-modes__img--plane" width="19" height="21">
-                        <use xlink:href="#plane"></use>
-                      </svg>
-                      <span class="visually-hidden">Самолёт</span>
+                <div class="traveler-card__like-wrap">
+                  <h4 class="visually-hidden">Рейтинг</h4>
+                  <form class="traveler-card__like-form" action="https://echo.htmlacademy.ru">
+                    <label class="traveler-card__label">
+                      <input class="visually-hidden traveler-card__like-checkbox" type="checkbox" name="like" checked>
+                      <span class="traveler-card__heart"></span>
+                      <span class="visually-hidden">Нравится</span>
                     </label>
-                  </li>
-                  <li class="travel-modes__item">
-                    <label class="travel-modes__label">
-                      <input class="visually-hidden travel-modes__checkbox"
-                        type="checkbox" disabled>
-                      <svg class="travel-modes__img travel-modes__img--bus" width="17" height="21">
-                        <use xlink:href="#bus"></use>
-                      </svg>
-                      <span class="visually-hidden">Автобус</span>
-                    </label>
-                  </li>
-                  <li class="travel-modes__item">
-                    <label class="travel-modes__label">
-                      <input class="visually-hidden travel-modes__checkbox"
-                        type="checkbox" disabled>
-                      <svg class="travel-modes__img travel-modes__img--bike" width="24" height="21">
-                        <use xlink:href="#bike"></use>
-                      </svg>
-                      <span class="visually-hidden">Велосипед</span>
-                    </label>
-                  </li>
-                  <li class="travel-modes__item">
-                    <label class="travel-modes__label">
-                      <input class="visually-hidden travel-modes__checkbox"
-                        type="checkbox" disabled>
-                      <svg class="travel-modes__img travel-modes__img--run" width="20" height="21">
-                        <use xlink:href="#run"></use>
-                      </svg>
-                      <span class="visually-hidden">Пешеход</span>
-                    </label>
-                  </li>
-                </ul>
+                    <button class="visually-hidden" type="submit">Отправить</button>
+                  </form>
+                  <p class="traveler-card__rate">1,5 m</p>
+                </div>
+                <div class="traveler-card__tag-wrap">
+                  <h4 class="visually-hidden">Теги</h4>
+                  <p class="traveler-card__tag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                </div>
+                <div class="traveler-card__country-wrap">
+                  <h4 class="traveler-card__subtitle traveler-card__subtitle--flag">Хочет посетить:</h4>
+                  <ul class="traveler-card__flag-list flag-list flag-list--catalog">
+                    <li class="flag-list__item">
+                      <span class="flag-list__img flag-list__img--srilanka"></span>
+                      <span class="flag-list__text">Шри-Ланка</span>
+                    </li>
+                    <li class="flag-list__item">
+                      <span class="flag-list__img flag-list__img--thailand"></span>
+                      <span class="flag-list__text">Таиланд</span>
+                    </li>
+                    <li class="flag-list__item">
+                      <span class="flag-list__img flag-list__img--seychelles"></span>
+                      <span class="flag-list__text">Сейшелы</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="traveler-card__transport-wrap">
+                  <h4 class="traveler-card__subtitle traveler-card__subtitle--transport">Транспорт:</h4>
+                  <ul class="traveler-card__travel-modes travel-modes travel-modes--catalog">
+                    <li class="travel-modes__item travel-modes__item--plane">
+                      <label class="travel-modes__label">
+                        <input class="visually-hidden travel-modes__checkbox"
+                          type="checkbox" disabled checked>
+                        <svg class="travel-modes__img travel-modes__img--plane" width="19" height="21">
+                          <use xlink:href="#plane"></use>
+                        </svg>
+                        <span class="travel-modes__text">Авиаперелет</span>
+                      </label>
+                    </li>
+                    <li class="travel-modes__item travel-modes__item--bus">
+                      <label class="travel-modes__label">
+                        <input class="visually-hidden travel-modes__checkbox"
+                          type="checkbox" disabled>
+                        <svg class="travel-modes__img travel-modes__img--bus" width="17" height="21">
+                          <use xlink:href="#bus"></use>
+                        </svg>
+                        <span class="travel-modes__text">Автотранспорт</span>
+                      </label>
+                    </li>
+                    <li class="travel-modes__item travel-modes__item--bike">
+                      <label class="travel-modes__label">
+                        <input class="visually-hidden travel-modes__checkbox"
+                          type="checkbox" disabled>
+                        <svg class="travel-modes__img travel-modes__img--bike" width="24" height="21">
+                          <use xlink:href="#bike"></use>
+                        </svg>
+                        <span class="travel-modes__text">Велосипед</span>
+                      </label>
+                    </li>
+                    <li class="travel-modes__item travel-modes__item--run">
+                      <label class="travel-modes__label">
+                        <input class="visually-hidden travel-modes__checkbox"
+                          type="checkbox" disabled>
+                        <svg class="travel-modes__img travel-modes__img--run" width="20" height="21">
+                          <use xlink:href="#run"></use>
+                        </svg>
+                        <span class="travel-modes__text">Пешком</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn btn--3 traveler-card__btn">Позвать!</button>
               </div>
-              <button class="btn btn--3 traveler-card__btn">Позвать!</button>
-            </div>
-          </li>
-          <li class="traveler-list__item">
-            <div class="traveler-card traveler-card--catalog">
-              <h3 class="traveler-card__name traveler-card__name--inactive">Петя<br> Демин</h3>
-              <div class="traveler-card__img-wrap traveler-card__img-wrap--round">
-                <img class="traveler-card__image" src="img/demin-mobile@1x.png" width="70" height="70"
-                  alt="Путешественник">
-              </div>
-              <div class="traveler-card__level-wrap">
-                <h4 class="traveler-card__subtitle traveler-card__subtitle--level">Левел:</h4>
-                <div class="traveler-card__level level level--catalog level--80">
-                  <svg class="level__svg-image" width="60" height="60" viewBox="0 0 100 100" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle r="50" cx="50" cy="50"></circle>
-                  </svg>
-                  <div class="level__content">
-                    <div class="level__number">80</div>
-                    <div class="level__text">level</div>
+            </li>
+            <li class="traveler-list__item">
+              <div class="traveler-card traveler-card--catalog">
+                <a class="traveler-card__name traveler-card__name--inactive" href="#">Петя<br> Демин</a>
+                <div class="traveler-card__img-wrap traveler-card__img-wrap--demin">
+                  <div class="traveler-card__img-inner traveler-card__img-inner--demin">
+                  </div>
+                  <img class="traveler-card__image" src="img/demin-mobile@1x.png" width="70" height="70"
+                    alt="Путешественник">
+                </div>
+                <div class="traveler-card__level-wrap">
+                  <h4 class="traveler-card__subtitle traveler-card__subtitle--level">Левел:</h4>
+                  <div class="traveler-card__level level level--catalog level--80">
+                    <svg class="level__svg-image" width="60" height="60" viewBox="0 0 100 100" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle r="50" cx="50" cy="50"></circle>
+                    </svg>
+                    <div class="level__content">
+                      <div class="level__number">80</div>
+                      <div class="level__text">level</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="traveler-card__like-wrap">
-                <h4 class="visually-hidden">Рейтинг</h4>
-                <form class="traveler-card__like-form" action="https://echo.htmlacademy.ru">
-                  <label class="traveler-card__label">
-                    <input class="visually-hidden traveler-card__like-checkbox" type="checkbox" name="like">
-                    <span class="traveler-card__heart"></span>
-                    <span class="visually-hidden">Нравится</span>
-                  </label>
-                  <button class="visually-hidden" type="submit">Отправить</button>
-                </form>
-                <p class="traveler-card__rate">150</p>
-              </div>
-              <div class="traveler-card__tag-wrap">
-                <h4 class="visually-hidden">Теги</h4>
-                <p class="traveler-card__tag">#бургер #бар #футбол #концерт #крафт</p>
-              </div>
-              <div class="traveler-card__country-wrap">
-                <h4 class="traveler-card__subtitle">Хочет посетить:</h4>
-                <ul class="traveler-card__flag-list flag-list flag-list--catalog">
-                  <li class="flag-list__item">
-                    <span class="flag-list__img flag-list__img--belgium"></span>
-                    <span class="flag-list__text">Бельгия</span>
-                  </li>
-                  <li class="flag-list__item">
-                    <span class="flag-list__img flag-list__img--czech"></span>
-                    <span class="flag-list__text">Чехия</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="traveler-card__transport-wrap">
-                <h4 class="traveler-card__subtitle traveler-card__subtitle--transport">Транспорт:</h4>
-                <ul class="traveler-card__travel-modes travel-modes travel-modes--catalog">
-                  <li class="travel-modes__item">
-                    <label class="travel-modes__label">
-                      <input class="visually-hidden travel-modes__checkbox"
-                        type="checkbox" disabled checked>
-                      <svg class="travel-modes__img travel-modes__img--plane" width="19" height="21">
-                        <use xlink:href="#plane"></use>
-                      </svg>
-                      <span class="visually-hidden">Самолёт</span>
+                <div class="traveler-card__like-wrap">
+                  <h4 class="visually-hidden">Рейтинг</h4>
+                  <form class="traveler-card__like-form" action="https://echo.htmlacademy.ru">
+                    <label class="traveler-card__label">
+                      <input class="visually-hidden traveler-card__like-checkbox" type="checkbox" name="like">
+                      <span class="traveler-card__heart"></span>
+                      <span class="visually-hidden">Нравится</span>
                     </label>
-                  </li>
-                  <li class="travel-modes__item">
-                    <label class="travel-modes__label">
-                      <input class="visually-hidden travel-modes__checkbox"
-                        type="checkbox" disabled checked>
-                      <svg class="travel-modes__img travel-modes__img--bus" width="17" height="21">
-                        <use xlink:href="#bus"></use>
-                      </svg>
-                      <span class="visually-hidden">Автобус</span>
-                    </label>
-                  </li>
-                  <li class="travel-modes__item">
-                    <label class="travel-modes__label">
-                      <input class="visually-hidden travel-modes__checkbox"
-                        type="checkbox" disabled>
-                      <svg class="travel-modes__img travel-modes__img--bike" width="24" height="21">
-                        <use xlink:href="#bike"></use>
-                      </svg>
-                      <span class="visually-hidden">Велосипед</span>
-                    </label>
-                  </li>
-                  <li class="travel-modes__item">
-                    <label class="travel-modes__label">
-                      <input class="visually-hidden travel-modes__checkbox"
-                        type="checkbox" disabled checked>
-                      <svg class="travel-modes__img travel-modes__img--run" width="20" height="21">
-                        <use xlink:href="#run"></use>
-                      </svg>
-                      <span class="visually-hidden">Пешеход</span>
-                    </label>
-                  </li>
-                </ul>
+                    <button class="visually-hidden" type="submit">Отправить</button>
+                  </form>
+                  <p class="traveler-card__rate">150</p>
+                </div>
+                <div class="traveler-card__tag-wrap">
+                  <h4 class="visually-hidden">Теги</h4>
+                  <p class="traveler-card__tag">#бургер #бар #футбол #концерт #крафт</p>
+                </div>
+                <div class="traveler-card__country-wrap">
+                  <h4 class="traveler-card__subtitle traveler-card__subtitle--flag">Хочет посетить:</h4>
+                  <ul class="traveler-card__flag-list flag-list flag-list--catalog">
+                    <li class="flag-list__item">
+                      <span class="flag-list__img flag-list__img--belgium"></span>
+                      <span class="flag-list__text">Бельгия</span>
+                    </li>
+                    <li class="flag-list__item">
+                      <span class="flag-list__img flag-list__img--czech"></span>
+                      <span class="flag-list__text">Чехия</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="traveler-card__transport-wrap">
+                  <h4 class="traveler-card__subtitle traveler-card__subtitle--transport">Транспорт:</h4>
+                  <ul class="traveler-card__travel-modes travel-modes travel-modes--catalog">
+                    <li class="travel-modes__item travel-modes__item--plane">
+                      <label class="travel-modes__label">
+                        <input class="visually-hidden travel-modes__checkbox"
+                          type="checkbox" disabled checked>
+                        <svg class="travel-modes__img travel-modes__img--plane" width="19" height="21">
+                          <use xlink:href="#plane"></use>
+                        </svg>
+                        <span class="travel-modes__text">Авиаперелет</span>
+                      </label>
+                    </li>
+                    <li class="travel-modes__item travel-modes__item--bus">
+                      <label class="travel-modes__label">
+                        <input class="visually-hidden travel-modes__checkbox"
+                          type="checkbox" disabled checked>
+                        <svg class="travel-modes__img travel-modes__img--bus" width="17" height="21">
+                          <use xlink:href="#bus"></use>
+                        </svg>
+                        <span class="travel-modes__text">Автотранспорт</span>
+                      </label>
+                    </li>
+                    <li class="travel-modes__item travel-modes__item--bike">
+                      <label class="travel-modes__label">
+                        <input class="visually-hidden travel-modes__checkbox"
+                          type="checkbox" disabled>
+                        <svg class="travel-modes__img travel-modes__img--bike" width="24" height="21">
+                          <use xlink:href="#bike"></use>
+                        </svg>
+                        <span class="travel-modes__text">Велосипед</span>
+                      </label>
+                    </li>
+                    <li class="travel-modes__item travel-modes__item--run">
+                      <label class="travel-modes__label">
+                        <input class="visually-hidden travel-modes__checkbox"
+                          type="checkbox" disabled checked>
+                        <svg class="travel-modes__img travel-modes__img--run" width="20" height="21">
+                          <use xlink:href="#run"></use>
+                        </svg>
+                        <span class="travel-modes__text">Пешком</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn btn--3 traveler-card__btn">Позвать!</button>
               </div>
-              <button class="btn btn--3 traveler-card__btn">Позвать!</button>
-            </div>
-          </li>
-          <li class="traveler-list__item">
-            <div class="traveler-card traveler-card--catalog">
-              <h3 class="traveler-card__name traveler-card__name--inactive">Марк<br> Смолов</h3>
-              <div class="traveler-card__img-wrap traveler-card__img-wrap--round">
-                <img class="traveler-card__image" src="img/smolov-mobile@1x.jpg" width="70" height="70"
-                  alt="Путешественник">
-              </div>
-              <div class="traveler-card__level-wrap">
-                <h4 class="traveler-card__subtitle traveler-card__subtitle--level">Левел:</h4>
-                <div class="traveler-card__level level level--catalog level--25">
-                  <svg class="level__svg-image" width="60" height="60" viewBox="0 0 100 100" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle r="50" cx="50" cy="50"></circle>
-                  </svg>
-                  <div class="level__content">
-                    <div class="level__number">25</div>
-                    <div class="level__text">level</div>
+            </li>
+            <li class="traveler-list__item">
+              <div class="traveler-card traveler-card--catalog">
+                <a class="traveler-card__name traveler-card__name--inactive" href="#">Марк<br> Смолов</a>
+                <div class="traveler-card__img-wrap traveler-card__img-wrap--smolov">
+                  <div class="traveler-card__img-inner traveler-card__img-inner--smolov">
+                    <img class="traveler-card__image" src="img/smolov-mobile@1x.jpg" width="70" height="70"
+                      alt="Путешественник">
                   </div>
                 </div>
-              </div>
-              <div class="traveler-card__like-wrap">
-                <h4 class="visually-hidden">Рейтинг</h4>
-                <form class="traveler-card__like-form" action="https://echo.htmlacademy.ru">
-                  <label class="traveler-card__label">
-                    <input class="visually-hidden traveler-card__like-checkbox" type="checkbox" name="like">
-                    <span class="traveler-card__heart"></span>
-                    <span class="visually-hidden">Нравится</span>
-                  </label>
-                  <button class="visually-hidden" type="submit">Отправить</button>
-                </form>
-                <p class="traveler-card__rate">1700</p>
-              </div>
-              <div class="traveler-card__tag-wrap">
-                <h4 class="visually-hidden">Теги</h4>
-                <p class="traveler-card__tag">#рэп #тату #хайпбист #кроссовки #суприм</p>
-              </div>
-              <div class="traveler-card__country-wrap">
-                <h4 class="traveler-card__subtitle">Хочет посетить:</h4>
-                <ul class="traveler-card__flag-list flag-list flag-list--catalog">
-                  <li class="flag-list__item">
-                    <span class="flag-list__img flag-list__img--united_states_of_america"></span>
-                    <span class="flag-list__text">США</span>
-                  </li>
-                  <li class="flag-list__item">
-                    <span class="flag-list__img flag-list__img--australia"></span>
-                    <span class="flag-list__text">Австралия</span>
-                  </li>
-                  <li class="flag-list__item">
-                    <span class="flag-list__img flag-list__img--dominica"></span>
-                    <span class="flag-list__text">Доминикана</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="traveler-card__transport-wrap">
-                <h4 class="traveler-card__subtitle traveler-card__subtitle--transport">Транспорт:</h4>
-                <ul class="traveler-card__travel-modes travel-modes travel-modes--catalog">
-                  <li class="travel-modes__item">
-                    <label class="travel-modes__label">
-                      <input class="visually-hidden travel-modes__checkbox"
-                        type="checkbox" disabled checked>
-                      <svg class="travel-modes__img travel-modes__img--plane" width="19" height="21">
-                        <use xlink:href="#plane"></use>
-                      </svg>
-                      <span class="visually-hidden">Самолёт</span>
-                    </label>
-                  </li>
-                  <li class="travel-modes__item">
-                    <label class="travel-modes__label">
-                      <input class="visually-hidden travel-modes__checkbox"
-                        type="checkbox" disabled>
-                      <svg class="travel-modes__img travel-modes__img--bus" width="17" height="21">
-                        <use xlink:href="#bus"></use>
-                      </svg>
-                      <span class="visually-hidden">Автобус</span>
-                    </label>
-                  </li>
-                  <li class="travel-modes__item">
-                    <label class="travel-modes__label">
-                      <input class="visually-hidden travel-modes__checkbox"
-                        type="checkbox" disabled checked>
-                      <svg class="travel-modes__img travel-modes__img--bike" width="24" height="21">
-                        <use xlink:href="#bike"></use>
-                      </svg>
-                      <span class="visually-hidden">Велосипед</span>
-                    </label>
-                  </li>
-                  <li class="travel-modes__item">
-                    <label class="travel-modes__label">
-                      <input class="visually-hidden travel-modes__checkbox"
-                        type="checkbox" disabled>
-                      <svg class="travel-modes__img travel-modes__img--run" width="20" height="21">
-                        <use xlink:href="#run"></use>
-                      </svg>
-                      <span class="visually-hidden">Пешеход</span>
-                    </label>
-                  </li>
-                </ul>
-              </div>
-              <button class="btn btn--3 traveler-card__btn">Позвать!</button>
-            </div>
-          </li>
-          <li class="traveler-list__item">
-            <div class="traveler-card traveler-card--catalog">
-              <h3 class="traveler-card__name traveler-card__name--active">Лариса<br> Роговая</h3>
-              <div class="traveler-card__img-wrap traveler-card__img-wrap--round">
-                <img class="traveler-card__image" src="img/rogovaya-mobile@1x.jpg" width="70" height="70"
-                  alt="Путешественник">
-              </div>
-              <div class="traveler-card__level-wrap">
-                <h4 class="traveler-card__subtitle traveler-card__subtitle--level">Левел:</h4>
-                <div class="traveler-card__level level level--catalog level--50">
-                  <svg class="level__svg-image" width="60" height="60" viewBox="0 0 100 100" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle r="50" cx="50" cy="50"></circle>
-                  </svg>
-                  <div class="level__content">
-                    <div class="level__number">50</div>
-                    <div class="level__text">level</div>
+                <div class="traveler-card__level-wrap">
+                  <h4 class="traveler-card__subtitle traveler-card__subtitle--level">Левел:</h4>
+                  <div class="traveler-card__level level level--catalog level--25">
+                    <svg class="level__svg-image" width="60" height="60" viewBox="0 0 100 100" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle r="50" cx="50" cy="50"></circle>
+                    </svg>
+                    <div class="level__content">
+                      <div class="level__number">25</div>
+                      <div class="level__text">level</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="traveler-card__like-wrap">
-                <h4 class="visually-hidden">Рейтинг</h4>
-                <form class="traveler-card__like-form" action="https://echo.htmlacademy.ru">
-                  <label class="traveler-card__label">
-                    <input class="visually-hidden traveler-card__like-checkbox" type="checkbox" name="like">
-                    <span class="traveler-card__heart"></span>
-                    <span class="visually-hidden">Нравится</span>
-                  </label>
-                  <button class="visually-hidden" type="submit">Отправить</button>
-                </form>
-                <p class="traveler-card__rate">23</p>
-              </div>
-              <div class="traveler-card__tag-wrap">
-                <h4 class="visually-hidden">Теги</h4>
-                <p class="traveler-card__tag">#образование #карьера #учеба #линкедин</p>
-              </div>
-              <div class="traveler-card__country-wrap">
-                <h4 class="traveler-card__subtitle">Хочет посетить:</h4>
-                <ul class="traveler-card__flag-list flag-list flag-list--catalog">
-                  <li class="flag-list__item">
-                    <span class="flag-list__img flag-list__img--united_kingdom"></span>
-                    <span class="flag-list__text">Великобритания</span>
-                  </li>
-                  <li class="flag-list__item">
-                    <span class="flag-list__img flag-list__img--germany"></span>
-                    <span class="flag-list__text">Германия</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="traveler-card__transport-wrap">
-                <h4 class="traveler-card__subtitle traveler-card__subtitle--transport">Транспорт:</h4>
-                <ul class="traveler-card__travel-modes travel-modes travel-modes--catalog">
-                  <li class="travel-modes__item">
-                    <label class="travel-modes__label">
-                      <input class="visually-hidden travel-modes__checkbox"
-                        type="checkbox" disabled checked>
-                      <svg class="travel-modes__img travel-modes__img--plane" width="19" height="21">
-                        <use xlink:href="#plane"></use>
-                      </svg>
-                      <span class="visually-hidden">Самолёт</span>
+                <div class="traveler-card__like-wrap">
+                  <h4 class="visually-hidden">Рейтинг</h4>
+                  <form class="traveler-card__like-form" action="https://echo.htmlacademy.ru">
+                    <label class="traveler-card__label">
+                      <input class="visually-hidden traveler-card__like-checkbox" type="checkbox" name="like">
+                      <span class="traveler-card__heart"></span>
+                      <span class="visually-hidden">Нравится</span>
                     </label>
-                  </li>
-                  <li class="travel-modes__item">
-                    <label class="travel-modes__label">
-                      <input class="visually-hidden travel-modes__checkbox"
-                        type="checkbox" disabled checked>
-                      <svg class="travel-modes__img travel-modes__img--bus" width="17" height="21">
-                        <use xlink:href="#bus"></use>
-                      </svg>
-                      <span class="visually-hidden">Автобус</span>
-                    </label>
-                  </li>
-                  <li class="travel-modes__item">
-                    <label class="travel-modes__label">
-                      <input class="visually-hidden travel-modes__checkbox"
-                        type="checkbox" disabled>
-                      <svg class="travel-modes__img travel-modes__img--bike" width="24" height="21">
-                        <use xlink:href="#bike"></use>
-                      </svg>
-                      <span class="visually-hidden">Велосипед</span>
-                    </label>
-                  </li>
-                  <li class="travel-modes__item">
-                    <label class="travel-modes__label">
-                      <input class="visually-hidden travel-modes__checkbox"
-                        type="checkbox" disabled>
-                      <svg class="travel-modes__img travel-modes__img--run" width="20" height="21">
-                        <use xlink:href="#run"></use>
-                      </svg>
-                      <span class="visually-hidden">Пешеход</span>
-                    </label>
-                  </li>
-                </ul>
+                    <button class="visually-hidden" type="submit">Отправить</button>
+                  </form>
+                  <p class="traveler-card__rate">1700</p>
+                </div>
+                <div class="traveler-card__tag-wrap">
+                  <h4 class="visually-hidden">Теги</h4>
+                  <p class="traveler-card__tag">#рэп #тату #хайпбист #кроссовки #суприм</p>
+                </div>
+                <div class="traveler-card__country-wrap">
+                  <h4 class="traveler-card__subtitle traveler-card__subtitle--flag">Хочет посетить:</h4>
+                  <ul class="traveler-card__flag-list flag-list flag-list--catalog">
+                    <li class="flag-list__item">
+                      <span class="flag-list__img flag-list__img--united-states-of-america"></span>
+                      <span class="flag-list__text">США</span>
+                    </li>
+                    <li class="flag-list__item">
+                      <span class="flag-list__img flag-list__img--australia"></span>
+                      <span class="flag-list__text">Австралия</span>
+                    </li>
+                    <li class="flag-list__item">
+                      <span class="flag-list__img flag-list__img--dominica"></span>
+                      <span class="flag-list__text">Доминикана</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="traveler-card__transport-wrap">
+                  <h4 class="traveler-card__subtitle traveler-card__subtitle--transport">Транспорт:</h4>
+                  <ul class="traveler-card__travel-modes travel-modes travel-modes--catalog">
+                    <li class="travel-modes__item travel-modes__item--plane">
+                      <label class="travel-modes__label">
+                        <input class="visually-hidden travel-modes__checkbox"
+                          type="checkbox" disabled checked>
+                        <svg class="travel-modes__img travel-modes__img--plane" width="19" height="21">
+                          <use xlink:href="#plane"></use>
+                        </svg>
+                        <span class="travel-modes__text">Авиаперелет</span>
+                      </label>
+                    </li>
+                    <li class="travel-modes__item travel-modes__item--bus">
+                      <label class="travel-modes__label">
+                        <input class="visually-hidden travel-modes__checkbox"
+                          type="checkbox" disabled>
+                        <svg class="travel-modes__img travel-modes__img--bus" width="17" height="21">
+                          <use xlink:href="#bus"></use>
+                        </svg>
+                        <span class="travel-modes__text">Автотранспорт</span>
+                      </label>
+                    </li>
+                    <li class="travel-modes__item travel-modes__item--bike">
+                      <label class="travel-modes__label">
+                        <input class="visually-hidden travel-modes__checkbox"
+                          type="checkbox" disabled checked>
+                        <svg class="travel-modes__img travel-modes__img--bike" width="24" height="21">
+                          <use xlink:href="#bike"></use>
+                        </svg>
+                        <span class="travel-modes__text">Велосипед</span>
+                      </label>
+                    </li>
+                    <li class="travel-modes__item travel-modes__item--run">
+                      <label class="travel-modes__label">
+                        <input class="visually-hidden travel-modes__checkbox"
+                          type="checkbox" disabled>
+                        <svg class="travel-modes__img travel-modes__img--run" width="20" height="21">
+                          <use xlink:href="#run"></use>
+                        </svg>
+                        <span class="travel-modes__text">Пешком</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn btn--3 traveler-card__btn">Позвать!</button>
               </div>
-              <button class="btn btn--3 traveler-card__btn">Позвать!</button>
-            </div>
-          </li>
-        </ul>
-        <button class="follow-traveler__show-more">Показать еще</button>
-        <div class="follow-traveler__control-arrow control-arrow">
-          <button class="follow-traveler__arrow follow-traveler__arrow--left"></button>
-          <button class="follow-traveler__arrow follow-traveler__arrow--right"></button>
-        </div>
-      </section>
+            </li>
+            <li class="traveler-list__item">
+              <div class="traveler-card traveler-card--catalog">
+                <a class="traveler-card__name traveler-card__name--active" href="#">Лариса<br> Роговая</a>
+                <div class="traveler-card__img-wrap traveler-card__img-wrap--rogovaya">
+                  <div class="traveler-card__img-inner traveler-card__img-inner--rogovaya">
+                    <img class="traveler-card__image" src="img/rogovaya-mobile@1x.jpg" width="70" height="70"
+                      alt="Путешественник">
+                  </div>
+                </div>
+                <div class="traveler-card__level-wrap">
+                  <h4 class="traveler-card__subtitle traveler-card__subtitle--level">Левел:</h4>
+                  <div class="traveler-card__level level level--catalog level--50">
+                    <svg class="level__svg-image" width="60" height="60" viewBox="0 0 100 100" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle r="50" cx="50" cy="50"></circle>
+                    </svg>
+                    <div class="level__content">
+                      <div class="level__number">50</div>
+                      <div class="level__text">level</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="traveler-card__like-wrap">
+                  <h4 class="visually-hidden">Рейтинг</h4>
+                  <form class="traveler-card__like-form" action="https://echo.htmlacademy.ru">
+                    <label class="traveler-card__label">
+                      <input class="visually-hidden traveler-card__like-checkbox" type="checkbox" name="like">
+                      <span class="traveler-card__heart"></span>
+                      <span class="visually-hidden">Нравится</span>
+                    </label>
+                    <button class="visually-hidden" type="submit">Отправить</button>
+                  </form>
+                  <p class="traveler-card__rate">23</p>
+                </div>
+                <div class="traveler-card__tag-wrap">
+                  <h4 class="visually-hidden">Теги</h4>
+                  <p class="traveler-card__tag">#образование #карьера #учеба #линкедин</p>
+                </div>
+                <div class="traveler-card__country-wrap">
+                  <h4 class="traveler-card__subtitle traveler-card__subtitle--flag">Хочет посетить:</h4>
+                  <ul class="traveler-card__flag-list flag-list flag-list--catalog">
+                    <li class="flag-list__item">
+                      <span class="flag-list__img flag-list__img--united-kingdom"></span>
+                      <span class="flag-list__text">Великобритания</span>
+                    </li>
+                    <li class="flag-list__item">
+                      <span class="flag-list__img flag-list__img--germany"></span>
+                      <span class="flag-list__text">Германия</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="traveler-card__transport-wrap">
+                  <h4 class="traveler-card__subtitle traveler-card__subtitle--transport">Транспорт:</h4>
+                  <ul class="traveler-card__travel-modes travel-modes travel-modes--catalog">
+                    <li class="travel-modes__item travel-modes__item--plane">
+                      <label class="travel-modes__label">
+                        <input class="visually-hidden travel-modes__checkbox"
+                          type="checkbox" disabled checked>
+                        <svg class="travel-modes__img travel-modes__img--plane" width="19" height="21">
+                          <use xlink:href="#plane"></use>
+                        </svg>
+                        <span class="travel-modes__text">Авиаперелет</span>
+                      </label>
+                    </li>
+                    <li class="travel-modes__item travel-modes__item--bus">
+                      <label class="travel-modes__label">
+                        <input class="visually-hidden travel-modes__checkbox"
+                          type="checkbox" disabled checked>
+                        <svg class="travel-modes__img travel-modes__img--bus" width="17" height="21">
+                          <use xlink:href="#bus"></use>
+                        </svg>
+                        <span class="travel-modes__text">Автотранспорт</span>
+                      </label>
+                    </li>
+                    <li class="travel-modes__item travel-modes__item--bike">
+                      <label class="travel-modes__label">
+                        <input class="visually-hidden travel-modes__checkbox"
+                          type="checkbox" disabled>
+                        <svg class="travel-modes__img travel-modes__img--bike" width="24" height="21">
+                          <use xlink:href="#bike"></use>
+                        </svg>
+                        <span class="travel-modes__text">Велосипед</span>
+                      </label>
+                    </li>
+                    <li class="travel-modes__item travel-modes__item--run">
+                      <label class="travel-modes__label">
+                        <input class="visually-hidden travel-modes__checkbox"
+                          type="checkbox" disabled>
+                        <svg class="travel-modes__img travel-modes__img--run" width="20" height="21">
+                          <use xlink:href="#run"></use>
+                        </svg>
+                        <span class="travel-modes__text">Пешком</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn btn--3 traveler-card__btn">Позвать!</button>
+              </div>
+            </li>
+          </ul>
+          <button class="follow-traveler__show-more">Показать еще</button>
+          <div class="follow-traveler__control-arrow control-arrow">
+            <ul class="control-arrow__pagination pagination">
+              <li class="pagination__item pagination__item--active">
+                <a class="pagination__link" href="#">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">4</a>
+              </li>
+            </ul>
+            <a class="control-arrow__arrow control-arrow__arrow--left" href="#">
+              <span class="visually-hidden">предыдущая</span>
+            </a>
+            <a class="control-arrow__arrow control-arrow__arrow--right" href="#">
+              <span class="visually-hidden">следующая</span>
+            </a>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="page-footer page-footer--catalog">
       <a class="page-footer__logo" href="#">

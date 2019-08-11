@@ -135,26 +135,13 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    //margin-top: -140px;
-    //padding-top: 278px;
+    padding-top: 385px;
     padding-bottom: 163px;
-    //
-    //&::before,
-    //&::after {
-    //  display: none;
-    //}
   }
 
   .about-us__wrapper {
     padding: 0 638px 0 71px;
-    //
-    //  &::before,
-    //  &::after {
-    //    content: "";
-    //    position: absolute;
-    //    z-index: -1;
-    //  }
-    //
+
     &::before {
       left: 1px;
       top: -61px;
