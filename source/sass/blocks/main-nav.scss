@@ -61,7 +61,17 @@
     .main-nav__logo {
       margin: 0;
 
-      @include bg-image(100px, 19px, "logo-mobile-white@1x.png");
+      //@include bg-image(100px, 19px, "logo-mobile-white@1x.png");
+    }
+
+    .main-nav__logo-image {
+      &--blue {
+        display: none;
+      }
+
+      &--white {
+        display: block;
+      }
     }
 
     .main-nav__toggle {
@@ -110,7 +120,17 @@
       margin: 0 0 72px 0;
       background-image: none;
 
-      @include bg-image(100px, 19px, "logo-mobile-blue@1x.png");
+      //@include bg-image(100px, 19px, "logo-mobile-blue@1x.png");
+    }
+
+    .main-nav__logo-image {
+      &--blue {
+        display: block;
+      }
+
+      &--white {
+        display: none;
+      }
     }
   }
 }
@@ -129,8 +149,18 @@
   .main-nav__logo {
     background-color: #ffffff;
 
-    @include bg-image(100px, 19px, "logo-mobile-blue@1x.png");
+    //@include bg-image(100px, 19px, "logo-mobile-blue@1x.png");
     margin: 0;
+  }
+
+  .main-nav__logo-image {
+    &--blue {
+      display: block;
+    }
+
+    &--white {
+      display: none;
+    }
   }
 
   .main-nav__toggle {
@@ -157,16 +187,24 @@
 }
 
 .main-nav__logo {
+  width: 100px;
+  height: 19px;
   margin: 0 0 72px 0;
   cursor: pointer;
   background-position: 0 0;
   background-repeat: no-repeat;
 
-  @include bg-image(100px, 19px, "logo-mobile-blue@1x.png");
+  //@include bg-image(100px, 19px, "logo-mobile-blue@1x.png");
 }
 
 .main-nav__logo-image {
-  display: none;
+  &--blue {
+    display: block;
+  }
+
+  &--white {
+    display: none;
+  }
 }
 
 .main-nav__toggle {
@@ -217,7 +255,17 @@
       order: 1;
       margin-top: 5px;
 
-      @include bg-image(164px, 42px, "logo-tablet-blue@1x.png");
+      //@include bg-image(164px, 42px, "logo-tablet-blue@1x.png");
+    }
+
+    .main-nav__logo-image {
+      &--blue {
+        display: block;
+      }
+
+      &--white {
+        display: none;
+      }
     }
 
     .main-nav__toggle {
@@ -250,8 +298,18 @@
       padding-bottom: 74px;
 
       .main-nav__logo {
-        @include bg-image(164px, 42px, "logo-tablet-blue@1x.png");
+        //@include bg-image(164px, 42px, "logo-tablet-blue@1x.png");
         margin-bottom: 97px;
+      }
+
+      .main-nav__logo-image {
+        &--blue {
+          display: block;
+        }
+
+        &--white {
+          display: none;
+        }
       }
     }
 
@@ -259,7 +317,17 @@
       background-color: #182044;
 
       .main-nav__logo {
-        @include bg-image(164px, 42px, "logo-tablet-white@1x.png");
+        //@include bg-image(164px, 42px, "logo-tablet-white@1x.png");
+      }
+
+      .main-nav__logo-image {
+        &--blue {
+          display: none;
+        }
+
+        &--white {
+          display: block;
+        }
       }
     }
 
@@ -271,6 +339,16 @@
       .main-nav__logo {
         @include bg-image(164px, 42px, "logo-tablet-blue@1x.png");
         margin-bottom: 97px;
+      }
+
+      .main-nav__logo-image {
+        &--blue {
+          display: block;
+        }
+
+        &--white {
+          display: none;
+        }
       }
 
       .main-nav__toggle {
@@ -285,8 +363,23 @@
     }
 
     .main-nav__logo {
-      @include bg-image(164px, 42px, "logo-tablet-blue@1x.png");
+      //@include bg-image(164px, 42px, "logo-tablet-blue@1x.png");
     }
+
+    .main-nav__logo-image {
+      &--blue {
+        display: block;
+      }
+
+      &--white {
+        display: none;
+      }
+    }
+  }
+
+  .main-nav__logo {
+    width: 164px;
+    height: 42px;
   }
 }
 
@@ -310,7 +403,17 @@
         order: 1;
         margin: -2px 0 0 0;
 
-        @include bg-image(200px, 52px, "logo-desktop-white@1x.png");
+        //@include bg-image(200px, 52px, "logo-desktop-white@1x.png");
+      }
+
+      .main-nav__logo-image {
+        &--blue {
+          display: none;
+        }
+
+        &--white {
+          display: block;
+        }
       }
 
       .main-nav__site-list {
@@ -355,7 +458,22 @@
 
     .main-nav__logo {
       //временно
-      @include bg-image(200px, 52px, "logo-desktop-blue@1x.png");
+      //@include bg-image(200px, 52px, "logo-desktop-blue@1x.png");
     }
+
+    .main-nav__logo-image {
+      &--blue {
+        display: block;
+      }
+
+      &--white {
+        display: none;
+      }
+    }
+  }
+
+  .main-nav__logo {
+    width: 200px;
+    height: 52px;
   }
 }

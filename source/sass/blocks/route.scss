@@ -40,8 +40,10 @@
     padding-bottom: 80px;
     background-repeat: no-repeat;
     background-position: calc(50% + 199px) 140px;
+    background-size: 289px 575px;
 
     @include bg-simple-image("flags-back@1x.png");
+    @include bg-retina("flags-back@2x.png");
   }
 
   .route__content-wrap {
@@ -108,6 +110,7 @@
       background-position: right top;
 
       @include bg-simple-image("flags-back@1x.png");
+      @include bg-retina("flags-back@2x.png");
     }
   }
 

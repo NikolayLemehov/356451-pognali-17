@@ -5,23 +5,12 @@
   //margin-bottom: 50px;
 }
 
-.route-card__img {
+.route-card__img img {
+  display: block;
   background-color: #bccaf5;
   border-radius: 10px 10px 0 0;
   width: 270px;
   height: 110px;
-
-  &--thailand {
-    @include bg-simple-image("thailand-mobile@1x.jpg");
-  }
-
-  &--france {
-    @include bg-simple-image("france-mobile@1x.jpg");
-  }
-
-  &--czech {
-    @include bg-simple-image("czech-mobile@1x.jpg");
-  }
 }
 
 .route-card__wrapper {
@@ -43,19 +32,18 @@
     transform: translateY(-50%);
     width: 35px;
     height: 24px;
-    background-position-x: -10px;
   }
 
   &--thailand::before {
-    @include bg-sprite-simple-image("flags-sprite.png", -786px);
+    @include bg-simple-image("flag-thailand.svg");
   }
 
   &--france::before {
-    @include bg-sprite-simple-image("flags-sprite.png", -610px);
+    @include bg-simple-image("flag-france.svg");
   }
 
   &--czech::before {
-    @include bg-sprite-simple-image("flags-sprite.png", -522px);
+    @include bg-simple-image("flag-czech.svg");
   }
 }
 
@@ -125,37 +113,16 @@
       width: 70px;
       height: 47px;
     }
-
-    &--thailand::before {
-      @include bg-sprite-simple-image("flags-sprite.png", -1679px);
-    }
-
-    &--france::before {
-      @include bg-sprite-simple-image("flags-sprite.png", -1612px);
-    }
-
-    &--czech::before {
-      @include bg-sprite-simple-image("flags-sprite.png", -1545px);
-    }
   }
 
   .route-card__img {
     order: 2;
+  }
+
+  .route-card__img img {
     border-radius: 0;
     width: 186px;
     height: 140px;
-
-    &--thailand {
-      @include bg-simple-image("thailand-desktop@1x.jpg");
-    }
-
-    &--france {
-      @include bg-simple-image("france-desktop@1x.jpg");
-    }
-
-    &--czech {
-      @include bg-simple-image("czech-desktop@1x.jpg");
-    }
   }
 
   .route-card__country {

@@ -26,8 +26,10 @@
     left: calc(50% - 292px / 2 + 4px);
     bottom: 0;
     background: no-repeat 0 0;
+    background-size: 100% 100%;
 
     @include bg-image(292px, 352px, "about-mobile@1x.png");
+    @include bg-retina("about-mobile@2x.png");
   }
 }
 
@@ -97,8 +99,10 @@
       right: -67px;
       top: 6px;
       background: no-repeat 0 0;
+      background-size: 100% 100%;
 
       @include bg-image(376px, 548px, "about-tablet@1x.png");
+      @include bg-retina("about-tablet@2x.png");
     }
   }
 
@@ -154,6 +158,7 @@
       top: -47px;
 
       @include bg-image(630px, 665px, "about-desktop@1x.png");
+      @include bg-retina("about-desktop@2x.png");
     }
   }
 

@@ -7,11 +7,12 @@
   &--main {
     padding-bottom: 30px;
     background-color: #192144;
-    background-position: 0 340px, 152px 68px;
+    background-position: -10px 340px, 152px 68px;
     background-repeat: no-repeat, no-repeat;
-    background-size: 61px 71px, 143px 143px;
+    background-size: 71px 71px, 143px 143px;
 
-    @include bg-simple-2-image("rogovaya-back-mobile.png@61w1x.png", "smolov-back-desktop.png@143w1x.png");
+    @include bg-simple-2-image("rogovaya-back-mobile@1x.png", "smolov-back-desktop@1x.png");
+    @include bg-retina-2-image("rogovaya-back-mobile@2x.png", "smolov-back-desktop@2x.png");
     overflow: hidden;
 
     &::after {
@@ -128,9 +129,8 @@
       background-position: calc(50% + 166px) 140px, calc(50% - 273px) 486px;
       background-size: 285px 285px, 143px 143px;
 
-      @include bg-simple-2-image(
-          "rogovaya-back-desktop@1x.png",
-          "smolov-back-desktop.png@143w1x.png");
+      @include bg-simple-2-image("rogovaya-back-desktop@1x.png", "smolov-back-desktop@1x.png");
+      @include bg-retina-2-image("rogovaya-back-desktop@2x.png", "smolov-back-desktop@2x.png");
       overflow: hidden;
 
       &::after {

@@ -35,8 +35,6 @@
         border-radius: 4px;
 
         &::before {
-          //временно
-          //$side: 10px;
           content: "";
           position: absolute;
           left: calc(50% - 7px);
@@ -56,26 +54,6 @@
       margin: 0;
       width: 35px;
       height: 24px;
-
-      &--srilanka {
-        @include bg-sprite-simple-image("flags-sprite.png", -742px);
-      }
-
-      &--thailand {
-        @include bg-sprite-simple-image("flags-sprite.png", -786px);
-      }
-
-      &--seychelles {
-        @include bg-sprite-simple-image("flags-sprite.png", -698px);
-      }
-
-      &--belgium {
-        @include bg-sprite-simple-image("flags-sprite.png", -434px);
-      }
-
-      &--czech {
-        @include bg-sprite-simple-image("flags-sprite.png", -522px);
-      }
     }
   }
 
@@ -90,54 +68,9 @@
       position: relative;
       left: 1px;
       top: -3px;
-      //display: block;
       width: 26px;
       height: 18px;
       margin: 0 15px 0 0;
-      //временно
-      background-color: rgba(0, 0, 0, 0.03);
-      border-radius: 2px;
-      background-position-x: -10px;
-
-      &--srilanka {
-        @include bg-sprite-simple-image("flags-sprite.png", -238px);
-      }
-
-      &--thailand {
-        @include bg-sprite-simple-image("flags-sprite.png", -276px);
-      }
-
-      &--seychelles {
-        @include bg-sprite-simple-image("flags-sprite.png", -200px);
-      }
-
-      &--belgium {
-        @include bg-sprite-simple-image("flags-sprite.png", -48px);
-      }
-
-      &--czech {
-        @include bg-sprite-simple-image("flags-sprite.png", -86px);
-      }
-
-      &--united-states-of-america {
-        @include bg-sprite-simple-image("flags-sprite.png", -352px);
-      }
-
-      &--australia {
-        @include bg-sprite-simple-image("flags-sprite.png", -10px);
-      }
-
-      &--dominica {
-        @include bg-sprite-simple-image("flags-sprite.png", -124px);
-      }
-
-      &--united-kingdom {
-        @include bg-sprite-simple-image("flags-sprite.png", -314px);
-      }
-
-      &--germany {
-        @include bg-sprite-simple-image("flags-sprite.png", -162px);
-      }
     }
   }
 }
@@ -150,9 +83,48 @@
 
 .flag-list__img {
   display: block;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-radius: 2px;
-  background-position-x: -10px;
+  background-repeat: no-repeat;
+
+  &--srilanka {
+    @include bg-simple-image("flag-sri-lanka.svg");
+  }
+
+  &--thailand {
+    @include bg-simple-image("flag-thailand.svg");
+  }
+
+  &--seychelles {
+    @include bg-simple-image("flag-seychelles.svg");
+  }
+
+  &--belgium {
+    @include bg-simple-image("flag-belgium.svg");
+  }
+
+  &--czech {
+    @include bg-simple-image("flag-czech.svg");
+  }
+
+  &--united-states-of-america {
+    @include bg-simple-image("flag-usa.svg");
+  }
+
+  &--australia {
+    @include bg-simple-image("flag-australia.svg");
+  }
+
+  &--dominica {
+    @include bg-simple-image("flag-dominica.svg");
+  }
+
+  &--united-kingdom {
+    @include bg-simple-image("flag-united-kingdom.svg");
+  }
+
+  &--germany {
+    //временно
+    @include bg-simple-image("flag-united-kingdom.svg");
+  }
 }
 
 .flag-list__text {
@@ -175,52 +147,11 @@
       }
 
       .flag-list__img {
-        //position: static;
         left: 0;
         top: 0;
         margin: 0 10px 0 0;
         width: 35px;
         height: 24px;
-
-        &--srilanka {
-          @include bg-sprite-simple-image("flags-sprite.png", -742px);
-        }
-
-        &--thailand {
-          @include bg-sprite-simple-image("flags-sprite.png", -786px);
-        }
-
-        &--seychelles {
-          @include bg-sprite-simple-image("flags-sprite.png", -698px);
-        }
-
-        &--belgium {
-          @include bg-sprite-simple-image("flags-sprite.png", -434px);
-        }
-
-        &--czech {
-          @include bg-sprite-simple-image("flags-sprite.png", -522px);
-        }
-
-        &--united-states-of-america {
-          @include bg-sprite-simple-image("flags-sprite.png", -874px);
-        }
-
-        &--australia {
-          @include bg-sprite-simple-image("flags-sprite.png", -390px);
-        }
-
-        &--dominica {
-          @include bg-sprite-simple-image("flags-sprite.png", -566px);
-        }
-
-        &--united-kingdom {
-          @include bg-sprite-simple-image("flags-sprite.png", -830px);
-        }
-
-        &--germany {
-          @include bg-sprite-simple-image("flags-sprite.png", -654px);
-        }
       }
 
       .flag-list__text {
@@ -241,7 +172,6 @@
       }
 
       .flag-list__img {
-        //position: static;
         left: 0;
         top: 0;
         margin: 0 19px 0 0;
