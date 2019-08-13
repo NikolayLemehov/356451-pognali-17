@@ -519,7 +519,12 @@
       </section>
       <section class="page-main__item page-main__item--map map">
         <h2 class="visually-hidden">Карта</h2>
-        <img class="map__img" src="img/map-mobile@1x.jpg" width="320" height="546" alt="ул. Большая Конюшенная, 19/8">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img class="map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg x2"
+            width="320" height="546" alt="ул. Большая Конюшенная, 19/8">
+        </picture>
       </section>
     </main>
     <footer class="page-footer page-footer--main">
