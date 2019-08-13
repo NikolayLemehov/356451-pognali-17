@@ -83,8 +83,11 @@
       right: 11px;
       bottom: -117px;
       z-index: 1;
+      background: no-repeat 0 0;
+      background-size: 100% 100%;
 
       @include bg-image(99px, 99px, "rates-mobile@1x.png");
+      @include bg-retina("rates@2x.png");
     }
   }
 
@@ -138,8 +141,11 @@
     &::before {
       right: 74px;
       bottom: calc(50% - 99px);
+      width: 198px;
+      height: 198px;
 
-      @include bg-image(198px, 198px, "rates@1x.png");
+      //@include bg-image(198px, 198px, "rates@1x.png");
+      //@include bg-retina("rates@2x.png");
     }
   }
 

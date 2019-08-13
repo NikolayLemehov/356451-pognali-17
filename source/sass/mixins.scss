@@ -12,6 +12,18 @@
   background-image: url("../img/#{$img}");
 }
 
+@mixin bg-retina($retina-img: "") {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/#{$retina-img}");
+  }
+}
+
+@mixin bg-retina-2-image($retina-img1: "", $retina-img2: "") {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/#{$retina-img1}"), url("../img/#{$retina-img2}");
+  }
+}
+
 //https://www.toptal.com/developers/css/sprite-generator/
 @mixin bg-sprite-image($width: 20px, $height: 20px, $sprite: "", $left: -1px, $top: -1px) {
   @include bg-image($width, $height, $sprite);

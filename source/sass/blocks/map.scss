@@ -1,7 +1,21 @@
 .map {
   background-color: #e7e6cd;
   height: 356px;
+  padding: 0;
   overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    left: calc(50% - 20px);
+    top: calc(50% - 37px);
+    width: 41px;
+    height: 41px;
+    background: no-repeat 0 0;
+
+    @include bg-simple-image("map-marker.svg");
+  }
 }
 
 .map__img {
@@ -12,11 +26,32 @@
   .map {
     height: 616px;
     border-radius: 0;
+
+    &::before {
+      left: calc(50% - 27px);
+      top: calc(50% - 62px);
+      width: 54px;
+      height: 54px;
+    }
+  }
+
+  .map__img {
+    width: $tablet-width;
+    margin: -25px 0 0 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map {
     height: 551px;
+
+    &::before {
+      top: calc(50% - 71px);
+    }
+  }
+
+  .map__img {
+    width: $desktop-width;
+    margin: -140px 0 0 0;
   }
 }

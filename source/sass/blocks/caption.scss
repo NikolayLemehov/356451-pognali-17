@@ -7,6 +7,7 @@
   background-size: 192px 255px, 320px 569px;
 
   @include bg-simple-2-image("traveller-illustration-mobile@1x.png", "globe-back-mobile@1x.jpg");
+  @include bg-retina-2-image("traveller-illustration-mobile@2x.png", "globe-back-mobile@2x.jpg");
 
   &::after {
     content: "";
