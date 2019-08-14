@@ -60,8 +60,6 @@
 
     .main-nav__logo {
       margin: 0;
-
-      //@include bg-image(100px, 19px, "logo-mobile-white@1x.png");
     }
 
     .main-nav__logo-image {
@@ -119,8 +117,6 @@
     .main-nav__logo {
       margin: 0 0 72px 0;
       background-image: none;
-
-      //@include bg-image(100px, 19px, "logo-mobile-blue@1x.png");
     }
 
     .main-nav__logo-image {
@@ -148,8 +144,6 @@
 
   .main-nav__logo {
     background-color: #ffffff;
-
-    //@include bg-image(100px, 19px, "logo-mobile-blue@1x.png");
     margin: 0;
   }
 
@@ -193,8 +187,6 @@
   cursor: pointer;
   background-position: 0 0;
   background-repeat: no-repeat;
-
-  //@include bg-image(100px, 19px, "logo-mobile-blue@1x.png");
 }
 
 .main-nav__logo-image {
@@ -254,8 +246,6 @@
     .main-nav__logo {
       order: 1;
       margin-top: 5px;
-
-      //@include bg-image(164px, 42px, "logo-tablet-blue@1x.png");
     }
 
     .main-nav__logo-image {
@@ -298,7 +288,6 @@
       padding-bottom: 74px;
 
       .main-nav__logo {
-        //@include bg-image(164px, 42px, "logo-tablet-blue@1x.png");
         margin-bottom: 97px;
       }
 
@@ -315,10 +304,6 @@
 
     &--closed {
       background-color: #182044;
-
-      .main-nav__logo {
-        //@include bg-image(164px, 42px, "logo-tablet-white@1x.png");
-      }
 
       .main-nav__logo-image {
         &--blue {
@@ -337,7 +322,6 @@
       background-color: #ffffff;
 
       .main-nav__logo {
-        //@include bg-image(164px, 42px, "logo-tablet-blue@1x.png");
         margin-bottom: 97px;
       }
 
@@ -360,10 +344,6 @@
   .page-header--scrolled {
     .main-nav {
       min-height: $header-tablet-min-height;
-    }
-
-    .main-nav__logo {
-      //@include bg-image(164px, 42px, "logo-tablet-blue@1x.png");
     }
 
     .main-nav__logo-image {
@@ -402,8 +382,6 @@
       .main-nav__logo {
         order: 1;
         margin: -2px 0 0 0;
-
-        //@include bg-image(200px, 52px, "logo-desktop-white@1x.png");
       }
 
       .main-nav__logo-image {
@@ -454,11 +432,6 @@
     .main-nav {
       min-height: $header-desktop-scrolled-min-height;
       padding: 18px 0 20px;
-    }
-
-    .main-nav__logo {
-      //временно
-      //@include bg-image(200px, 52px, "logo-desktop-blue@1x.png");
     }
 
     .main-nav__logo-image {
