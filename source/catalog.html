@@ -5,7 +5,7 @@
     <title>HTML Academy: Погнали</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script>
       // Picture element HTML5 shiv
       document.createElement( "picture" );
@@ -13,6 +13,9 @@
     <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header page-header--no-index">
       <div class="page-header__container">
         <nav class="page-header__main-nav main-nav main-nav--closed">
@@ -66,7 +69,7 @@
                 <span class="contact-list__round">
                   <svg class="contact-list__icon"
                     width="18" height="18">
-                    <use xlink:href="#contacts-phone"></use>
+                    <use xlink:href="#icon-contacts-phone"></use>
                   </svg>
                 </span>
                 <span class="contact-list__text">8 800 555-86-28</span>
@@ -78,7 +81,7 @@
                 <span class="contact-list__round">
                   <svg class="contact-list__icon"
                     width="18" height="13">
-                    <use xlink:href="#contacts-mail"></use>
+                    <use xlink:href="#icon-contacts-mail"></use>
                   </svg>
                 </span>
                 <span class="contact-list__text">mail@htmlacademy.ru</span>
@@ -91,7 +94,7 @@
                 aria-label="Facebook">Facebook
                 <svg class="social-list__img social-list__img--header social-list__img--header--fb" width="11"
                   height="21">
-                  <use xlink:href="#facebook"></use>
+                  <use xlink:href="#icon-facebook"></use>
                 </svg>
               </a>
             </li>
@@ -100,7 +103,7 @@
                 aria-label="ВКонтакте">ВКонтакте
                 <svg class="social-list__img social-list__img--header social-list__img--header--vk" width="23"
                   height="18">
-                  <use xlink:href="#vk"></use>
+                  <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
             </li>
@@ -109,7 +112,7 @@
                 aria-label="Instagram">Instagram
                 <svg class="social-list__img social-list__img--header social-list__img--header--inst" width="18"
                   height="18">
-                  <use xlink:href="#instagram"></use>
+                  <use xlink:href="#icon-instagram"></use>
                 </svg>
               </a>
             </li>
@@ -317,7 +320,7 @@
                         <input class="visually-hidden travel-modes__checkbox"
                           type="checkbox" disabled checked>
                         <svg class="travel-modes__img travel-modes__img--plane" width="19" height="21">
-                          <use xlink:href="#plane"></use>
+                          <use xlink:href="#icon-plane"></use>
                         </svg>
                         <span class="travel-modes__text">Авиаперелет</span>
                       </label>
@@ -327,7 +330,7 @@
                         <input class="visually-hidden travel-modes__checkbox"
                           type="checkbox" disabled>
                         <svg class="travel-modes__img travel-modes__img--bus" width="17" height="21">
-                          <use xlink:href="#bus"></use>
+                          <use xlink:href="#icon-bus"></use>
                         </svg>
                         <span class="travel-modes__text">Автотранспорт</span>
                       </label>
@@ -337,7 +340,7 @@
                         <input class="visually-hidden travel-modes__checkbox"
                           type="checkbox" disabled>
                         <svg class="travel-modes__img travel-modes__img--bike" width="24" height="21">
-                          <use xlink:href="#bike"></use>
+                          <use xlink:href="#icon-bike"></use>
                         </svg>
                         <span class="travel-modes__text">Велосипед</span>
                       </label>
@@ -347,7 +350,7 @@
                         <input class="visually-hidden travel-modes__checkbox"
                           type="checkbox" disabled>
                         <svg class="travel-modes__img travel-modes__img--run" width="20" height="21">
-                          <use xlink:href="#run"></use>
+                          <use xlink:href="#icon-run"></use>
                         </svg>
                         <span class="travel-modes__text">Пешком</span>
                       </label>
@@ -421,7 +424,7 @@
                         <input class="visually-hidden travel-modes__checkbox"
                           type="checkbox" disabled checked>
                         <svg class="travel-modes__img travel-modes__img--plane" width="19" height="21">
-                          <use xlink:href="#plane"></use>
+                          <use xlink:href="#icon-plane"></use>
                         </svg>
                         <span class="travel-modes__text">Авиаперелет</span>
                       </label>
@@ -431,7 +434,7 @@
                         <input class="visually-hidden travel-modes__checkbox"
                           type="checkbox" disabled checked>
                         <svg class="travel-modes__img travel-modes__img--bus" width="17" height="21">
-                          <use xlink:href="#bus"></use>
+                          <use xlink:href="#icon-bus"></use>
                         </svg>
                         <span class="travel-modes__text">Автотранспорт</span>
                       </label>
@@ -441,7 +444,7 @@
                         <input class="visually-hidden travel-modes__checkbox"
                           type="checkbox" disabled>
                         <svg class="travel-modes__img travel-modes__img--bike" width="24" height="21">
-                          <use xlink:href="#bike"></use>
+                          <use xlink:href="#icon-bike"></use>
                         </svg>
                         <span class="travel-modes__text">Велосипед</span>
                       </label>
@@ -451,7 +454,7 @@
                         <input class="visually-hidden travel-modes__checkbox"
                           type="checkbox" disabled checked>
                         <svg class="travel-modes__img travel-modes__img--run" width="20" height="21">
-                          <use xlink:href="#run"></use>
+                          <use xlink:href="#icon-run"></use>
                         </svg>
                         <span class="travel-modes__text">Пешком</span>
                       </label>
@@ -529,7 +532,7 @@
                         <input class="visually-hidden travel-modes__checkbox"
                           type="checkbox" disabled checked>
                         <svg class="travel-modes__img travel-modes__img--plane" width="19" height="21">
-                          <use xlink:href="#plane"></use>
+                          <use xlink:href="#icon-plane"></use>
                         </svg>
                         <span class="travel-modes__text">Авиаперелет</span>
                       </label>
@@ -539,7 +542,7 @@
                         <input class="visually-hidden travel-modes__checkbox"
                           type="checkbox" disabled>
                         <svg class="travel-modes__img travel-modes__img--bus" width="17" height="21">
-                          <use xlink:href="#bus"></use>
+                          <use xlink:href="#icon-bus"></use>
                         </svg>
                         <span class="travel-modes__text">Автотранспорт</span>
                       </label>
@@ -549,7 +552,7 @@
                         <input class="visually-hidden travel-modes__checkbox"
                           type="checkbox" disabled checked>
                         <svg class="travel-modes__img travel-modes__img--bike" width="24" height="21">
-                          <use xlink:href="#bike"></use>
+                          <use xlink:href="#icon-bike"></use>
                         </svg>
                         <span class="travel-modes__text">Велосипед</span>
                       </label>
@@ -559,7 +562,7 @@
                         <input class="visually-hidden travel-modes__checkbox"
                           type="checkbox" disabled>
                         <svg class="travel-modes__img travel-modes__img--run" width="20" height="21">
-                          <use xlink:href="#run"></use>
+                          <use xlink:href="#icon-run"></use>
                         </svg>
                         <span class="travel-modes__text">Пешком</span>
                       </label>
@@ -633,7 +636,7 @@
                         <input class="visually-hidden travel-modes__checkbox"
                           type="checkbox" disabled checked>
                         <svg class="travel-modes__img travel-modes__img--plane" width="19" height="21">
-                          <use xlink:href="#plane"></use>
+                          <use xlink:href="#icon-plane"></use>
                         </svg>
                         <span class="travel-modes__text">Авиаперелет</span>
                       </label>
@@ -643,7 +646,7 @@
                         <input class="visually-hidden travel-modes__checkbox"
                           type="checkbox" disabled checked>
                         <svg class="travel-modes__img travel-modes__img--bus" width="17" height="21">
-                          <use xlink:href="#bus"></use>
+                          <use xlink:href="#icon-bus"></use>
                         </svg>
                         <span class="travel-modes__text">Автотранспорт</span>
                       </label>
@@ -653,7 +656,7 @@
                         <input class="visually-hidden travel-modes__checkbox"
                           type="checkbox" disabled>
                         <svg class="travel-modes__img travel-modes__img--bike" width="24" height="21">
-                          <use xlink:href="#bike"></use>
+                          <use xlink:href="#icon-bike"></use>
                         </svg>
                         <span class="travel-modes__text">Велосипед</span>
                       </label>
@@ -663,7 +666,7 @@
                         <input class="visually-hidden travel-modes__checkbox"
                           type="checkbox" disabled>
                         <svg class="travel-modes__img travel-modes__img--run" width="20" height="21">
-                          <use xlink:href="#run"></use>
+                          <use xlink:href="#icon-run"></use>
                         </svg>
                         <span class="travel-modes__text">Пешком</span>
                       </label>
@@ -716,7 +719,7 @@
           <a class="social-list__link social-list__link--footer" href="https://facebook.com/" target="_blank"
             aria-label="Facebook">Facebook
             <svg class="social-list__img social-list__img--footer social-list__img--footer--fb" width="11" height="21">
-              <use xlink:href="#facebook"></use>
+              <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -724,7 +727,7 @@
           <a class="social-list__link social-list__link--footer" href="https://vk.com/" target="_blank"
             aria-label="ВКонтакте">ВКонтакте
             <svg class="social-list__img social-list__img--footer social-list__img--footer--vk" width="23" height="12">
-              <use xlink:href="#vk"></use>
+              <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
@@ -733,7 +736,7 @@
             aria-label="Instagram">Instagram
             <svg class="social-list__img social-list__img--footer social-list__img--footer--inst" width="18"
               height="18">
-              <use xlink:href="#instagram"></use>
+              <use xlink:href="#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -742,7 +745,7 @@
         <span class="copyright__text">Разработано</span>
         <span class="visually-hidden">HTML Academy</span>
         <svg class="copyright__logo" width="27" height="34">
-          <use xlink:href="#htmlacademy"></use>
+          <use xlink:href="#icon-htmlacademy"></use>
         </svg>
       </a>
     </footer>
