@@ -143,49 +143,6 @@
   text-decoration: none;
   color: #192144;
   transition: $duration;
-  //
-  //&--menu {
-  //  @include square(40px);
-  //  //font-size: 0;
-  //  border-radius: 50%;
-  //}
-  //
-  //&--caption {
-  //  padding-left: 51px;
-  //  text-transform: uppercase;
-  //
-  //  &:hover .contact-list__icon--caption {
-  //    fill: #ffbd30;
-  //  }
-  //
-  //  &:active .contact-list__icon--caption {
-  //    fill: fade-out(#ffbd30, 1 - 0.3);
-  //  }
-  //
-  //  &--header {
-  //    color: #192144;
-  //
-  //    &:hover {
-  //      color: fade_out(#192144, 1 - 0.6);
-  //    }
-  //
-  //    &:active {
-  //      color: fade_out(#192144, 1 - 0.3);
-  //    }
-  //  }
-  //
-  //  &--main {
-  //    color: #ffd74b;
-  //
-  //    &:hover {
-  //      color: #ffbd30;
-  //    }
-  //
-  //    &:active {
-  //      color: fade-out(#ffbd30, 1 - 0.3);
-  //    }
-  //  }
-  //}
 }
 
 .contact-list__round {
@@ -194,43 +151,6 @@
   top: 0;
   border-radius: 50%;
   transition: $duration;
-
-  //@include menu-round(40px);
-  //&--menu {
-  //  @include square(40px);
-  //
-  //  &--phone {
-  //    background-color: #ff8d30;
-  //
-  //    &:hover {
-  //      background-color: #f26926;
-  //    }
-  //
-  //    &:active .contact-list__icon--menu {
-  //      opacity: 0.3;
-  //    }
-  //  }
-  //
-  //  &--mail {
-  //    background-color: #ffbd30;
-  //
-  //    &:hover {
-  //      background-color: #ff8d30;
-  //    }
-  //
-  //    &:active .contact-list__icon--menu {
-  //      opacity: 0.3;
-  //    }
-  //  }
-  //}
-  //
-  //&--caption {
-  //  left: -10px;
-  //  top: -12.5px;
-  //
-  //  @include square(45px);
-  //  background-color: #121936;
-  //}
 }
 
 .contact-list__icon {
@@ -241,46 +161,14 @@
   background: no-repeat 0 0;
   fill: #010101;
   transition: $duration;
-  //
-  //&--menu {
-  //  fill: #161c35;
-  //
-  //  &:active {
-  //    fill: fade_out(#161c35, 1 - 0.3);
-  //  }
-  //
-  //  &--phone {
-  //    width: 18px;
-  //    height: 18px;
-  //  }
-  //
-  //  &--mail {
-  //    width: 18px;
-  //    height: 14px;
-  //  }
-  //}
-  //
-  //&--caption {
-  //  fill: #ffd74b;
-  //
-  //  &:hover {
-  //    fill: #ffbd30;
-  //  }
-  //
-  //  &:active {
-  //    fill: fade_out(#ffbd30, 1 - 0.3);
-  //  }
-  //
-  //  &--phone {
-  //    width: 18px;
-  //    height: 18px;
-  //  }
-  //
-  //  &--mail {
-  //    width: 18px;
-  //    height: 13px;
-  //  }
-  //}
+
+  &--contacts {
+    display: block;
+  }
+
+  &--topmenu {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -378,6 +266,14 @@
 
       .contact-list__icon {
         fill: #161c35;
+
+        &--contacts {
+          display: none;
+        }
+
+        &--topmenu {
+          display: block;
+        }
       }
 
       .contact-list__item--phone .contact-list__icon {
