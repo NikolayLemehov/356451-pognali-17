@@ -122,8 +122,8 @@
   }
 
   &--germany {
-    //временно
-    @include bg-simple-image("flag-united-kingdom.svg");
+    @include bg-simple-image("flag-germany.svg");
+    background-size: cover;
   }
 }
 

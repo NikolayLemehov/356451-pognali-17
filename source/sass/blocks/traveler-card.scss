@@ -63,26 +63,29 @@
   }
 
   &--catalog {
-    padding: 15px 0 5px;
+    padding: 12px 0 5px;
     border-radius: 20px;
 
     .traveler-card__img-wrap {
       order: 1;
       position: absolute;
-      left: 18px;
+      left: 19px;
+      top: 15px;
       border-radius: 50%;
     }
 
     .traveler-card__name {
       order: 2;
       width: 100%;
-      margin: 0 0 5px 0;
-      padding: 0 0 0 104px;
+      margin: 0 0 9px;
+      padding: 0 0 0 105px;
+      font-size: 20px;
+      line-height: 20px;
 
       &::before {
         left: auto;
-        right: 22px;
-        top: 8px;
+        right: 21px;
+        top: 11px;
 
         @include square(6px);
       }
@@ -97,11 +100,12 @@
 
     .traveler-card__rate {
       margin: 0;
+      padding: 0 0 0 1px;
     }
 
     .traveler-card__tag-wrap {
       order: 4;
-      margin: 0 0 21px 0;
+      margin: 0 0 23.5px;
       padding: 0 0 0 26px;
     }
 
@@ -115,8 +119,8 @@
       order: 5;
       width: 100%;
       //временно, усредняет все карточки
-      margin: 0 0 12.7px 0;
-      //margin: 0 0 9px 0;
+      margin: 0 0 13.5px;
+      //margin: 0 0 9.5px 0;
       border-top: 1px solid #edeff6;
     }
 
@@ -137,7 +141,7 @@
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-      margin: 0 0 14px 0;
+      margin: 0 0 15px;
       border-top: 1px solid #edeff6;
     }
 
@@ -152,6 +156,7 @@
       order: 8;
       position: relative;
       width: 100%;
+      min-height: 40px;
       margin: 0 20px 17px;
     }
   }
@@ -160,7 +165,7 @@
 .traveler-card__subtitle {
   position: relative;
   left: 15px;
-  top: -10px;
+  top: -11px;
   display: inline-block;
   margin: 0 0 7px 0;
   padding: 0 8px 0 12px;
@@ -173,7 +178,7 @@
   background-color: #ffffff;
 
   &--transport {
-    margin: 0 0 4px 0;
+    margin: 0 0 5px 0;
     padding: 0 14px 0 12px;
   }
 
@@ -268,8 +273,8 @@
 
 .traveler-card__heart {
   position: absolute;
-  left: 67px;
-  top: -8px;
+  left: 68px;
+  top: -7px;
 
   @include square(31px);
   background-color: #edeff6;
@@ -327,7 +332,7 @@
 .traveler-card__rate {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   text-transform: uppercase;
   color: #161c35;
 }
