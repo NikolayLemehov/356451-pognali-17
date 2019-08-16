@@ -3,6 +3,7 @@
   src: url("../fonts/bloggersans-light.woff") format("woff"), url("../fonts/bloggersans-light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   src: url("../fonts/bloggersans.woff") format("woff"), url("../fonts/bloggersans.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
   src: url("../fonts/bloggersans-medium.woff") format("woff"), url("../fonts/bloggersans-medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -24,4 +27,5 @@
   src: url("../fonts/bloggersans-bold.woff") format("woff"), url("../fonts/bloggersans-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
