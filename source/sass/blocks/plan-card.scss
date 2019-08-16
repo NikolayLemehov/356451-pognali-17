@@ -107,50 +107,31 @@
 }
 
 @media (min-width: $desktop-width) {
-  .plan-card {
-    //display: flex;
-    //flex-wrap: wrap;
-  }
-
   .plan-card__title {
-    //position: relative;
     width: 583px;
     margin: 0;
     padding: 0 0 0 52px;
     border-bottom: none;
 
     &::before {
-      //position: absolute;
       right: auto;
       left: 0;
       top: 17px;
-      //padding-right: 0;
-      //font-size: 20px;
-      //line-height: 18px;
-      //letter-spacing: 1px;
     }
   }
 
   .plan-card__list {
-    //display: flex;
     align-self: flex-start;
     margin: 17px 115px 0 0;
     padding: 0;
   }
 
   .plan-card__item {
-    //margin: 0;
-    //font-size: 20px;
-    //line-height: 18px;
-    //letter-spacing: 2px;
-
     &--number-travelers {
       width: 178px;
     }
 
     &--date {
-      //width: 190px;
-      //margin: 0;
       text-align: left;
     }
   }
@@ -158,8 +139,5 @@
   .plan-card__change {
     align-self: flex-start;
     padding: 17px 0 0;
-    //font-size: 20px;
-    //line-height: 18px;
-    //letter-spacing: 2px;
   }
 }
