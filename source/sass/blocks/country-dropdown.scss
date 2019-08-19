@@ -1,0 +1,58 @@
+.country-dropdown {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  width: 100%;
+  padding: 0 0 16px;
+  background-color: #ffffff;
+  box-shadow: 0 20px 50px 0 #1d2e5b19;
+  border-left: solid 1px #cbced9;
+  border-right: solid 1px #cbced9;
+  border-bottom: solid 1px #cbced9;
+  border-radius: 0 0 10px 10px;
+}
+
+.country-dropdown__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 -1px 0 -1px;
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  color: #1d2e5b;
+}
+
+.country-dropdown__item {
+  &--letter {
+    width: 44px;
+    height: 41px;
+    margin: 0;
+    padding: 11px 0 10px 2px;
+    border-left: solid 0.5px #cbced9;
+    border-right: solid 0.5px #cbced9;
+    border-bottom: solid 1px #cbced9;
+
+    &--active {
+      background-color: #edeff6;
+    }
+  }
+}
+
+.country-dropdown__list ul {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 14px 0 0 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #444444;
+}

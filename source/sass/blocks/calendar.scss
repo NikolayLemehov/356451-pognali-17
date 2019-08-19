@@ -1,0 +1,52 @@
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.calendar__cell {
+  height: 31px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #444444;
+  border: 1px solid #cbced9;
+
+  &--day-week {
+    border: none;
+  }
+
+  &--day-week-end {
+    color: #ff5c23;
+    border: none;
+  }
+
+  &--past {
+    color: fade_out(#444444, 1 - 0.3);
+  }
+
+  &--future {
+    background-color: #edeff6;
+  }
+
+  &--mark {
+    color: #ffffff;
+    background-color: #1d2e5b;
+  }
+
+  &--today {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      border: solid 2px #ff5c23;
+      border-radius: 1px;
+    }
+  }
+}

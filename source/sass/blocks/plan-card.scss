@@ -1,0 +1,152 @@
+.plan-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.plan-card__title {
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1d2e5b;
+
+  &::before {
+    counter-increment: list;
+    content: counter(list) ".";
+    padding-right: 1px;
+    font-weight: 500;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: inherit;
+  }
+}
+
+.plan-card__list {
+  margin: 0 0 22px;
+  padding: 0;
+  list-style: none;
+}
+
+.plan-card__item {
+  margin: 0 0 5px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #1d2e5b;
+}
+
+.plan-card__change {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: fade_out(#000000, 1 - 0.3);
+  transition: $duration;
+
+  &:hover {
+    color: fade_out(#000000, 1 - 0.6);
+  }
+
+  &:active {
+    color: fade_out(#000000, 1 - 0.1);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .plan-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .plan-card__title {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 22px 35px;
+    font-size: 24px;
+    line-height: 50px;
+    border-bottom: 1px solid fade_out(#cbced9, 1 - 0.3);
+
+    &::before {
+      position: absolute;
+      right: 30px;
+      top: 17px;
+      padding-right: 0;
+      font-size: 20px;
+      line-height: 18px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .plan-card__list {
+    display: flex;
+    margin: 0 75px 0 0;
+    padding: 18px 0 0 32px;
+  }
+
+  .plan-card__item {
+    margin: 0;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+
+    &--number-travelers {
+      width: 180px;
+    }
+
+    &--date {
+      width: 190px;
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  .plan-card__change {
+    align-self: flex-end;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plan-card__title {
+    width: 583px;
+    margin: 0;
+    padding: 0 0 0 52px;
+    border-bottom: none;
+
+    &::before {
+      right: auto;
+      left: 0;
+      top: 17px;
+    }
+  }
+
+  .plan-card__list {
+    align-self: flex-start;
+    margin: 17px 115px 0 0;
+    padding: 0;
+  }
+
+  .plan-card__item {
+    &--number-travelers {
+      width: 178px;
+    }
+
+    &--date {
+      text-align: left;
+    }
+  }
+
+  .plan-card__change {
+    align-self: flex-start;
+    margin: 17px 0 0;
+  }
+}

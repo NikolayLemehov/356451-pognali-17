@@ -1,0 +1,262 @@
+.country-item {
+  position: relative;
+
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 50px;
+    bottom: -16px;
+    background: no-repeat 0 0;
+
+    @include bg-image(5px, 10px, "small-arrow.svg");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    right: 49px;
+    top: 17px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid 1px #cbced9;
+  }
+
+  &--selected {
+    &::before {
+      border: none;
+      background-color: #1d2e5b;
+    }
+  }
+
+  &--unselected {
+    .country-item__flag {
+      display: none;
+    }
+  }
+
+  &--active {
+    .country-item__btn2--delete,
+    .country-item__btn-toggle::before,
+    &::before {
+      display: none;
+    }
+
+    .country-item__btn-img,
+    .country-item__dropdown {
+      display: block;
+    }
+
+    .country-item__field-wrap:hover,
+    .country-item__field-wrap {
+      background-color: #1d2e5b;
+      border: 1px solid #1d2e5b;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .country-item__field-text {
+      color: #ffffff;
+    }
+  }
+
+  &--add-country {
+    .country-item__label,
+    .country-item__flag,
+    .country-item__btn-toggle,
+    .country-item__btn2--delete {
+      display: none;
+    }
+
+    .country-item__btn2--add {
+      display: block;
+    }
+
+    .country-item__field-wrap {
+      background-color: #edeff6;
+      border: solid 1px #edeff6;
+
+      &:hover {
+        background-color: #dfe3f0;
+        border: solid 1px #dfe3f0;
+
+        ~ .country-item__btn2--add {
+          opacity: 0.3;
+        }
+      }
+
+      &:active {
+        background-color: #dfe3f0;
+        border: solid 1px #dfe3f0;
+
+        .country-item__field-text {
+          color: fade_out(#1d2e5b, 1 - 0.3);
+        }
+
+        ~ .country-item__btn2--add {
+          opacity: 0.1;
+        }
+      }
+    }
+  }
+}
+
+.country-item__btn-img,
+.country-item__dropdown {
+  display: none;
+}
+
+.country-item__field-wrap {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-grow: 1;
+  width: 168px;
+  height: 42px;
+  padding: 11px 0 8px 10px;
+  border-radius: 4px;
+  border: solid 1px #cbced9;
+  transition: $duration;
+
+  &:hover {
+    border: solid 1px #959bb2;
+  }
+
+  &:hover .country-item__btn-toggle::before {
+    opacity: 0.5;
+  }
+}
+
+.country-item__field-text {
+  display: block;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #1d2e5b;
+  transition: $duration;
+}
+
+.country-item__btn-toggle {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  display: block;
+  background: transparent no-repeat 0 0;
+  border: none;
+
+  @include bg-image(49px, 36px, "fade-vertical.png");
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 13px;
+    top: 15px;
+    background: no-repeat 0 0;
+    opacity: 0.3;
+    transition: $duration;
+
+    @include bg-image(12px, 7px, "dropdown-form-mobile.svg");
+  }
+}
+
+.country-item--active .country-item__btn-toggle {
+  position: absolute;
+  z-index: 2;
+  right: 16px;
+  top: 16px;
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  background: none;
+
+  .country-item__btn-img {
+    display: block;
+    width: 9px;
+    height: 9px;
+    fill: #ffffff;
+  }
+
+  &:hover .country-item__btn-img {
+    fill: fade_out(#ffffff, 1 - 0.5);
+  }
+
+  &:active .country-item__btn-img {
+    fill: fade_out(#ffffff, 1 - 0.2);
+  }
+}
+
+.country-item__flag {
+  position: relative;
+  width: 53px;
+  height: 42px;
+  margin: 0 0 0 -1px;
+  border-radius: 4px;
+  border: solid 1px #cbced9;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 8px;
+    top: 9px;
+    width: 35px;
+    height: 24px;
+    background: no-repeat 0 0;
+  }
+
+  &--bosnia::before {
+    @include bg-simple-image("flag-bosnia.svg");
+  }
+
+  &--czech::before {
+    @include bg-simple-image("flag-czech.svg");
+  }
+}
+
+.country-item__btn2 {
+  position: absolute;
+  z-index: 3;
+  right: -10px;
+  top: -10px;
+  display: block;
+  background-color: transparent;
+  border: none;
+
+  &--delete {
+    width: 21px;
+    height: 21px;
+    background-color: #edeff6;
+    border-radius: 50%;
+
+    .country-item__btn-img {
+      position: absolute;
+      left: 6px;
+      top: 6px;
+      display: block;
+      width: 9px;
+      height: 9px;
+      fill: fade_out(#000000, 1 - 0.3);
+    }
+
+    &:hover .country-item__btn-img {
+      fill: fade_out(#000000, 1 - 0.5);
+    }
+
+    &:active .country-item__btn-img {
+      fill: fade_out(#000000, 1 - 0.2);
+    }
+  }
+
+  &--add {
+    display: none;
+    right: 14px;
+    top: 14px;
+    opacity: 0.2;
+    transition: $duration;
+
+    @include bg-image(14px, 14px, "qty-plus-mobile.svg");
+  }
+}
