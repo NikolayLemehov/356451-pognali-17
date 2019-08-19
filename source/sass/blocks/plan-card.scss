@@ -47,6 +47,15 @@
   text-transform: uppercase;
   text-decoration: none;
   color: fade_out(#000000, 1 - 0.3);
+  transition: $duration;
+
+  &:hover {
+    color: fade_out(#000000, 1 - 0.6);
+  }
+
+  &:active {
+    color: fade_out(#000000, 1 - 0.1);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -138,6 +147,6 @@
 
   .plan-card__change {
     align-self: flex-start;
-    padding: 17px 0 0;
+    margin: 17px 0 0;
   }
 }

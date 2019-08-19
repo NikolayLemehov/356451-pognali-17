@@ -1,0 +1,278 @@
+.form-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: none;
+
+  &--step2 {
+    .form-step__text {
+      margin: 0 0 22px;
+    }
+  }
+}
+
+.form-step__title {
+  margin: 0 0 16px -1px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+  color: #1d2e5b;
+}
+
+.form-step__text {
+  margin: 0 0 21px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+.form-step__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 20px;
+
+  &--number-travelers,
+  &--days {
+    .form-step__input {
+      padding: 0 57px;
+      border: 1px solid #cbced9;
+      border-radius: 4px;
+      transition: $duration;
+
+      &:hover {
+        border: 1px solid #959bb2;
+      }
+
+      &:active {
+        border: 1px solid #161c35;
+      }
+
+      &:focus {
+        border: 1px solid #161c35;
+        outline: none;
+      }
+    }
+  }
+
+  &--with-kids {
+    justify-content: flex-start;
+    margin: 0 0 22px;
+
+    .form-step__label {
+      align-self: flex-start;
+      margin: 7px 0 0;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 15px;
+      letter-spacing: 0;
+      text-transform: none;
+      color: #444444;
+    }
+  }
+
+  &--month {
+    margin: 0 0 16px;
+
+    label {
+      width: 100%;
+    }
+
+    .form-step__input {
+      min-height: 44px;
+      border-left: none;
+      border-right: none;
+      border-top: 1px solid #cbced9;
+      border-bottom: 1px solid #cbced9;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    .form-step__sign-btn {
+      &::before {
+        top: 14px;
+        opacity: 0.3;
+      }
+
+      &:hover::before {
+        opacity: 0.5;
+      }
+
+      &:active::before {
+        opacity: 0.1;
+      }
+    }
+  }
+}
+
+.form-step__label {
+  margin: 0 -1px 9px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #1d2e5b;
+
+  &--units {
+    color: fade_out(#1d2e5b, 1 - 0.3);
+  }
+}
+
+.form-step__input-wrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.form-step__input {
+  width: 100%;
+  min-height: 43px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 13.5px;
+  text-align: center;
+  color: #1d2e5b;
+}
+
+.form-step__sign-btn {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border: none;
+  width: 42px;
+  background-color: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: no-repeat 0 0;
+    opacity: 0.2;
+    transition: $duration;
+  }
+
+  &:hover::before {
+    opacity: 0.4;
+  }
+
+  &:active::before {
+    opacity: 0.1;
+  }
+
+  &--minus {
+    left: 0;
+
+    &::before {
+      left: 14px;
+      top: 21px;
+
+      @include bg-image(14px, 2px, "qty-minus-mobile.svg");
+    }
+  }
+
+  &--plus {
+    right: 0;
+
+    &::before {
+      right: 14px;
+      top: 15px;
+
+      @include bg-image(14px, 14px, "qty-plus-mobile.svg");
+    }
+  }
+
+  &--left {
+    left: 0;
+
+    &::before {
+      left: 0;
+
+      @include bg-image(9px, 18px, "month-arrow-left.svg");
+    }
+  }
+
+  &--right {
+    right: 0;
+
+    &::before {
+      right: 0;
+
+      @include bg-image(9px, 18px, "month-arrow-right.svg");
+    }
+  }
+}
+
+.form-step__icon-checkbox {
+  position: relative;
+  top: 1px;
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin: 0 13px 0 0;
+  border-radius: 4px;
+  border: solid 1px #cbced9;
+  transition: $duration;
+}
+
+.form-step__input-checkbox:checked ~ .form-step__icon-checkbox::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  background: no-repeat 0 0;
+
+  @include bg-image(9px, 9px, "tick.svg");
+}
+
+.form-step__input-checkbox:checked:active ~ .form-step__icon-checkbox::before {
+  opacity: 0.3;
+}
+
+.form-step__input-checkbox:hover ~ .form-step__icon-checkbox {
+  border: solid 1px #959bb2;
+}
+
+.form-step__input-checkbox:active ~ .form-step__icon-checkbox {
+  background-color: #e2e5f1;
+  border-color: #e2e5f1;
+}
+
+.form-step__calendar-wrap {
+  width: 100%;
+  margin: 0 0 22px;
+}
+
+.form-step__btn-main {
+  $shift-width: 10px;
+  position: relative;
+  width: calc(100% + #{$shift-width});
+  margin-left: $shift-width / -2;
+  text-align: center;
+
+  &--back {
+    align-self: center;
+    width: auto;
+    margin: 11px 0 0 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #161c35;
+    transition: $duration;
+
+    &:hover {
+      color: fade_out(#161c35, 1 - 0.7);
+    }
+
+    &:active {
+      color: fade_out(#161c35, 1 - 0.3);
+    }
+  }
+}
