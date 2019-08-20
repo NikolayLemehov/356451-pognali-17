@@ -1,5 +1,6 @@
 .add-plan {
   padding-top: 28px;
+  padding-bottom: 64px;
   background-color: #d4d9eb;
 }
 
@@ -11,6 +12,10 @@
   border-radius: 10px;
 
   &--step2 {
+    padding-bottom: 11px;
+  }
+
+  &--step3 {
     padding-bottom: 11px;
   }
 }

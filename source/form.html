@@ -133,7 +133,7 @@
         </nav>
       </div>
     </header>
-    <main class="page-main">
+    <main class="page-main page-main--form">
       <div class="page-main__title">
         <h1 class="page-main__title-text">Направления</h1>
         <a class="page-main__return" href="index.html">На главную</a>
@@ -243,7 +243,7 @@
         <h2 class="add-plan__title">Добавить план:</h2>
         <form class="add-plan__form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="add-plan__item add-plan__item--step1" id="step1">
-            <div class="add-plan__fieldset-inner form-step">
+            <div class="add-plan__fieldset-inner form-step--step1">
               <h3 class="form-step__title">Шаг 1.<br> Даты пребывания</h3>
               <p class="form-step__text">
                 Укажите предпочтительное количество попутчиков, которых
@@ -438,7 +438,7 @@
                     <span class="visually-hidden">Добавить позицию</span>
                   </button>
                 </li>
-                <li class="country-list__item country-item country-item--unselected country-item--active">
+                <li class="country-list__item country-item country-item--unselected">
                   <div class="country-item__field-wrap">
                     <label class="country-item__label visually-hidden">
                       <span class="visually-hidden">Выбор страны</span>
@@ -550,31 +550,37 @@
               <a class="form-step__btn-main form-step__btn-main--back" href="#step1">На шаг назад</a>
             </div>
           </fieldset>
-          <fieldset class="add-plan__item form-step entertainment" id="step3">
-            <h3 class="form-step__title">Шаг 3.<br> Развлечения</h3>
-            <p class="form-step__text">
-              Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
-            </p>
-            <ul class="entertainment-list">
-              <li class="entertainment-list__item">
-                <label class="entertainment-list__label" for="entertainment-country-1">Босния и герцеговина</label>
-                <textarea class="entertainment-list__textarea" id="entertainment-country-1"
-                          name="entertainment-country-1" cols="30" rows="10" placeholder="План действий"></textarea>
-              </li>
-              <li class="entertainment-list__item">
-                <label class="entertainment-list__label" for="entertainment-country-2">Чехословакия</label>
-                <textarea class="entertainment-list__textarea" id="entertainment-country-2"
-                          name="entertainment-country-2" cols="30" rows="10"
-                          placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
-              </li>
-            </ul>
-            <button class="form-step__btn form-step__btn--main form-step__btn--main--submit" type="submit">Отправить</button>
-            <button class="form-step__btn form-step__btn--back">На шаг назад</button>
+          <fieldset class="add-plan__item add-plan__item--step3" id="step3">
+            <div class="add-plan__fieldset-inner form-step form-step--step3">
+              <h3 class="form-step__title">Шаг 3.<br> Развлечения</h3>
+              <p class="form-step__text">
+                Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+              </p>
+              <ul class="entertainment-list">
+                <li class="entertainment-list__item">
+                  <label class="entertainment-list__label entertainment-list__label--bosnia" for="entertainment-country-1">
+                    <span class="entertainment-list__label-cut">Босния и герцеговина</span>
+                  </label>
+                  <textarea class="entertainment-list__textarea" id="entertainment-country-1"
+                    name="entertainment-country-1" cols="28" rows="4" placeholder="План действий"></textarea>
+                </li>
+                <li class="entertainment-list__item">
+                  <label class="entertainment-list__label entertainment-list__label--czech" for="entertainment-country-2">
+                    <span class="entertainment-list__label-cut">Чехословакия</span>
+                  </label>
+                  <textarea class="entertainment-list__textarea" id="entertainment-country-2"
+                    name="entertainment-country-2" cols="28" rows="4"
+                    placeholder="План действий">Пить пиво и лазить по&#160;старым замкам, наслаждаться аритектурой и вот это все.</textarea>
+                </li>
+              </ul>
+              <button class="btn btn--3 form-step__btn-main form-step__btn-main--next" type="submit">Отправить</button>
+              <a class="form-step__btn-main form-step__btn-main--back" href="#step2">На шаг назад</a>
+            </div>
           </fieldset>
         </form>
       </section>
     </main>
-    <footer class="page-footer page-footer--main">
+    <footer class="page-footer page-footer--form">
       <a class="page-footer__logo" href="index.html">
         <picture>
           <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">

@@ -5,10 +5,16 @@
   background-color: #ffffff;
   border: none;
 
-  &--step2 {
-    .form-step__text {
-      margin: 0 0 22px;
-    }
+  &--step1 .form-step__text {
+    margin: 0 0 21px;
+  }
+
+  &--step2 .form-step__text {
+    margin: 0 0 22px;
+  }
+
+  &--step3 .form-step__text {
+    margin: 0 0 23px;
   }
 }
 
