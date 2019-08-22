@@ -247,7 +247,7 @@
               <h3 class="form-step__title">Шаг 1.<br> Даты пребывания</h3>
               <p class="form-step__text">
                 Укажите предпочтительное количество попутчиков, которых
-                вы хотели бы позвать в поездку и ее предполагаемую длительность.
+                <span class="nowrap">вы хотели бы</span> позвать в поездку и ее предполагаемую длительность.
               </p>
               <p class="form-step__wrap form-step__wrap--number-travelers">
                 <label class="form-step__label form-step__label--text" for="field-number-travelers">Ищу попутчиков:</label>
@@ -285,6 +285,10 @@
                 <span class="form-step__input-wrap">
                   <button class="form-step__sign-btn form-step__sign-btn--left" type="button">
                     <span class="visually-hidden">Стрелка влево</span>
+                    <svg class="form-step__img"
+                      width="9" height="18">
+                      <use xlink:href="#icon-month-arrow-left"></use>
+                    </svg>
                   </button>
                   <label>
                     <span class="visually-hidden">Месяц календаря</span>
@@ -292,6 +296,10 @@
                   </label>
                   <button class="form-step__sign-btn form-step__sign-btn--right" type="button">
                     <span class="visually-hidden">Стрелка вправо</span>
+                    <svg class="form-step__img"
+                      width="9" height="18">
+                      <use xlink:href="#icon-month-arrow-right"></use>
+                    </svg>
                   </button>
                 </span>
               </p>
@@ -318,8 +326,8 @@
                     <td class="calendar__cell calendar__cell--past">26</td>
                     <td class="calendar__cell calendar__cell--past">27</td>
                     <td class="calendar__cell calendar__cell--past">28</td>
-                    <td class="calendar__cell calendar__cell--past">1</td>
-                    <td class="calendar__cell calendar__cell--past">2</td>
+                    <td class="calendar__cell calendar__cell--past">1<span> мар</span></td>
+                    <td class="calendar__cell calendar__cell--past">1<span> мар</span></td>
                   </tr>
                   <tr>
                     <td class="calendar__cell calendar__cell--past">3</td>
@@ -352,9 +360,9 @@
                     <td class="calendar__cell calendar__cell--past">23</td>
                     <td class="calendar__cell calendar__cell--past">24</td>
                     <td class="calendar__cell calendar__cell--past">25</td>
-                    <td class="calendar__cell calendar__cell--future calendar__cell--mark calendar__cell--today">26</td>
+                    <td class="calendar__cell calendar__cell--future calendar__cell--mark calendar__cell--today">26<span><br>Заезд</span></td>
                     <td class="calendar__cell calendar__cell--future calendar__cell--mark">27</td>
-                    <td class="calendar__cell calendar__cell--future calendar__cell--mark">28</td>
+                    <td class="calendar__cell calendar__cell--future calendar__cell--mark">28<span><br>Выезд</span></td>
                     <td class="calendar__cell calendar__cell--future">29</td>
                   </tr>
                   <tr>
@@ -571,7 +579,7 @@
                     placeholder="План действий">Пить пиво и лазить по&#160;старым замкам, наслаждаться&#160;аритектурой и вот это все.</textarea>
                 </li>
               </ul>
-              <button class="btn btn--3 form-step__btn-main form-step__btn-main--next" type="submit">Следующий шаг</button>
+              <button class="btn btn--3 form-step__btn-main form-step__btn-main--next" type="submit">Отправить</button>
               <a class="form-step__btn-main form-step__btn-main--back" href="#step2">На шаг назад</a>
             </div>
           </fieldset>

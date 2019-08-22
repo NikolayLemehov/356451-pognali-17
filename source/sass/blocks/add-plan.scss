@@ -66,11 +66,12 @@
 @media (min-width: $desktop-width) {
   .add-plan {
     //padding-top: 46px;
-    //padding-bottom: 118px;
+    padding-bottom: 123px;
   }
 
   .add-plan__title {
     //margin: 0 0 52px;
+    padding: 0 0 0 70px;
     //font-weight: 700;
     //font-size: 36px;
     //line-height: 50px;
@@ -79,17 +80,17 @@
   }
 
   .add-plan__item {
-    //margin: 0 0 40px;
-    //padding: 45px 44px;
-    //border-radius: 30px;
+    margin: 0 0 44px;
+    padding: 96px 160px 105px;
+    border-radius: 60px;
 
     &--step1 {
-      //padding-bottom: 55px;
+      //padding-bottom: 105px;
     }
 
     &--step2 {
       //padding-bottom: 53px;
-      //margin-bottom: 51px;//временно, не совпадает с первым
+      margin-bottom: 45px;//временно, не совпадает с первым
     }
 
     &--step3 {
