@@ -91,15 +91,12 @@
 
   .page-footer__logo {
     margin: -2px 0 0 0;
-    //width: 198px;
-    //height: 52px;
-
-    //@include bg-image(198px, 52px, "logo-desktop-blue@1x.png");
   }
 
-  //.page-footer__logo-image {
-  //
-  //}
+  .page-footer__logo-image {
+    width: 198px;
+    height: 52px;
+  }
 
   .page-footer__social-list {
     margin: 1px 44px 0 0;
