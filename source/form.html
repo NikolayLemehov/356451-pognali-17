@@ -243,7 +243,7 @@
         <h2 class="add-plan__title">Добавить план:</h2>
         <form class="add-plan__form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="add-plan__item add-plan__item--step1" id="step1">
-            <div class="add-plan__fieldset-inner form-step--step1">
+            <div class="add-plan__fieldset-inner form-step form-step--step1">
               <h3 class="form-step__title">Шаг 1.<br> Даты пребывания</h3>
               <p class="form-step__text">
                 Укажите предпочтительное количество попутчиков, которых
@@ -304,13 +304,13 @@
                 </label>
                 <table class="form-step__calendar calendar">
                   <tr>
-                    <th class="calendar__cell calendar__cell--day-week">П</th>
-                    <th class="calendar__cell calendar__cell--day-week">В</th>
-                    <th class="calendar__cell calendar__cell--day-week">С</th>
-                    <th class="calendar__cell calendar__cell--day-week">Ч</th>
-                    <th class="calendar__cell calendar__cell--day-week">П</th>
-                    <th class="calendar__cell calendar__cell--day-week-end">С</th>
-                    <th class="calendar__cell calendar__cell--day-week-end">В</th>
+                    <th class="calendar__cell calendar__cell--day-week">П<span>н</span></th>
+                    <th class="calendar__cell calendar__cell--day-week">В<span>т</span></th>
+                    <th class="calendar__cell calendar__cell--day-week">С<span>р</span></th>
+                    <th class="calendar__cell calendar__cell--day-week">Ч<span>т</span></th>
+                    <th class="calendar__cell calendar__cell--day-week">П<span>т</span></th>
+                    <th class="calendar__cell calendar__cell--day-week-end">С<span>б</span></th>
+                    <th class="calendar__cell calendar__cell--day-week-end">В<span>с</span></th>
                   </tr>
                   <tr>
                     <td class="calendar__cell calendar__cell--past">24</td>
@@ -375,10 +375,10 @@
             <div class="add-plan__fieldset-inner form-step form-step--step2">
               <h3 class="form-step__title">Шаг 2.<br> Маршрут</h3>
               <p class="form-step__text">
-                Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
+                Укажите страны, которые вы хотели по посетить. <br>Это может быть одна или сразу несколько.
               </p>
-              <ul class="form-step__country-list country-list">
-                <li class="country-list__item country-item country-item--selected">
+              <ul class="form-step__country-list1 country-list1">
+                <li class="country-list1__item country-item country-item--selected">
                   <div class="country-item__field-wrap">
                     <label class="country-item__label visually-hidden">
                       <span class="visually-hidden">Выбор страны</span>
@@ -387,7 +387,7 @@
                         <option value="country-2">Чехословакия</option>
                       </select>
                     </label>
-                    <span class="country-item__field-text">Босния и герцегов</span>
+                    <span class="country-item__field-text">Босния и герцеговина</span>
                     <button class="country-item__btn-toggle" type="button">
                       <span class="visually-hidden">Список стран</span>
                       <svg class="country-item__btn-img"
@@ -408,7 +408,7 @@
                     <span class="visually-hidden">Добавить позицию</span>
                   </button>
                 </li>
-                <li class="country-list__item country-item country-item--selected">
+                <li class="country-list1__item country-item country-item--selected">
                   <div class="country-item__field-wrap">
                     <label class="country-item__label visually-hidden">
                       <span class="visually-hidden">Выбор страны</span>
@@ -438,7 +438,7 @@
                     <span class="visually-hidden">Добавить позицию</span>
                   </button>
                 </li>
-                <li class="country-list__item country-item country-item--unselected">
+                <li class="country-list1__item country-item country-item--unselected"><!--for open menu add class "country-item--active"-->
                   <div class="country-item__field-wrap">
                     <label class="country-item__label visually-hidden">
                       <span class="visually-hidden">Выбор страны</span>
@@ -467,55 +467,53 @@
                   <button class="country-item__btn2 country-item__btn2--add" type="button">
                     <span class="visually-hidden">Добавить позицию</span>
                   </button>
-                  <div class="country-item__dropdown country-dropdown">
-                    <ul class="country-dropdown__list">
-                      <li class="country-dropdown__item country-dropdown__item--letter country-dropdown__item--letter--active">А</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Б</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">В</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Г</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Д</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Е</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Ё</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Ж</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">З</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">И</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Й</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">К</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Л</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">М</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Н</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">О</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">П</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Р</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">С</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Т</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">У</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Ф</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Х</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Ц</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Ч</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Ш</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Щ</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Э</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Ю</li>
-                      <li class="country-dropdown__item country-dropdown__item--letter">Я</li>
-                      <li class="country-dropdown__item country-dropdown__item--county-list">
-                        <ul>
-                          <li>Афганистан</li>
-                          <li>Албания</li>
-                          <li>Алгерия</li>
-                          <li>Андорра</li>
-                          <li>Аргентина</li>
-                          <li>Армения</li>
-                          <li>Австралия</li>
-                          <li>Австрия</li>
-                          <li>Азербайджанм</li>
-                        </ul>
-                      </li>
+                  <div class="country-item__dropdown alphabet">
+                    <ul class="alphabet__list">
+                      <li class="alphabet__item alphabet__item--active">А</li>
+                      <li class="alphabet__item">Б</li>
+                      <li class="alphabet__item">В</li>
+                      <li class="alphabet__item">Г</li>
+                      <li class="alphabet__item">Д</li>
+                      <li class="alphabet__item">Е</li>
+                      <li class="alphabet__item">Ё</li>
+                      <li class="alphabet__item">Ж</li>
+                      <li class="alphabet__item">З</li>
+                      <li class="alphabet__item">И</li>
+                      <li class="alphabet__item">Й</li>
+                      <li class="alphabet__item">К</li>
+                      <li class="alphabet__item">Л</li>
+                      <li class="alphabet__item">М</li>
+                      <li class="alphabet__item">Н</li>
+                      <li class="alphabet__item">О</li>
+                      <li class="alphabet__item">П</li>
+                      <li class="alphabet__item">Р</li>
+                      <li class="alphabet__item">С</li>
+                      <li class="alphabet__item">Т</li>
+                      <li class="alphabet__item">У</li>
+                      <li class="alphabet__item">Ф</li>
+                      <li class="alphabet__item">Х</li>
+                      <li class="alphabet__item">Ц</li>
+                      <li class="alphabet__item">Ч</li>
+                      <li class="alphabet__item">Ш</li>
+                      <li class="alphabet__item">Щ</li>
+                      <li class="alphabet__item">Э</li>
+                      <li class="alphabet__item">Ю</li>
+                      <li class="alphabet__item">Я</li>
+                    </ul>
+                    <ul class="country-list2 country-list2--outside">
+                      <li class="country-list2__item">Афганистан</li>
+                      <li class="country-list2__item">Албания</li>
+                      <li class="country-list2__item">Алгерия</li>
+                      <li class="country-list2__item">Андорра</li>
+                      <li class="country-list2__item">Аргентина</li>
+                      <li class="country-list2__item">Армения</li>
+                      <li class="country-list2__item">Австралия</li>
+                      <li class="country-list2__item">Австрия</li>
+                      <li class="country-list2__item">Азербайджанм</li>
                     </ul>
                   </div>
                 </li>
-                <li class="country-list__item country-item country-item--add-country">
+                <li class="country-list1__item country-item country-item--add-country">
                   <div class="country-item__field-wrap">
                     <label class="country-item__label visually-hidden">
                       <span class="visually-hidden">Выбор страны</span>
@@ -554,7 +552,7 @@
             <div class="add-plan__fieldset-inner form-step form-step--step3">
               <h3 class="form-step__title">Шаг 3.<br> Развлечения</h3>
               <p class="form-step__text">
-                Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+                Наконец, расскажите о своих планах времяпровождения. <br>Можно писать в свободной форме и ставить тэги.
               </p>
               <ul class="entertainment-list">
                 <li class="entertainment-list__item">
@@ -570,10 +568,10 @@
                   </label>
                   <textarea class="entertainment-list__textarea" id="entertainment-country-2"
                     name="entertainment-country-2" cols="28" rows="4"
-                    placeholder="План действий">Пить пиво и лазить по&#160;старым замкам, наслаждаться аритектурой и вот это все.</textarea>
+                    placeholder="План действий">Пить пиво и лазить по&#160;старым замкам, наслаждаться&#160;аритектурой и вот это все.</textarea>
                 </li>
               </ul>
-              <button class="btn btn--3 form-step__btn-main form-step__btn-main--next" type="submit">Отправить</button>
+              <button class="btn btn--3 form-step__btn-main form-step__btn-main--next" type="submit">Следующий шаг</button>
               <a class="form-step__btn-main form-step__btn-main--back" href="#step2">На шаг назад</a>
             </div>
           </fieldset>

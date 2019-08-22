@@ -49,14 +49,16 @@
     right: 0;
     top: -3px;
     background: no-repeat 0 0;
+    width: 35px;
+    height: 24px;
   }
 
   &--bosnia::after {
-    @include bg-image(35px, 24px, "flag-bosnia.svg");
+    @include bg-simple-image("flag-bosnia.svg");
   }
 
   &--czech::after {
-    @include bg-image(35px, 24px, "flag-czech.svg");
+    @include bg-simple-image("flag-czech.svg");
   }
 
   &::before {
@@ -104,4 +106,66 @@
   font-size: 16px;
   line-height: 22px;
   color: fade_out(#444444, 1 - 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .entertainment-list {
+    width: 500px;
+  }
+
+  .entertainment-list__item {
+    padding: 0 0 50px;
+
+    &::before {
+      display: none;
+    }
+
+    &:not(:last-child)::after {
+      left: auto;
+      right: -28px;
+      top: 17px;
+      width: 3px;
+      height: calc(100% - 5px);
+    }
+  }
+
+  .entertainment-list__label {
+    margin: 0 0 39px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+
+    &::after {
+      right: 1px;
+      top: -6px;
+      width: 70px;
+      height: 47px;
+    }
+
+    &::before {
+      left: auto;
+      right: -34px;
+      top: 10px;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .entertainment-list__label-cut {
+    width: 376px;
+    margin: 0;
+  }
+
+  .entertainment-list__textarea {
+    min-height: 142px;
+    padding: 15px 14px 5px 18px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .entertainment-list__textarea::placeholder {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

@@ -1,0 +1,46 @@
+.country-list1 {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+}
+
+.country-list1__item {
+  display: flex;
+  margin: 0 0 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .country-list1 {
+    $line-shift-y: 44px;
+    position: relative;
+    padding: 41px 0 0;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      right: 135px;
+    }
+
+    &::after {
+      top: 0;
+      width: 1px;
+      height: calc(100% - #{$line-shift-y});
+      background-color: #d6d9e6;
+    }
+
+    &::before {
+      bottom: $line-shift-y;
+      transform: translateY(100%);
+      width: 1px;
+      height: 106px;
+
+      @include bg-image(1px, 106px, "line fade.png");
+    }
+  }
+
+  .country-list1__item {
+    margin: 0 0 15px;
+  }
+}

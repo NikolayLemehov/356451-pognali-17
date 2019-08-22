@@ -3,7 +3,6 @@
   border-collapse: collapse;
 }
 
-
 .calendar__cell {
   height: 31px;
   font-weight: 400;
@@ -15,6 +14,10 @@
 
   &--day-week {
     border: none;
+
+    span {
+      display: none;
+    }
   }
 
   &--day-week-end {
@@ -47,6 +50,56 @@
       height: calc(100% + 2px);
       border: solid 2px #ff5c23;
       border-radius: 1px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .calendar {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th.calendar__cell {
+    height: 35px;
+  }
+
+  .calendar__cell {
+    width: calc(100% / 7);
+    height: 69px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+
+    &--day-week {
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: 1.8px;
+      color: #444444;
+
+      span {
+        display: inline;
+      }
+    }
+
+    &--past {
+      color: fade_out(#1d2e5b, 1 - 0.3);
+    }
+
+    &--future {
+      color: #1d2e5b;
+    }
+
+    &--mark {
+      color: #ffffff;
+    }
+
+    &--today::before {
+      top: -2px;
+      height: calc(100% + 4px);
+      border: solid 4px #ff5c23;
+      border-radius: 2px;
     }
   }
 }
