@@ -556,55 +556,20 @@
 
 @media (min-width: $desktop-width) {
   .form-step {
-    //flex-direction: row;
-    //flex-wrap: wrap;
-    //justify-content: space-between;
-
     .form-step__text {
       padding-bottom: 56px;
     }
 
     &--step1 {
-      .form-step__title {
-        //order: 1;
-      }
-
       .form-step__text {
-        //order: 2;
         margin: 0 0 30px;
       }
 
       .form-step__wrap {
         &--number-travelers {
-          //order: 3;
           margin: 0 0 14px;
         }
-
-        &--with-kids {
-          //order: 4;
-        }
-
-        &--days {
-          //order: 5;
-          //margin: 0 0 59px;
-        }
-
-        &--month {
-          //order: 6;
-        }
       }
-
-      .form-step__calendar-wrap {
-        //order: 7;
-      }
-
-      .form-step__btn-main--next {
-        //order: 8;
-      }
-    }
-
-    &--step2 .form-step__text {
-      //margin: 0;
     }
 
     &--step3 .form-step__text {
@@ -614,7 +579,6 @@
 
   .form-step__wrap {
     width: auto;
-    //margin: 0 0 10px;
 
     &--number-travelers,
     &--days {
@@ -627,7 +591,6 @@
 
       .form-step__input {
         width: 181px;
-        //padding: 0 75px;
       }
 
       .form-step__label--units {
@@ -644,33 +607,11 @@
       margin: 0;
       padding: 0;
       border-bottom: none;
-
-      .form-step__label {
-        //margin: 2px 0 0;
-        //font-weight: 500;
-        //font-size: 20px;
-        //line-height: 18px;
-        //letter-spacing: 2px;
-        //text-align: left;
-        //text-transform: uppercase;
-        //color: #1d2e5b;
-      }
     }
 
     &--month {
       width: 100%;
-      //min-height: 87px;
       margin: 0 0 9px;
-
-      .form-step__input {
-        //min-height: 87px;
-        //border-top: 1px solid #d6d9e6;
-        //border-bottom: 1px solid #d6d9e6;
-        //font-size: 36px;
-        //line-height: normal;
-        //letter-spacing: -0.4px;
-        //color: #1d2e5b;
-      }
 
       .form-step__img {
         fill: #231f20;
@@ -694,12 +635,7 @@
   }
 
   .form-step__title {
-    //width: 100%;
-    //margin-bottom: 35px;
     padding: 0 280px 0 0;
-    //font-size: 36px;
-    //line-height: 36px;
-    //letter-spacing: -0.2px;
 
     br {
       display: none;
@@ -707,25 +643,12 @@
   }
 
   .form-step__text {
-    //width: 100%;
     padding: 0 390px 56px 0;
-    //font-size: 20px;
-    //line-height: 24px;
-    //color: #444444;
-    //border-bottom: 1px solid #d6d9e6;
-
-    br {
-      //display: inline;
-    }
   }
 
   .form-step__label {
     align-self: center;
     margin: 0;
-    //margin: 0 -1px 26px;
-    //font-size: 20px;
-    //line-height: 18px;
-    //letter-spacing: 1.9px;
 
     &--units {
       color: #1d2e5b;
@@ -736,43 +659,10 @@
     width: 220px;
   }
 
-  .form-step__input {
-    //min-height: 70px;
-    //font-size: 20px;
-    //line-height: 18px;
-    //letter-spacing: 2px;
-  }
-
   .form-step__sign-btn {
-    //width: 61px;
-
     &--minus::before {
       left: 20px;
-      //top: 34px;
-
-      //@include bg-image(20px, 2px, "qty-minus.svg");
     }
-
-    &--plus::before {
-      //right: 19px;
-      //top: 25px;
-
-      //@include bg-image(20px, 20px, "qty-plus.svg");
-    }
-  }
-
-  .form-step__icon-checkbox {
-    //top: -6px;
-    //width: 36px;
-    //height: 36px;
-    //margin: 0 22px 0 0;
-  }
-
-  .form-step__input-checkbox:checked ~ .form-step__icon-checkbox::before {
-    //left: 12px;
-    //top: 11px;
-    //width: 12px;
-    //height: 12px;
   }
 
   .form-step__calendar-wrap {
@@ -780,62 +670,12 @@
   }
 
   .form-step__country-list1 {
-    //width: 100%;
     margin: 0 0 40px;
   }
 
-  button.form-step__btn-main--next {
-    //padding-top: 21px;
-  }
-
   .form-step__btn-main {
-    &--next {
-      //width: 285px;
-      //height: 81px;
-      //border-radius: 20px;
-      //margin: 0;
-      //padding: 28px 29px 22px 33px;
-      //text-transform: none;
-      //font-size: 24px;
-      //line-height: 24px;
-      //text-align: left;
-
-      &::after {
-        //display: block;
-      }
-
-      &:active::after {
-        //border-left-color: fade_out(#1d2e5b, 1 - 0.3);
-      }
-    }
-
     &--back {
-      //width: auto;
       margin: 0 2px 0 0;
-      //padding: 0 0 0 40px;
-      //font-size: 24px;
-      //line-height: 24px;
-      //text-transform: none;
-      //color: #1d2e5b;
-
-      &::after {
-        //content: "";
-        //position: absolute;
-        //top: 50%;
-        //left: 0;
-        //border: 7px solid transparent;
-        //border-right: 10px solid #1d2e5b;
-        //transform: translateY(-50%);
-        //transition: $duration;
-      }
-
-      &:hover::after {
-        //border-right-color: fade_out(#1d2e5b, 1 - 0.7);
-      }
-
-      &:active::after {
-        //border-right-color: fade_out(#1d2e5b, 1 - 0.3);
-      }
     }
   }
 }

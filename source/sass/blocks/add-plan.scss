@@ -65,18 +65,11 @@
 
 @media (min-width: $desktop-width) {
   .add-plan {
-    //padding-top: 46px;
     padding-bottom: 123px;
   }
 
   .add-plan__title {
-    //margin: 0 0 52px;
     padding: 0 0 0 70px;
-    //font-weight: 700;
-    //font-size: 36px;
-    //line-height: 50px;
-    //letter-spacing: -0.1px;
-    //color: #1d2e5b;
   }
 
   .add-plan__item {
@@ -84,17 +77,8 @@
     padding: 96px 160px 105px;
     border-radius: 60px;
 
-    &--step1 {
-      //padding-bottom: 105px;
-    }
-
     &--step2 {
-      //padding-bottom: 53px;
       margin-bottom: 45px;//временно, не совпадает с первым
-    }
-
-    &--step3 {
-      //padding-bottom: 53px;
     }
   }
 }
