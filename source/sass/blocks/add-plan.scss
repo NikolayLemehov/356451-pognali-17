@@ -2,6 +2,18 @@
   padding-top: 28px;
   padding-bottom: 64px;
   background-color: #d4d9eb;
+
+  &--active1 .add-plan__item--step1 .add-plan__indicate {
+    display: flex;
+  }
+
+  &--active2 .add-plan__item--step2 .add-plan__indicate {
+    display: flex;
+  }
+
+  &--active3 .add-plan__item--step3 .add-plan__indicate {
+    display: flex;
+  }
 }
 
 .add-plan__item {
@@ -11,12 +23,66 @@
   background-color: #ffffff;
   border-radius: 10px;
 
+  &--step1 .add-plan__indicate-item:nth-child(1) {
+    color: #000000;
+
+    &::before {
+      background-color: #1d2e5b;
+    }
+  }
+
   &--step2 {
     padding-bottom: 11px;
+
+    .add-plan__indicate-item:nth-child(2) {
+      color: #000000;
+
+      &::before {
+        background-color: #1d2e5b;
+      }
+    }
   }
 
   &--step3 {
     padding-bottom: 11px;
+
+    .add-plan__indicate-item:nth-child(3) {
+      color: #000000;
+
+      &::before {
+        background-color: #1d2e5b;
+      }
+    }
+  }
+}
+
+.add-plan__indicate {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  right: 43px;
+  top: 39px;
+  list-style: none;
+  height: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.add-plan__indicate-item {
+  position: relative;
+  margin: 0 0 0 21px;
+  padding: 0;
+  font-size: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5px;
+    height: 5px;
+    background-color: fade_out(#808285, 1 - 0.3);
+    border-radius: 50%;
   }
 }
 
@@ -54,18 +120,31 @@
 
     &--step2 {
       padding-bottom: 53px;
-      margin-bottom: 51px;//временно, не совпадает с первым
+      margin-bottom: 51px; //временно, не совпадает с первым
     }
 
     &--step3 {
       padding-bottom: 53px;
     }
   }
+
+  .add-plan__indicate {
+    right: 75px;
+    top: 69px;
+  }
+
+  .add-plan__indicate-item {
+    margin: 0 0 0 34px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .add-plan {
     padding-bottom: 123px;
+
+    .add-plan__item .add-plan__indicate {
+      display: block;
+    }
   }
 
   .add-plan__title {
@@ -73,12 +152,35 @@
   }
 
   .add-plan__item {
+    position: relative;
     margin: 0 0 44px;
     padding: 96px 160px 105px;
     border-radius: 60px;
 
     &--step2 {
-      margin-bottom: 45px;//временно, не совпадает с первым
+      margin-bottom: 45px; //временно, не совпадает с первым
+    }
+  }
+
+  .add-plan__indicate {
+    right: 206px;
+    top: 106px;
+  }
+
+  .add-plan__indicate-item {
+    margin: 0 0 24px;
+    padding: 0 0 0 41px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: fade_out(#000000, 1 - 0.6);
+
+    &::before {
+      right: auto;
+      left: 0;
+      top: 9px;
     }
   }
 }
