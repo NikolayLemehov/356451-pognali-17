@@ -1,10 +1,11 @@
 .alphabet {
   position: absolute;
   z-index: 10;
-  left: 0;
-  bottom: 0;
+  left: -1px;
+  bottom: -1px;
   transform: translateY(100%);
-  width: 100%;
+  flex-wrap: wrap;
+  width: calc(100% + 2px);
   padding: 0 0 16px;
   background-color: #ffffff;
   box-shadow: 0 20px 50px 0 fade_out(#1d2e5b, 1 - 0.1);
@@ -14,18 +15,32 @@
   border-radius: 0 0 10px 10px;
 }
 
+.choose-country .alphabet {
+  padding: 10px 50px 5px;
+  background-color: #e2e5f2;
+  box-shadow: none;
+  border: none;
+  border-radius: 0 0 20px 20px;
+}
+
 .alphabet__list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0 -1px 0 -1px;
+  margin: 0 -1.1px 0 0;
   padding: 0;
+  overflow: hidden;
+}
+
+.choose-country .alphabet__list {
+  margin: 0;
+  background-color: #ffffff;
 }
 
 .alphabet__item {
-  width: 44px;
-  height: 41px;
-  margin: 0;
+  width: calc((100% + 5px) / 5);
+  height: 42px;
+  margin: -1px 0 0 -1px;
   padding: 11px 0 10px 2px;
   font-weight: 500;
   font-size: 14px;
@@ -33,13 +48,17 @@
   letter-spacing: 1.4px;
   text-align: center;
   color: #1d2e5b;
-  border-left: solid 1px #cbced9;
-  border-right: solid 0 #cbced9;
-  border-bottom: solid 1px #cbced9;
+  border: 1px solid #cbced9;
 
   &--active {
     background-color: #edeff6;
   }
+}
+
+.choose-country .alphabet__item {
+  width: calc((100% + 5px) / 5);
+  margin: -1px 0 0 -1px;
+  border: 1px solid #cbced9;
 }
 
 .country-list2 {
@@ -60,23 +79,21 @@
 
 @media (min-width: $tablet-width) {
   .alphabet {
-    width: calc(100% + 45px);
+    width: calc(100% + 207px);
     padding: 0;
     border: none;
   }
 
   .alphabet__list {
-    width: 370px;
-    padding: 35px 28px 36px 29px;
+    width: 369px;
+    padding: 35px 27px 36px;
     border-right: 1px solid fade_out(#d6d9e6, 1 - 0.5);
   }
 
   .alphabet__item {
-    width: 53px;
+    width: calc((100% + 6px) / 6);
     height: 70px;
-    margin: -1px 0 0 -1px;
     padding: 25px 0 10px 5px;
-    border: 1px solid #cbced9;
     font-size: 20px;
     letter-spacing: 2px;
 
@@ -97,5 +114,23 @@
   .country-list2__item {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .alphabet {
+    width: calc(100% + 2px);
+  }
+
+  .alphabet__list {
+    width: 490px;
+    margin: 0;
+    padding: 34px 26px 17px 12px;
+  }
+
+  .alphabet__item {
+    width: calc((100% - 15px * 6) / 6);
+    margin: 0 0 15px 15px;
+    border-radius: 4px;
   }
 }

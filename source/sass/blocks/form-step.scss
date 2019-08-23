@@ -14,8 +14,7 @@
   }
 
   &--step3 .form-step__text {
-    margin: 0 0 34px;
-    padding-bottom: 35px;
+    margin: 0 0 23px;
   }
 }
 
@@ -353,6 +352,11 @@
 
     &--step2 .form-step__text {
       margin: 0;
+      padding-bottom: 35px;
+    }
+
+    &--step3 .form-step__text {
+      margin: 0 0 34px;
       padding-bottom: 35px;
     }
   }

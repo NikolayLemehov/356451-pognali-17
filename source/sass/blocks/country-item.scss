@@ -38,8 +38,7 @@
 
   &--active {
     .country-item__btn2--delete,
-    .country-item__btn-toggle::before,
-    &::before {
+    .country-item__btn-toggle::before {
       display: none;
     }
 
@@ -53,6 +52,7 @@
 
     .country-item__field-wrap:hover,
     .country-item__field-wrap {
+      z-index: 11;
       background-color: #1d2e5b;
       border: 1px solid #1d2e5b;
       border-radius: 4px 4px 0 0;
@@ -120,7 +120,6 @@
   border-radius: 4px;
   border: solid 1px #cbced9;
   transition: $duration;
-  overflow: hidden;
 
   &:hover {
     border: solid 1px #959bb2;
@@ -142,6 +141,7 @@
   white-space: nowrap;
   color: #1d2e5b;
   transition: $duration;
+  overflow: hidden;
 }
 
 .country-item__btn-toggle {
@@ -287,6 +287,10 @@
 
     &:not(:last-child)::after {
       display: none;
+    }
+
+    &--active .country-item__btn2--delete {
+      display: block;
     }
   }
 
