@@ -17,12 +17,14 @@
 }
 
 .choose-country .alphabet {
+  position: static;
   flex-direction: column;
   align-items: flex-start;
   left: 0;
   bottom: 0;
+  transform: none;
   width: 100%;
-  padding: 16px 50px 27px;
+  padding: 0;
   background-color: #e2e5f2;
   box-shadow: none;
   border: none;
@@ -39,7 +41,7 @@
 }
 
 .choose-country .alphabet__list {
-  margin: 0 0 22px 1px;
+  margin: 0 -0.1px 22px 1px;
   background-color: #ffffff;
   overflow: visible;
 }
@@ -131,6 +133,10 @@
     width: calc(100% + 207px);
     padding: 0;
     border: none;
+  }
+
+  .choose-country .alphabet {
+    position: absolute;
   }
 
   .alphabet__list {
