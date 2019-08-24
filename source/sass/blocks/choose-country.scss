@@ -3,9 +3,11 @@
   padding-top: 46px;
   padding-bottom: 14px;
   background-color: #e2e5f2;
-  border-radius: 0;
+  border-radius: 0 0 20px 20px;
 
   &--active {
+    border-radius: 0;
+
     .choose-country__btn--toggle {
       &::before {
         display: none;

@@ -4,6 +4,7 @@
   left: -1px;
   bottom: -1px;
   transform: translateY(100%);
+  display: none;
   flex-wrap: wrap;
   width: calc(100% + 2px);
   padding: 0 0 16px;
@@ -21,7 +22,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 16px 50px 5px;
+  padding: 16px 50px 27px;
   background-color: #e2e5f2;
   box-shadow: none;
   border: none;
@@ -87,10 +88,25 @@
   letter-spacing: 0.5px;
   text-align: center;
   text-transform: uppercase;
-  color: #161c35;
+  color: #1d2e5b;
   background-color: #d6daed;
   border: none;
   border-radius: 20px;
+  transition: $duration;
+
+  &:hover {
+    //color: #1d2e5b;
+    background-color: #c8cee8;
+  }
+
+  &:active {
+    color: fade_out(#1d2e5b, 1 - 0.3);
+    background-color: #c8cee8;
+  }
+
+  &:active span::before {
+    opacity: 0.3;
+  }
 
   span {
     position: relative;
@@ -103,6 +119,7 @@
       left: 0;
       top: 3px;
       background: no-repeat 0 0;
+      transition: $duration;
 
       @include bg-image(12px, 12px, "filter-close.svg");
     }
