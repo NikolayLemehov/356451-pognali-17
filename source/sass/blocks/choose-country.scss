@@ -30,7 +30,7 @@
     padding: 0;
 
     &--active {
-      .chose-country__height-wrap {
+      .choose-country__height-wrap {
         position: static;
         padding-bottom: 27px;
       }
@@ -45,7 +45,7 @@
     }
   }
 
-  .chose-country__height-wrap {
+  .choose-country__height-wrap {
     position: absolute;
     z-index: 1;
     left: 0;
@@ -95,9 +95,15 @@
 
     @include bg-image(15px, 10px, "filter.svg");
   }
+
+  span {
+    display: none;
+  }
 }
 
 .choose-country__btn {
+  color: #192144;
+
   &--toggle {
     position: relative;
     align-self: flex-start;
@@ -131,6 +137,8 @@
     }
 
     &:hover {
+      color: fade_out(#192144, 1 - 0.6);
+
       &::before,
       &::after {
         opacity: 0.6;
@@ -138,10 +146,117 @@
     }
 
     &:active {
+      color: fade_out(#192144, 1 - 0.3);
+
       &::before,
       &::after {
         opacity: 0.3;
       }
     }
+  }
+}
+
+.choose-country__text {
+  @include visually-hidden();
+}
+
+@media (min-width: $tablet-width) {
+  .choose-country {
+    padding-top: 117px;
+    padding-bottom: 55px;
+    border-radius: 0 0 60px 60px;
+
+    &--active {
+      border-radius: 0;
+
+      .choose-country__text {
+        &--show {
+          @include visually-hidden();
+        }
+
+        &--collapse {
+          @include visually-hidden-inactive();
+        }
+      }
+    }
+  }
+
+  .choose-country__title {
+    @include visually-hidden();
+  }
+
+  .choose-country__btn--toggle {
+    width: 176px;
+
+    &::before {
+      left: auto;
+      right: 0;
+      top: 9px;
+
+      @include bg-image(27px, 5px, "dots.svg");
+    }
+
+    &::after {
+      left: auto;
+      right: 3px;
+      top: 3px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .choose-country__text {
+    display: block;
+    padding: 0 32px 0 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+
+    &--show {
+      @include visually-hidden-inactive();
+    }
+
+    &--collapse {
+      padding-left: 2px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .choose-country__height-wrap {
+    padding: 117px 123px 55px 80px;
+  }
+
+  .choose-country__wrap {
+    justify-content: flex-start;
+  }
+
+  .choose-country__title {
+    @include visually-hidden-inactive();
+    position: relative;
+    margin: 0 35px 0 0;
+    padding: 0 0 0 43px;
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      top: 4px;
+
+      @include bg-image(23px, 15px, "filter-desktop.svg");
+    }
+
+    span {
+      display: inline;
+    }
+  }
+
+  .choose-country__continent {
+    margin: 0;
+  }
+
+  .choose-country--active .choose-country__btn--toggle {
+    left: -2px;
   }
 }

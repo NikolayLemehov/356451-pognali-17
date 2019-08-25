@@ -6,8 +6,13 @@
 }
 
 .choose-country .country-list2 {
-  margin: 0 0 22px;
-  padding: 0 0 0 1px;
+  display: none;
+
+  &--outside {
+    display: block;
+    margin: 0 0 22px;
+    padding: 0 0 0 1px;
+  }
 }
 
 .country-list2__item {
@@ -19,7 +24,6 @@
   color: #444444;
 }
 
-
 @media (min-width: $tablet-width) {
   .country-list2 {
     width: auto;
@@ -29,5 +33,16 @@
   .country-list2__item {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .choose-country .country-list2 {
+    display: block;
+    padding: 0;
+
+    &--outside {
+      display: none;
+    }
   }
 }

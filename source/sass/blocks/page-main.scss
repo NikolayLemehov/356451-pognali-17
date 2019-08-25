@@ -137,11 +137,13 @@
 
     &--catalog {
       .page-main__item {
-        padding: 60px 40px 10px;
+        &--choose-country {
+          padding-left: 75px;
+          padding-right: 75px;
+        }
 
         &--traveler-filter-wrap {
-          padding-top: 100px;
-          padding-bottom: 120px;
+          padding: 100px 40px 120px;
           border-radius: 0;
         }
       }
@@ -205,12 +207,14 @@
 
     &--catalog {
       .page-main__item {
-        padding: 60px 60px 10px;
+        &--choose-country {
+          padding: 0;
+        }
 
         &--traveler-filter-wrap {
           flex-direction: row-reverse;
           justify-content: space-between;
-          padding-bottom: 92px;
+          padding: 60px 60px 92px;
         }
       }
     }

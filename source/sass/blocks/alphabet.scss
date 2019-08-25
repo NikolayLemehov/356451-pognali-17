@@ -97,7 +97,6 @@
   transition: $duration;
 
   &:hover {
-    //color: #1d2e5b;
     background-color: #c8cee8;
   }
 
@@ -137,12 +136,24 @@
 
   .choose-country .alphabet {
     position: absolute;
+    transform: translateY(100%);
+    flex-direction: row;
+    padding: 0 0 74px;
+    border-radius: 0 0 60px 60px;
   }
 
   .alphabet__list {
     width: 369px;
     padding: 35px 27px 36px;
     border-right: 1px solid fade_out(#d6d9e6, 1 - 0.5);
+  }
+
+  .choose-country .alphabet__list {
+    width: 385px;
+    margin: 4px 77px 43px 55px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
   }
 
   .alphabet__item {
@@ -160,6 +171,57 @@
       border: 1px solid #1d2e5b;
     }
   }
+
+  .choose-country .alphabet__item {
+    display: flex;
+    justify-content: center;
+    width: calc(100% / 5);
+    height: auto;
+    margin: 0 0 23px;
+    padding: 0;
+    color: fade_out(#192144, 1 - 0.2);
+    border: none;
+
+    &--canceled {
+      order: 30;
+      display: none;
+    }
+
+    &--active {
+      color: #192144;
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  .choose-country .alphabet__letter {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .alphabet__btn {
+    position: static;
+    width: calc(100% - 75px * 2);
+    min-height: 100px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0;
+    color: #1d2e5b;
+
+    span {
+      margin: 0 3px 0 0;
+      padding: 0 0 0 39px;
+
+      &::before {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -167,15 +229,49 @@
     width: calc(100% + 2px);
   }
 
+  .choose-country .alphabet {
+    padding: 0 60px 74px;
+  }
+
+
   .alphabet__list {
     width: 490px;
     margin: 0;
     padding: 34px 26px 17px 12px;
   }
 
+  .choose-country .alphabet__list {
+    width: 100%;
+    margin: 0 0 23px;
+    padding: 2px 0 0 66px;
+  }
+
   .alphabet__item {
     width: calc((100% - 15px * 6) / 6);
     margin: 0 0 15px 15px;
     border-radius: 4px;
+  }
+
+  .choose-country .alphabet__item {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: calc((100% - 6px * 0) / 6);
+    margin: 0 0 66px;
+    text-align: left;
+    color: #192144;
+
+    &--canceled-desktop {
+      order: 30;
+      display: none;
+    }
+  }
+
+  .choose-country .alphabet__letter {
+    margin: 0 0 16px;
+  }
+
+  .choose-country .alphabet__btn {
+    width: 100%;
   }
 }
