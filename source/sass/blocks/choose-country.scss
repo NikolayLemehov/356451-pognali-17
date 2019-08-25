@@ -226,7 +226,7 @@
 
 @media (min-width: $desktop-width) {
   .choose-country__height-wrap {
-    padding: 117px 123px 55px 80px;
+    padding: 117px 0 55px;
   }
 
   .choose-country__wrap {
@@ -236,7 +236,7 @@
   .choose-country__title {
     @include visually-hidden-inactive();
     position: relative;
-    margin: 0 35px 0 0;
+    margin: 0 35px 0 80px;
     padding: 0 0 0 43px;
     font-size: 20px;
     line-height: 24px;
@@ -254,6 +254,10 @@
 
   .choose-country__continent {
     margin: 0;
+  }
+
+  .choose-country__btn--toggle {
+    margin: 0 123px 0 0;
   }
 
   .choose-country--active .choose-country__btn--toggle {
