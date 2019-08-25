@@ -225,12 +225,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .choose-country {
+    border-radius: 0 0 60px 60px;
+  }
+
   .choose-country__height-wrap {
-    padding: 117px 0 55px;
+    padding: 117px 0 0;
   }
 
   .choose-country__wrap {
     justify-content: flex-start;
+    margin: 0 0 55px;
   }
 
   .choose-country__title {
