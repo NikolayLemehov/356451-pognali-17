@@ -138,7 +138,7 @@
         <h1 class="page-main__title-text">Попутчики</h1>
         <a class="page-main__return" href="index.html">На главную</a>
       </div>
-      <div class="page-main__item page-main__item--choose-country choose-country choose-country--active">
+      <div class="page-main__item page-main__item--choose-country choose-country">
         <div class="choose-country__height-wrap">
           <div class="choose-country__wrap">
             <h2 class="choose-country__title">Фильтрация по странам<span>:</span></h2>
@@ -536,51 +536,147 @@
         </div>
       </div>
       <div class="page-main__item page-main__item--traveler-filter-wrap">
-        <form class="main-filter test-d-none" action="https://echo.htmlacademy.ru">
+        <form class="main-filter" action="https://echo.htmlacademy.ru">
           <h2 class="main-filter__title">Подберите идеального попутчика</h2>
-          <fieldset class="main-filter__hobby">
-            <legend class="main-filter__legend">Хобби</legend>
+          <fieldset class="main-filter__set main-filter__set--hobby">
+            <h3 class="main-filter__legend">
+              <button class="main-filter__toggle" type="button">
+                Хобби
+              </button>
+            </h3>
+            <p class="main-filter__inputs-container">
+              <label class="main-filter__label">
+                <input class="main-filter__checkbox visually-hidden" type="checkbox" checked>
+                <span class="main-filter__label-text">Спортзал</span>
+              </label>
+              <label class="main-filter__label">
+                <input class="main-filter__checkbox visually-hidden" type="checkbox">
+                <span class="main-filter__label-text">Кальян</span>
+              </label>
+              <label class="main-filter__label">
+                <input class="main-filter__checkbox visually-hidden" type="checkbox">
+                <span class="main-filter__label-text">Диван</span>
+              </label>
+            </p>
           </fieldset>
-          <fieldset class="main-filter__music music-fieldset">
-            <legend class="main-filter__legend">Музыка</legend>
-            <label class="music-fieldset__label">
-              <input class="music-fieldset__checkbox" type="checkbox" name="music-1" checked>Тяжелый рок
-            </label>
-            <label class="music-fieldset__label">
-              <input class="music-fieldset__checkbox" type="checkbox" name="music-2">Русский рэп
-            </label>
-            <label class="music-fieldset__label">
-              <input class="music-fieldset__checkbox" type="checkbox" name="music-3">Евроденс
-            </label>
+          <fieldset class="main-filter__set main-filter__set--music main-filter__set--active">
+            <h3 class="main-filter__legend">
+              <button class="main-filter__toggle" type="button">
+                Музыка
+              </button>
+            </h3>
+            <p class="main-filter__inputs-container">
+              <label class="main-filter__label">
+                <input class="main-filter__checkbox visually-hidden" type="checkbox" checked>
+                <span class="main-filter__label-text">Тяжелый рок</span>
+              </label>
+              <label class="main-filter__label">
+                <input class="main-filter__checkbox visually-hidden" type="checkbox">
+                <span class="main-filter__label-text">Русский рэп</span>
+              </label>
+              <label class="main-filter__label">
+                <input class="main-filter__checkbox visually-hidden" type="checkbox">
+                <span class="main-filter__label-text">Евроденс</span>
+              </label>
+            </p>
           </fieldset>
-          <fieldset class="main-filter__food">
-            <legend class="main-filter__legend">Еда</legend>
+          <fieldset class="main-filter__set main-filter__set--food">
+            <h3 class="main-filter__legend">
+              <button class="main-filter__toggle" type="button">
+                Еда
+              </button>
+            </h3>
+            <p class="main-filter__inputs-container">
+              <label class="main-filter__label">
+                <input class="main-filter__checkbox visually-hidden" type="checkbox" checked>
+                <span class="main-filter__label-text">Мясоед</span>
+              </label>
+              <label class="main-filter__label">
+                <input class="main-filter__checkbox visually-hidden" type="checkbox">
+                <span class="main-filter__label-text">Сидит на ПП</span>
+              </label>
+              <label class="main-filter__label">
+                <input class="main-filter__checkbox visually-hidden" type="checkbox">
+                <span class="main-filter__label-text">Веган-сыроед</span>
+              </label>
+            </p>
           </fieldset>
-          <fieldset class="main-filter__transport travel-modes" style="display: none;">
-            <legend class="main-filter__legend">Транспорт</legend>
-            <label class="travel-modes__label">
-              <input class="travel-modes__item travel-modes__item--air" type="checkbox" name="transport-1" checked>Самолёт
-            </label>
-            <label class="travel-modes__label">
-              <input class="travel-modes__item travel-modes__item--mass-transit" type="checkbox" name="transport-2"
-                checked>Автобус
-            </label>
-            <label class="travel-modes__label">
-              <input class="travel-modes__item travel-modes__item--bicycle" type="checkbox" name="transport-3">Велосипед
-            </label>
-            <label class="travel-modes__label">
-              <input class="travel-modes__item travel-modes__item--pedestrian" type="checkbox" name="transport-4"
-                checked>Пешеход
-            </label>
+          <fieldset class="main-filter__set main-filter__set--transport main-filter__set--active">
+            <h3 class="main-filter__legend">
+              <button class="main-filter__toggle" type="button">
+                Транспорт
+              </button>
+            </h3>
+            <ul class="travel-modes travel-modes--catalog-filter">
+              <li class="travel-modes__item travel-modes__item--plane">
+                <label class="travel-modes__label">
+                  <input class="visually-hidden travel-modes__checkbox"
+                    type="checkbox" checked>
+                  <span class="travel-modes__round"></span>
+                  <svg class="travel-modes__img travel-modes__img--plane" width="14" height="16">
+                    <use xlink:href="#icon-plane"></use>
+                  </svg>
+                  <span class="travel-modes__text">Авиаперелет</span>
+                </label>
+              </li>
+              <li class="travel-modes__item travel-modes__item--bus">
+                <label class="travel-modes__label">
+                  <input class="visually-hidden travel-modes__checkbox"
+                    type="checkbox" checked>
+                  <span class="travel-modes__round"></span>
+                  <svg class="travel-modes__img travel-modes__img--bus" width="13" height="16">
+                    <use xlink:href="#icon-bus"></use>
+                  </svg>
+                  <span class="travel-modes__text">Автотранспорт</span>
+                </label>
+              </li>
+              <li class="travel-modes__item travel-modes__item--bike">
+                <label class="travel-modes__label">
+                  <input class="visually-hidden travel-modes__checkbox"
+                    type="checkbox">
+                  <span class="travel-modes__round"></span>
+                  <svg class="travel-modes__img travel-modes__img--bike" width="19" height="17">
+                    <use xlink:href="#icon-bike"></use>
+                  </svg>
+                  <span class="travel-modes__text">Велосипед</span>
+                </label>
+              </li>
+              <li class="travel-modes__item travel-modes__item--run">
+                <label class="travel-modes__label">
+                  <input class="visually-hidden travel-modes__checkbox"
+                    type="checkbox" checked>
+                  <span class="travel-modes__round"></span>
+                  <svg class="travel-modes__img travel-modes__img--run" width="15" height="17">
+                    <use xlink:href="#icon-run"></use>
+                  </svg>
+                  <span class="travel-modes__text">Пешком</span>
+                </label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="main-filter__level level">
-            <legend class="main-filter__legend">Левел</legend>
-            <label class="level__label">От
-              <input class="level__from" type="text" name="from" value="30">
-            </label>
-            <label class="level__label">До
-              <input class="level__from" type="text" name="from" value="100">
-            </label>
+          <fieldset class="main-filter__set main-filter__set--level main-filter__set--active">
+            <h3 class="main-filter__legend">
+              <button class="main-filter__toggle" type="button">
+                Левел
+              </button>
+            </h3>
+            <div class="main-filter__level level-filter">
+              <label class="level-filter__label level-filter__label--from">
+                <span class="visually-hidden">От</span>
+                <input class="level-filter__input level-filter__input--from" type="text" value="30">
+              </label>
+              <label class="level-filter__label level-filter__label--to">
+                <span class="visually-hidden">До</span>
+                <input class="level-filter__input level-filter__input--to" type="text" value="100">
+              </label>
+              <div class="level-filter__range-controls">
+                <div class="level-filter__scale">
+                  <div class="level-filter__bar"></div>
+                </div>
+                <div class="level-filter__toggle level-filter__toggle--min"></div>
+                <div class="level-filter__toggle level-filter__toggle--max"></div>
+              </div>
+            </div>
           </fieldset>
           <button class="main-filter__show" type="submit">Показать</button>
         </form>
@@ -1083,5 +1179,6 @@
         </svg>
       </a>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
