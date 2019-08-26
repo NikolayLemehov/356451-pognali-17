@@ -204,6 +204,8 @@
 
 @media (min-width: $desktop-width) {
   .follow-traveler {
+    padding-top: 0;
+
     &--main {
       flex-direction: row;
       flex-wrap: wrap;

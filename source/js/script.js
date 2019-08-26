@@ -12,4 +12,17 @@ function legendToggle() {
   }
 }
 
+function headerCountryFilter() {
+  var activateBlock = document.querySelector(".page-main__item--choose-country");
+  var button = activateBlock.querySelector(".choose-country__btn--toggle");
+  var closeBtn = activateBlock.querySelector(".alphabet__btn");
+  button.addEventListener("click", function () {
+    activateBlock.classList.toggle("choose-country--active");
+  });
+  closeBtn.addEventListener("click", function () {
+    activateBlock.classList.remove("choose-country--active");
+  });
+}
+
 legendToggle();
+headerCountryFilter();

@@ -211,7 +211,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
   .main-filter {
     margin: 0;
     padding: 34px 35px 38px;
@@ -220,15 +220,12 @@
   .main-filter__title {
     margin: 0 0 31px -1px;
     padding: 0 0 39px;
-    font-size: 30px;
-    line-height: 30px;
     border-bottom: 1px solid #f3c72b;
   }
 
   .main-filter__set {
     display: flex;
     margin: 0;
-    border: none;
 
     &--transport {
       margin: 0 0 11px;
@@ -263,9 +260,6 @@
   .main-filter__legend-text {
     position: static;
     display: flex;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
   }
 
   .main-filter__toggle:hover + .main-filter__legend-text {
@@ -310,6 +304,31 @@
 
   .main-filter__label-text {
     padding: 0 0 0 36px;
+
+    &::after {
+      left: 6px;
+      top: 6px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-filter__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .main-filter__set {
+    border: none;
+  }
+
+  .main-filter__legend-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .main-filter__label-text {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -320,8 +339,6 @@
     }
 
     &::after {
-      left: 6px;
-      top: 6px;
       width: 12px;
       height: 12px;
     }
@@ -339,6 +356,62 @@
 
 @media (min-width: $desktop-width) {
   .main-filter {
+    align-self: flex-start;
     width: 285px;
+    margin: 0;
+    padding: 45px 48px 47px;
+  }
+
+  .main-filter__title {
+    margin: 0 0 19px;
+  }
+
+  .main-filter__set {
+    margin: 0 0 2px;
+  }
+
+  .main-filter__toggle {
+    &::after {
+      right: -1px;
+      top: 23px;
+      width: 10px;
+      height: 5px;
+    }
+  }
+
+  .main-filter__wrap {
+    padding: 23px 0 0;
+
+    &--travel-modes {
+      margin: 0 0 0 -3px;
+      padding: 18px 0 15px;
+    }
+
+    &--level {
+      margin: 0;
+      padding: 17px 0 0;
+    }
+  }
+
+  .main-filter__label {
+    margin: 0 0 16px;
+
+    &:last-child {
+      margin: 0 0 13px;
+    }
+  }
+
+  .main-filter__label-text {
+    padding: 0 0 0 36px;
+
+    &::after {
+      left: 6px;
+      top: 6px;
+    }
+  }
+
+  .main-filter__show {
+    width: calc(100% + 7px);
+    margin: 28px 0 0;
   }
 }
