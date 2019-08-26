@@ -30,32 +30,22 @@
 }
 
 .main-filter__legend {
+  position: relative;
+  height: 39px;
   margin: 0;
   padding: 0;
 }
 
 .main-filter__toggle {
   position: relative;
+  z-index: 1;
   display: block;
   width: 100%;
+  height: 100%;
   margin: 0;
-  padding: 11px 15px 10px 1px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: left;
-  color: #1d2e5b;
-  text-transform: uppercase;
+  padding: 0;
   background-color: transparent;
   border: none;
-
-  &:hover {
-    color: fade_out(#1d2e5b, 1 - 0.6);
-  }
-
-  &:active {
-    color: fade_out(#1d2e5b, 1 - 0.3);
-  }
 
   &::after {
     content: "";
@@ -74,6 +64,30 @@
   &:active::after {
     opacity: 0.3;
   }
+}
+
+.main-filter__legend-text {
+  position: absolute;
+  left: 1px;
+  top: 11px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  color: #1d2e5b;
+  text-transform: uppercase;
+}
+
+.main-filter__toggle:hover + .main-filter__legend-text {
+  color: fade_out(#1d2e5b, 1 - 0.6);
+}
+
+.main-filter__toggle:active + .main-filter__legend-text {
+  color: fade_out(#1d2e5b, 1 - 0.3);
+}
+
+.main-filter__legend-text2 {
+  display: none;
 }
 
 .main-filter__set--active .main-filter__toggle::after {
