@@ -94,14 +94,17 @@
   transform: rotate(-180deg);
 }
 
-.main-filter__inputs-container {
+.main-filter__wrap {
   display: none;
-  flex-direction: column;
-  margin: 0;
-  padding: 4px 0 8px;
+
+  &--checkbox {
+    margin: 0;
+    flex-direction: column;
+    padding: 4px 0 8px;
+  }
 }
 
-.main-filter__set--active .main-filter__inputs-container {
+.main-filter__set--active .main-filter__wrap {
   display: flex;
 }
 
@@ -172,11 +175,11 @@
   background-color: fade_out(#ffffff, 1 - 0.5);
 }
 
-.main-filter__level {
+.main-filter__wrap--level {
   display: none;
 }
 
-.main-filter__set--active .main-filter__level {
+.main-filter__set--active .main-filter__wrap--level {
   display: flex;
   flex-wrap: wrap;
   padding: 2px 0 0;
@@ -205,6 +208,12 @@
   &:active {
     color: fade_out(#161c35, 1 - 0.3);
     background-color: #f3c72b;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-filter {
+    width: 285px;
   }
 }
 
