@@ -13,6 +13,12 @@
   }
 }
 
+.page-header__inner {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
 .page-header__container,
 .page-header__main-nav {
   width: 320px;
@@ -29,6 +35,10 @@
   .page-header__main-nav {
     width: $tablet-width;
     min-height: $header-tablet-min-height;
+  }
+
+  .page-header__inner {
+    width: $tablet-width;
   }
 }
 
@@ -52,5 +62,9 @@
   .page-header__main-nav {
     width: $desktop-width;
     min-height: $header-desktop-min-height;
+  }
+
+  .page-header__inner {
+    width: $desktop-width;
   }
 }

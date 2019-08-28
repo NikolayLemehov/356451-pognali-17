@@ -12,38 +12,11 @@
     z-index: 16;
     background-color: #ffffff;
 
-    .main-nav__toggle {
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        top: 9px;
-        left: -2.9px;
-        width: 26px;
-        height: 2px;
-        background-color: #cccccc;
-        border-radius: 1px;
-        transition: $duration;
-        transition-property: background-color, box-shadow, color;
-      }
+    .main-nav__toggle-icon {
+      display: none;
 
-      &::before {
-        transform: rotate(45deg);
-        box-shadow: none;
-      }
-
-      &::after {
-        transform: rotate(-45deg);
-      }
-
-      &:hover::before,
-      &:hover::after {
-        background-color: #999999;
-      }
-
-      &:active::before,
-      &:active::after {
-        background-color: #e6e6e6;
+      &--close-mobile {
+        display: block;
       }
     }
   }
@@ -72,37 +45,21 @@
       }
     }
 
-    .main-nav__toggle {
-      width: 27px;
+    .main-nav__toggle-icon {
+      display: none;
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 4px;
-        left: 1px;
-        width: 25px;
-        height: 3px;
-        background-color: #ffffff;
-        box-shadow: 0 8px 0 0 #ffffff;
-        border-radius: 1.5px;
-        transition: $duration;
-        transition-property: background-color, box-shadow, color;
-      }
-
-      &:hover::before {
-        background-color: fade_out(#ffffff, 1 - 0.6);
-        box-shadow: 0 8px 0 0 fade_out(#ffffff, 1 - 0.6);
-      }
-
-      &:active::before {
-        background-color: fade_out(#ffffff, 1 - 0.3);
-        box-shadow: 0 8px 0 0 fade_out(#ffffff, 1 - 0.3);
+      &--menu-mobile {
+        display: block;
       }
     }
   }
 
   &--nojs {
     background-color: #ffffff;
+
+    .main-nav__toggle {
+      display: none;
+    }
 
     .main-nav__site-list,
     .main-nav__user-list,
@@ -144,7 +101,6 @@
 
   .main-nav__logo {
     background-color: #ffffff;
-    margin: 0;
   }
 
   .main-nav__logo-image {
@@ -157,25 +113,15 @@
     }
   }
 
-  .main-nav__toggle {
-    width: 27px;
+  .main-nav__toggle-icon--menu-mobile {
+    fill: #cccccc;
 
-    &::before {
-      background-color: #cccccc;
-      box-shadow: 0 8px 0 0 #cccccc;
-      border-radius: 1.5px;
-      transition: $duration;
-      transition-property: background-color, box-shadow, color;
+    &:hover {
+      fill: #999999;
     }
 
-    &:hover::before {
-      background-color: fade_out(#000000, 1 - 0.6);
-      box-shadow: 0 8px 0 0 fade_out(#000000, 1 - 0.6);
-    }
-
-    &:active::before {
-      background-color: fade_out(#000000, 1 - 0.3);
-      box-shadow: 0 8px 0 0 fade_out(#000000, 1 - 0.3);
+    &:active {
+      fill: #e6e6e6;
     }
   }
 }
@@ -183,7 +129,7 @@
 .main-nav__logo {
   width: 100px;
   height: 19px;
-  margin: 0 0 72px 0;
+  margin: 0 0 69px 0;
   cursor: pointer;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -201,14 +147,59 @@
 
 .main-nav__toggle {
   position: relative;
+  top: -3px;
   display: block;
   background-color: transparent;
-
-  @include square(20px);
+  width: 25px;
+  height: 25px;
   padding: 0;
   border: none;
   transition: $duration;
-  transition-property: background-color, box-shadow, color;
+}
+
+.main-nav__toggle-icon {
+  transition: $duration;
+
+  &--menu-tablet,
+  &--menu-mobile {
+    width: 25px;
+    height: 11px;
+    fill: #ffffff;
+
+    &:hover {
+      fill: fade_out(#ffffff, 1 - 0.6);
+    }
+
+    &:active {
+      fill: fade_out(#ffffff, 1 - 0.3);
+    }
+  }
+
+  &--close-mobile {
+    width: 19px;
+    height: 19px;
+    margin-left: 3px;
+  }
+
+  &--close-tablet {
+    width: 18px;
+    height: 18px;
+    margin-left: 3px;
+    margin-top: -3px;
+  }
+
+  &--close-mobile,
+  &--close-tablet {
+    fill: #cccccc;
+  }
+
+  &:hover {
+    fill: #999999;
+  }
+
+  &:active {
+    fill: #e6e6e6;
+  }
 }
 
 .main-nav__site-list {
@@ -300,6 +291,14 @@
           display: none;
         }
       }
+
+      .main-nav__toggle-icon {
+        display: none;
+
+        &--close-tablet {
+          display: block;
+        }
+      }
     }
 
     &--closed {
@@ -311,6 +310,14 @@
         }
 
         &--white {
+          display: block;
+        }
+      }
+
+      .main-nav__toggle-icon {
+        display: none;
+
+        &--menu-tablet {
           display: block;
         }
       }
@@ -442,6 +449,10 @@
       &--white {
         display: none;
       }
+    }
+
+    .main-nav__site-list::before {
+      background-color: #192144;
     }
   }
 

@@ -91,4 +91,15 @@
   .site-list__link {
     color: #ffffff;
   }
+
+  .page-header--scrolled {
+    .site-list__link,
+    .site-list__text::before {
+      background-color: #ffffff;
+    }
+
+    .site-list__link {
+      color: #192144;
+    }
+  }
 }
