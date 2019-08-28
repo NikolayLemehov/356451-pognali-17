@@ -65,7 +65,7 @@ function businessPrice() {
   });
 }
 
-function cooseCountryForm() {
+function chooseCountryForm() {
   var blockAll = document.querySelectorAll(".country-list1__item");
   var addToggleHandler = function (toggle, block) {
     toggle.addEventListener("click", function () {
@@ -79,8 +79,20 @@ function cooseCountryForm() {
   }
 }
 
+function scrollMenu() {
+  var header = document.querySelector(".page-header");
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 740 && window.innerWidth >= 1200 || window.pageYOffset > 0 && window.innerWidth < 1200) {
+      header.classList.add("page-header--scrolled");
+    } else {
+      header.classList.remove("page-header--scrolled");
+    }
+  });
+}
+
 nojs();
 mainNav();
+scrollMenu();
 
 if (currentLocation.pathname.lastIndexOf("/index.html") >= 0) {
   businessPrice();
@@ -92,5 +104,5 @@ if (currentLocation.pathname.lastIndexOf("/catalog.html") >= 0) {
 }
 
 if (currentLocation.pathname.lastIndexOf("/form.html") >= 0) {
-  cooseCountryForm()
+  chooseCountryForm()
 }
