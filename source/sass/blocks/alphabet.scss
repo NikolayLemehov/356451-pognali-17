@@ -59,6 +59,14 @@
   color: #1d2e5b;
   border: 1px solid #cbced9;
 
+  &--active {
+    position: relative;
+    z-index: 1;
+    background-color: #edeff6;
+  }
+}
+
+.add-plan__item .alphabet__item {
   &:active {
     background-color: #edeff6;
   }
@@ -67,12 +75,6 @@
     position: relative;
     z-index: 1;
     border: 1px solid #959bb2;
-  }
-
-  &--active {
-    position: relative;
-    z-index: 1;
-    background-color: #edeff6;
   }
 }
 
@@ -175,8 +177,17 @@
     font-size: 20px;
     letter-spacing: 2px;
 
-    &:active,
     &--active {
+      position: relative;
+      z-index: 2;
+      color: #ffffff;
+      background-color: #1d2e5b;
+      border: 1px solid #1d2e5b;
+    }
+  }
+
+  .add-plan__item .alphabet__item {
+    &:active {
       position: relative;
       z-index: 2;
       color: #ffffff;
@@ -244,7 +255,7 @@
 
   .choose-country .alphabet {
     position: static;
-    padding: 0 60px 74px;
+    padding: 0 60px 73px;
     transform: none;
   }
 

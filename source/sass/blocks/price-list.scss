@@ -2,7 +2,7 @@
   list-style: none;
   counter-reset: list;
 
-  &--busyness .price-list__item::after {
+  &--business .price-list__item::after {
     display: none;
   }
 }
@@ -65,29 +65,31 @@
     flex-direction: column;
     padding: 0;
 
-    &::after {
-      content: "";
-      position: absolute;
-      right: -35px;
-      top: -43px;
-      z-index: -1;
-      width: 198px;
-      height: calc(100% + 86px);
-      background-color: #e2e5f2;
-      border-radius: 20px;
-    }
+    &--main {
+      &::after {
+        content: "";
+        position: absolute;
+        right: -35px;
+        top: -43px;
+        z-index: -1;
+        width: 198px;
+        height: calc(100% + 86px);
+        background-color: #e2e5f2;
+        border-radius: 20px;
+      }
 
-    &::before {
-      content: "";
-      position: absolute;
-      right: 11px;
-      bottom: -117px;
-      z-index: 1;
-      background: no-repeat 0 0;
-      background-size: 100% 100%;
+      &::before {
+        content: "";
+        position: absolute;
+        right: 11px;
+        bottom: -117px;
+        z-index: 1;
+        background: no-repeat 0 0;
+        background-size: 100% 100%;
 
-      @include bg-image(99px, 99px, "rates-mobile@1x.png");
-      @include bg-retina("rates@2x.png");
+        @include bg-image(99px, 99px, "rates-mobile@1x.png");
+        @include bg-retina("rates@2x.png");
+      }
     }
   }
 
@@ -120,6 +122,17 @@
     background-color: #ffd74b;
   }
 
+  .price-list--business .price-list__item {
+    min-height: 56px;
+    padding: 12px 0 14px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #444444;
+  }
+
   .price-list__cost {
     width: 200px;
     text-align: right;
@@ -135,7 +148,6 @@
       top: -52px;
       width: 444px;
       height: calc(100% + 102px);
-      //background-color: #e2e5f2;
     }
 
     &::before {
@@ -143,9 +155,6 @@
       bottom: calc(50% - 99px);
       width: 198px;
       height: 198px;
-
-      //@include bg-image(198px, 198px, "rates@1x.png");
-      //@include bg-retina("rates@2x.png");
     }
   }
 

@@ -17,6 +17,13 @@ body {
   font-style: normal;
 }
 
+@media (max-width: $mobile-width-only) {
+  .body-main {
+    position: relative;
+    z-index: -20;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;

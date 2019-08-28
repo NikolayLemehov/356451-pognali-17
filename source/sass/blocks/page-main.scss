@@ -77,6 +77,27 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  position: relative;
+  z-index: -20;
+
+  &--add-profile {
+    z-index: auto;
+  }
+
+  &--user-nav {
+    z-index: -1;
+  }
+
+  &--get-route {
+    z-index: -2;
+  }
+
+  &--map {
+    z-index: -3;
+  }
+}
+
 .page-main__title {
   position: relative;
   z-index: 15;

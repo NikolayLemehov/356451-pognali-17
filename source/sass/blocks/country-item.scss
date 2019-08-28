@@ -170,10 +170,10 @@
 .country-item--active .country-item__btn-toggle {
   position: absolute;
   z-index: 2;
-  right: 16px;
-  top: 16px;
-  width: 9px;
-  height: 9px;
+  right: 0;
+  top: 2px;
+  width: 49px;
+  height: 36px;
   padding: 0;
   background: none;
 
@@ -181,6 +181,7 @@
     display: block;
     width: 9px;
     height: 9px;
+    margin: 0 0 0 24px;
     fill: #ffffff;
   }
 

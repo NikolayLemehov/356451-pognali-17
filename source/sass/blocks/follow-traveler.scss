@@ -4,6 +4,7 @@
   color: #ffffff;
 
   &--main {
+    padding-top: 81px;
     padding-bottom: 30px;
     background-color: #192144;
     background-position: -10px 340px, 152px 68px;
@@ -120,7 +121,7 @@
 
 @media (min-width: $tablet-width) {
   .follow-traveler {
-    padding-top: 40px;
+    padding-top: 201px;
     padding-bottom: 88px;
 
     &--main {
