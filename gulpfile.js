@@ -4,10 +4,10 @@ var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
-// var postcss = require("gulp-postcss");
-// var autoprefixer = require("autoprefixer");
+var postcss = require("gulp-postcss");
+var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-// var csso = require("gulp-csso");
+var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -16,7 +16,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 // var htmlmin = require("gulp-htmlmin");
-// var uglify = require("gulp-uglify");
+var uglify = require("gulp-uglify");
 
 
 gulp.task("css", function () {
@@ -24,22 +24,22 @@ gulp.task("css", function () {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    // .pipe(postcss([
-    //   autoprefixer()
-    // ]))
-    // .pipe(csso())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
-// gulp.task("minjs", function () {
-//   return gulp.src(["source/js/script.js"])
-//     .pipe(uglify())
-//     .pipe(rename("script.min.js"))
-//     .pipe(gulp.dest("build/js"));
-// });
+gulp.task("minjs", function () {
+  return gulp.src(["source/js/script.js"])
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"));
+});
 
 gulp.task("server", function () {
   server.init({
@@ -53,7 +53,7 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/*.svg", gulp.series("copysvg", "sprite", "html", "refresh"));
   gulp.watch("source/img/*.{png,jpg}", gulp.series("copypngjpg", "html", "refresh"));
-  // gulp.watch("source/js/*.js", gulp.series("minjs", "refresh"));
+  gulp.watch("source/js/*.js", gulp.series("minjs", "refresh"));
   gulp.watch("source/js/*.js", gulp.series("copyjs", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
@@ -148,7 +148,7 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
-  // "minjs",
+  "minjs",
   "sprite",
   "html"
 ));
