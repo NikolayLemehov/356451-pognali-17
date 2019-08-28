@@ -78,23 +78,27 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  position: relative;
-  z-index: -20;
-
-  &--add-profile {
-    z-index: auto;
+  .page-main {
+    position: relative;
+    z-index: -20;
   }
 
-  &--user-nav {
-    z-index: -1;
-  }
+  .page-main__item {
+    &--add-profile {
+      z-index: auto;
+    }
 
-  &--get-route {
-    z-index: -2;
-  }
+    &--user-nav {
+      z-index: -1;
+    }
 
-  &--map {
-    z-index: -3;
+    &--get-route {
+      z-index: -2;
+    }
+
+    &--map {
+      z-index: -3;
+    }
   }
 }
 

@@ -94,7 +94,8 @@ nojs();
 mainNav();
 scrollMenu();
 
-if (currentLocation.pathname.lastIndexOf("/index.html") >= 0) {
+
+if (document.querySelector(".add-profile__business-price") !== null) {
   businessPrice();
 }
 
