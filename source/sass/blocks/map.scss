@@ -1,4 +1,5 @@
 .map {
+  position: relative;
   background-color: #e7e6cd;
   height: 356px;
   padding: 0;
@@ -19,7 +20,18 @@
 }
 
 .map__img {
+  position: relative;
+  z-index: 1;
   display: block;
+}
+
+.map__iframe {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 
 @media (min-width: $tablet-width) {
