@@ -13,7 +13,7 @@
     top: calc(50% - 37px);
     width: 41px;
     height: 41px;
-    background: no-repeat 0 0;
+    background: #efeade no-repeat 0 0;
 
     @include bg-simple-image("map-marker.svg");
   }
