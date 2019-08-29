@@ -368,6 +368,18 @@
     width: 164px;
     height: 42px;
   }
+
+  .main-nav__toggle-icon--menu-tablet {
+    fill: #cccccc;
+
+    &:hover {
+      fill: #999999;
+    }
+
+    &:active {
+      fill: #e6e6e6;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
