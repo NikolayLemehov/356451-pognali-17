@@ -78,7 +78,7 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .page-main {
+  .main-body .page-main {
     position: relative;
     z-index: -20;
   }
