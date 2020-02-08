@@ -118,10 +118,6 @@ gulp.task("copysvg", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("clean", function () {
-  return del("build");
-});
-
 gulp.task("copypngjpg", function () {
   return gulp.src([
     "source/img/**/*.{png,jpg}"
